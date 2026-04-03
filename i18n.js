@@ -7,8 +7,8 @@ en: {
   heroH1: "The Different Versions<br>of the Quran",
   heroP: "An investigation into the 10+ canonical Quranic recitations, their origins, and documented textual differences — verified from Islamic and academic scholarship.",
   kfLabel: "Key Finding",
-  kfText: '<strong>Multiple Qurans exist.</strong> There are at least <strong>10 canonically accepted Quranic recitations (qira\'at)</strong> with documented textual differences — different words, verb forms, singular/plural nouns, pronouns, and grammar. Over <strong>10,000+ variants</strong> are documented in Islamic scholarship.<sup>[1]</sup>',
-  s1: "Canonical Readings", s2: "Transmissions", s3: "Hafs vs Warsh", s4: "Total Variants",
+  kfText: '<strong>Multiple Qurans exist.</strong> There are at least <strong>30+ canonically recognized Quranic versions (qira\'at)</strong> with documented textual differences — different words, verb forms, singular/plural nouns, pronouns, and grammar. Over <strong>10,000+ variants</strong> are documented in Islamic scholarship.<sup>[1]</sup>',
+  s1: "Variant Qurans", s2: "Transmissions", s3: "Hafs vs Warsh", s4: "Total Differences",
   secLabel1: "The Canonical Recitations",
   secH1: "The Different Qurans in Use Today",
   secP1: "Each has its own chain of transmission, its own printed edition, and documented textual differences from the others.",
@@ -50,7 +50,7 @@ en: {
   secP5: "Every claim verified from academic and Islamic scholarly sources.",
   secLabel6: "Conclusion", secH6: "What the Evidence Shows",
   conc1: '<strong>The claim that "all Qurans are identical" is demonstrably false.</strong>',
-  conc2: "10 canonical qira'at exist with 20 transmissions. Thousands of documented textual variants. Hafs became dominant in the 20th century through printing, not consensus. Early manuscripts confirm script ambiguity.",
+  conc2: "30+ different Qurans exist — 10 readers, 20 transmitters, 93,263 documented differences. Thousands of documented textual variants. Hafs became dominant in the 20th century through printing, not consensus. Early manuscripts confirm script ambiguity.",
   conc3: "<strong>This is not pronunciation or dialect</strong> — these are substantive textual differences recognized within Islamic tradition itself.",
   footer1: "Research compiled April 2026",
   footer2: '"You will know the truth, and the truth will set you free." — John 8:32',
@@ -58,7 +58,7 @@ en: {
   claimText: '"The Quran has been perfectly preserved, letter for letter, without any variation whatsoever. Every Quran in the world is identical."',
   verdictLabel: "The Verdict — After Investigation",
   verdictResult: "FALSE.",
-  verdictExplain: '<strong>At least 10 different Qurans</strong> are in use today with <strong>10,243+ documented textual differences</strong> between them — including different words, different meanings, different grammar, and different verse counts. This is not a matter of pronunciation. These are substantive textual variants <strong>recognized and documented by Islamic scholars themselves.</strong> The most popular version (Hafs) only became dominant in 1924 through Egyptian printing — not through early Islamic consensus.'
+  verdictExplain: '<strong>At least 30 different Qurans</strong> are in use today with <strong>10,243+ documented textual differences</strong> between them — including different words, different meanings, different grammar, and different verse counts. This is not a matter of pronunciation. These are substantive textual variants <strong>recognized and documented by Islamic scholars themselves.</strong> The most popular version (Hafs) only became dominant in 1924 through Egyptian printing — not through early Islamic consensus.'
 },
 hi: {
   dir: "ltr",
@@ -67,8 +67,8 @@ hi: {
   heroH1: "कुरान के विभिन्न<br>संस्करण",
   heroP: "10+ प्रामाणिक कुरानी पाठों, उनके मूल और प्रलेखित पाठ्य अंतरों की जांच — इस्लामी और शैक्षणिक विद्वता से सत्यापित।",
   kfLabel: "मुख्य निष्कर्ष",
-  kfText: '<strong>कई कुरान मौजूद हैं।</strong> कम से कम <strong>10 प्रामाणिक रूप से स्वीकृत कुरान पाठ (किराअत)</strong> प्रलेखित पाठ्य अंतरों के साथ मौजूद हैं — विभिन्न शब्द, क्रिया रूप, एकवचन/बहुवचन, सर्वनाम और व्याकरण। इस्लामी विद्वता में <strong>10,000+ भिन्नताएं</strong> प्रलेखित हैं।<sup>[1]</sup>',
-  s1: "प्रामाणिक पाठ", s2: "संचरण", s3: "हफ़्स बनाम वर्श", s4: "कुल भिन्नताएं",
+  kfText: '<strong>कई कुरान मौजूद हैं।</strong> कम से कम <strong>30+ प्रामाणिक रूप से मान्यता प्राप्त कुरान संस्करण</strong> प्रलेखित पाठ्य अंतरों के साथ मौजूद हैं — विभिन्न शब्द, क्रिया रूप, एकवचन/बहुवचन, सर्वनाम और व्याकरण। इस्लामी विद्वता में <strong>10,000+ भिन्नताएं</strong> प्रलेखित हैं।<sup>[1]</sup>',
+  s1: "भिन्न कुरान", s2: "संचरण", s3: "हफ़्स बनाम वर्श", s4: "कुल अंतर",
   secLabel1: "प्रामाणिक पाठ",
   secH1: "आज प्रचलन में विभिन्न कुरान",
   secP1: "प्रत्येक की अपनी संचरण श्रृंखला, मुद्रित संस्करण और प्रलेखित पाठ्य अंतर हैं।",
@@ -110,7 +110,7 @@ hi: {
   secP5: "प्रत्येक दावा शैक्षणिक और इस्लामी विद्वान स्रोतों से सत्यापित।",
   secLabel6: "निष्कर्ष", secH6: "साक्ष्य क्या दिखाता है",
   conc1: '<strong>"सभी कुरान समान हैं" का दावा स्पष्ट रूप से गलत है।</strong>',
-  conc2: "10 प्रामाणिक किराअत 20 संचरणों के साथ मौजूद हैं। हजारों प्रलेखित पाठ्य भिन्नताएं। हफ़्स 20वीं सदी में मुद्रण के माध्यम से प्रमुख बना, सहमति से नहीं।",
+  conc2: "30+ अलग-अलग कुरान मौजूद हैं जिनमें 93,263 प्रलेखित अंतर हैं। 37 भौतिक रूप से अलग मुद्रित संस्करण खरीद के लिए उपलब्ध हैं। हफ़्स केवल 1924 में मुद्रण से प्रमुख बना।",
   conc3: "<strong>यह उच्चारण या बोली का मामला नहीं है</strong> — ये इस्लामी परंपरा के भीतर ही मान्यता प्राप्त महत्वपूर्ण पाठ्य अंतर हैं।",
   footer1: "शोध संकलित अप्रैल 2026",
   footer2: '"तुम सत्य को जानोगे, और सत्य तुम्हें स्वतंत्र करेगा।" — यूहन्ना 8:32',
@@ -118,7 +118,7 @@ hi: {
   claimText: '"कुरान को अक्षर-अक्षर पूर्ण रूप से संरक्षित किया गया है, बिना किसी भिन्नता के। दुनिया की हर कुरान एक जैसी है।"',
   verdictLabel: "निर्णय — जांच के बाद",
   verdictResult: "गलत।",
-  verdictExplain: 'आज <strong>कम से कम 10 अलग-अलग कुरान</strong> उपयोग में हैं जिनमें <strong>10,243+ प्रलेखित पाठ्य अंतर</strong> हैं — विभिन्न शब्द, अलग-अलग अर्थ, अलग व्याकरण, और अलग आयत संख्या। यह उच्चारण का मामला नहीं है। ये महत्वपूर्ण पाठ्य भिन्नताएं हैं <strong>जिन्हें स्वयं इस्लामी विद्वानों ने मान्यता दी है और प्रलेखित किया है।</strong> सबसे लोकप्रिय संस्करण (हफ़्स) 1924 में मिस्र की छपाई से ही प्रमुख बना — प्रारंभिक इस्लामी सहमति से नहीं।'
+  verdictExplain: 'आज <strong>कम से कम 30 अलग-अलग कुरान</strong> उपयोग में हैं जिनमें <strong>10,243+ प्रलेखित पाठ्य अंतर</strong> हैं — विभिन्न शब्द, अलग-अलग अर्थ, अलग व्याकरण, और अलग आयत संख्या। यह उच्चारण का मामला नहीं है। ये महत्वपूर्ण पाठ्य भिन्नताएं हैं <strong>जिन्हें स्वयं इस्लामी विद्वानों ने मान्यता दी है और प्रलेखित किया है।</strong> सबसे लोकप्रिय संस्करण (हफ़्स) 1924 में मिस्र की छपाई से ही प्रमुख बना — प्रारंभिक इस्लामी सहमति से नहीं।'
 },
 ur: {
   dir: "rtl",
@@ -127,8 +127,8 @@ ur: {
   heroH1: "قرآن کے مختلف<br>نسخے",
   heroP: "10+ مستند قرآنی قراءتوں، ان کی تاریخی اصل، اور دستاویزی متنی اختلافات کی تحقیق — اسلامی اور علمی تحقیق سے تصدیق شدہ۔",
   kfLabel: "اہم نتیجہ",
-  kfText: '<strong>متعدد قرآن موجود ہیں۔</strong> کم از کم <strong>10 مستند قرآنی قراءتیں</strong> موجود ہیں جن میں دستاویزی متنی اختلافات ہیں — مختلف الفاظ، فعل کی شکلیں، واحد/جمع، ضمائر، اور گرامر۔ اسلامی علم میں <strong>10,000+ اختلافات</strong> دستاویزی ہیں۔<sup>[1]</sup>',
-  s1: "مستند قراءتیں", s2: "روایات", s3: "حفص بمقابلہ ورش", s4: "کل اختلافات",
+  kfText: '<strong>متعدد قرآن موجود ہیں۔</strong> کم از کم <strong>30+ مستند قرآنی نسخے</strong> موجود ہیں جن میں دستاویزی متنی اختلافات ہیں — مختلف الفاظ، فعل کی شکلیں، واحد/جمع، ضمائر، اور گرامر۔ اسلامی علم میں <strong>10,000+ اختلافات</strong> دستاویزی ہیں۔<sup>[1]</sup>',
+  s1: "مختلف قرآن", s2: "روایات", s3: "حفص بمقابلہ ورش", s4: "کل فرق",
   secLabel1: "مستند قراءتیں",
   secH1: "آج کل زیر استعمال مختلف قرآن",
   secP1: "ہر ایک کی اپنی سند کی زنجیر، اپنا مطبوعہ ایڈیشن، اور دوسروں سے دستاویزی متنی اختلافات ہیں۔",
@@ -178,7 +178,7 @@ ur: {
   claimText: '"قرآن کو حرف بہ حرف مکمل طور پر محفوظ کیا گیا ہے، بغیر کسی فرق کے۔ دنیا کا ہر قرآن ایک جیسا ہے۔"',
   verdictLabel: "فیصلہ — تحقیق کے بعد",
   verdictResult: "غلط۔",
-  verdictExplain: 'آج <strong>کم از کم 10 مختلف قرآن</strong> زیر استعمال ہیں جن میں <strong>10,243+ دستاویزی متنی اختلافات</strong> ہیں — مختلف الفاظ، مختلف معانی، مختلف گرامر، اور مختلف آیات کی تعداد۔ یہ تلفظ کا معاملہ نہیں ہے۔ یہ اہم متنی اختلافات ہیں <strong>جنہیں خود اسلامی علماء نے تسلیم کیا اور دستاویزی شکل دی ہے۔</strong> سب سے مقبول نسخہ (حفص) صرف 1924 میں مصری چھپائی سے غالب ہوا — ابتدائی اسلامی اتفاق رائے سے نہیں۔'
+  verdictExplain: 'آج <strong>کم از کم 30 مختلف قرآن</strong> زیر استعمال ہیں جن میں <strong>10,243+ دستاویزی متنی اختلافات</strong> ہیں — مختلف الفاظ، مختلف معانی، مختلف گرامر، اور مختلف آیات کی تعداد۔ یہ تلفظ کا معاملہ نہیں ہے۔ یہ اہم متنی اختلافات ہیں <strong>جنہیں خود اسلامی علماء نے تسلیم کیا اور دستاویزی شکل دی ہے۔</strong> سب سے مقبول نسخہ (حفص) صرف 1924 میں مصری چھپائی سے غالب ہوا — ابتدائی اسلامی اتفاق رائے سے نہیں۔'
 },
 fa: {
   dir: "rtl",
@@ -187,8 +187,8 @@ fa: {
   heroH1: "نسخه‌های مختلف<br>قرآن",
   heroP: "بررسی 10+ قرائت معتبر قرآنی، خاستگاه تاریخی و تفاوت‌های متنی مستند — تأیید شده از منابع اسلامی و آکادمیک.",
   kfLabel: "یافته کلیدی",
-  kfText: '<strong>قرآن‌های متعدد وجود دارند.</strong> حداقل <strong>10 قرائت معتبر قرآنی</strong> با تفاوت‌های متنی مستند وجود دارند — کلمات، صرف افعال، مفرد/جمع، ضمایر و دستور زبان متفاوت. بیش از <strong>10,000+ تفاوت</strong> در منابع اسلامی مستند شده‌اند.<sup>[1]</sup>',
-  s1: "قرائت‌های معتبر", s2: "روایات", s3: "حفص در برابر ورش", s4: "کل تفاوت‌ها",
+  kfText: '<strong>قرآن‌های متعدد وجود دارند.</strong> حداقل <strong>30+ نسخه معتبر قرآنی</strong> با تفاوت‌های متنی مستند وجود دارند — کلمات، صرف افعال، مفرد/جمع، ضمایر و دستور زبان متفاوت. بیش از <strong>10,000+ تفاوت</strong> در منابع اسلامی مستند شده‌اند.<sup>[1]</sup>',
+  s1: "قرآن‌های متفاوت", s2: "روایات", s3: "حفص در برابر ورش", s4: "کل تفاوت‌ها",
   secLabel1: "قرائت‌های معتبر",
   secH1: "قرآن‌های مختلف در استفاده امروز",
   secP1: "هر کدام زنجیره نقل، نسخه چاپی و تفاوت‌های متنی مستند خود را دارند.",
@@ -238,7 +238,7 @@ fa: {
   claimText: '"قرآن حرف به حرف بدون هیچ تفاوتی کاملاً حفظ شده است. هر قرآنی در جهان یکسان است."',
   verdictLabel: "حکم — پس از بررسی",
   verdictResult: "نادرست.",
-  verdictExplain: 'امروز <strong>حداقل 10 قرآن متفاوت</strong> در استفاده هستند با <strong>10,243+ تفاوت متنی مستند</strong> — کلمات متفاوت، معانی متفاوت، دستور زبان متفاوت، و تعداد آیات متفاوت. این تلفظ نیست. اینها تفاوت‌های متنی اساسی هستند <strong>که توسط خود علمای اسلامی به رسمیت شناخته و مستند شده‌اند.</strong> محبوب‌ترین نسخه (حفص) تنها در سال 1924 از طریق چاپ مصری غالب شد — نه از طریق اجماع اولیه اسلامی.'
+  verdictExplain: 'امروز <strong>حداقل 30 قرآن متفاوت</strong> در استفاده هستند با <strong>10,243+ تفاوت متنی مستند</strong> — کلمات متفاوت، معانی متفاوت، دستور زبان متفاوت، و تعداد آیات متفاوت. این تلفظ نیست. اینها تفاوت‌های متنی اساسی هستند <strong>که توسط خود علمای اسلامی به رسمیت شناخته و مستند شده‌اند.</strong> محبوب‌ترین نسخه (حفص) تنها در سال 1924 از طریق چاپ مصری غالب شد — نه از طریق اجماع اولیه اسلامی.'
 }
 };
 
