@@ -475,30 +475,76 @@ function toggleTheme(){
     document.querySelector('.theme-toggle').textContent=s==='dark'?'◐':'◑';}
 })();
 
-/* ── Language (Google Translate) ── */
+/* ── Language switcher via Google Translate ── */
 function googleTranslateElementInit(){
-    new google.translate.TranslateElement({pageLanguage:'en',includedLanguages:'hi',autoDisplay:false},'google_translate_element');
+    new google.translate.TranslateElement({
+        pageLanguage:'en',
+        includedLanguages:'hi',
+        autoDisplay:false,
+        multilanguagePage:false
+    },'google_translate_element');
 }
-function setLang(l){
-    const btns=document.querySelectorAll('.bar-btn');
-    btns.forEach(b=>b.classList.remove('active'));
-    if(l==='hi'){
-        btns[1].classList.add('active');
-        const t=setInterval(()=>{
-            const s=document.querySelector('.goog-te-combo');
-            if(s){s.value='hi';s.dispatchEvent(new Event('change'));clearInterval(t);}
-        },200);
-    }else{
-        btns[0].classList.add('active');
-        // Reset
-        const f=document.querySelector('.goog-te-banner-frame');
-        if(f){try{f.contentDocument.querySelector('.goog-close-link').click();}catch(e){}}
-        document.cookie="googtrans=;path=/;expires=Thu,01 Jan 1970 00:00:00 UTC";
-        document.cookie="googtrans=;path=/;domain=.github.io;expires=Thu,01 Jan 1970 00:00:00 UTC";
-        const s=document.querySelector('.goog-te-combo');
-        if(s){s.value='en';s.dispatchEvent(new Event('change'));}
+
+function setLang(lang){
+    var btns=document.querySelectorAll('.bar-btn');
+    btns[0].classList.toggle('active',lang==='en');
+    btns[1].classList.toggle('active',lang==='hi');
+
+    if(lang==='hi'){
+        // Set cookie first (Google Translate reads this)
+        document.cookie='googtrans=/en/hi;path=/';
+        document.cookie='googtrans=/en/hi;path=/;domain=.github.io';
+        // Then trigger the select
+        waitForGT(function(sel){
+            sel.value='hi';
+            sel.dispatchEvent(new Event('change'));
+        });
+    } else {
+        // Clear cookies
+        document.cookie='googtrans=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC';
+        document.cookie='googtrans=;path=/;domain=.github.io;expires=Thu, 01 Jan 1970 00:00:00 UTC';
+        document.cookie='googtrans=/en/en;path=/';
+        document.cookie='googtrans=/en/en;path=/;domain=.github.io';
+        // Try select first
+        var sel=document.querySelector('.goog-te-combo');
+        if(sel){
+            sel.value='en';
+            sel.dispatchEvent(new Event('change'));
+        }
+        // Also try the restore banner
+        try{
+            var f=document.querySelector('iframe.goog-te-banner-frame');
+            if(f){
+                var btn=f.contentDocument.querySelector('.goog-close-link');
+                if(btn) btn.click();
+            }
+        }catch(e){}
+        // Hard reload as failsafe — guarantees English
+        setTimeout(function(){
+            if(document.querySelector('html').classList.contains('translated-ltr') ||
+               document.querySelector('html').classList.contains('translated-rtl')){
+                window.location.reload();
+            }
+        },600);
     }
 }
+
+function waitForGT(cb){
+    var attempts=0;
+    var iv=setInterval(function(){
+        var sel=document.querySelector('.goog-te-combo');
+        if(sel){clearInterval(iv);cb(sel);}
+        if(++attempts>30){clearInterval(iv);}
+    },150);
+}
+
+// Auto-apply Hindi if cookie was set (returning user)
+(function(){
+    if(document.cookie.indexOf('googtrans=/en/hi')!==-1){
+        var btns=document.querySelectorAll('.bar-btn');
+        if(btns.length>1){btns[0].classList.remove('active');btns[1].classList.add('active');}
+    }
+})();
 </script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
