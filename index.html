@@ -500,32 +500,12 @@ function setLang(lang){
             sel.dispatchEvent(new Event('change'));
         });
     } else {
-        // Clear cookies
+        // Nuke all googtrans cookies then hard reload — only reliable way
         document.cookie='googtrans=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC';
         document.cookie='googtrans=;path=/;domain=.github.io;expires=Thu, 01 Jan 1970 00:00:00 UTC';
-        document.cookie='googtrans=/en/en;path=/';
-        document.cookie='googtrans=/en/en;path=/;domain=.github.io';
-        // Try select first
-        var sel=document.querySelector('.goog-te-combo');
-        if(sel){
-            sel.value='en';
-            sel.dispatchEvent(new Event('change'));
-        }
-        // Also try the restore banner
-        try{
-            var f=document.querySelector('iframe.goog-te-banner-frame');
-            if(f){
-                var btn=f.contentDocument.querySelector('.goog-close-link');
-                if(btn) btn.click();
-            }
-        }catch(e){}
-        // Hard reload as failsafe — guarantees English
-        setTimeout(function(){
-            if(document.querySelector('html').classList.contains('translated-ltr') ||
-               document.querySelector('html').classList.contains('translated-rtl')){
-                window.location.reload();
-            }
-        },600);
+        document.cookie='googtrans=;path=/;domain=billy872.github.io;expires=Thu, 01 Jan 1970 00:00:00 UTC';
+        // Immediate clean reload
+        window.location.assign(window.location.pathname);
     }
 }
 
