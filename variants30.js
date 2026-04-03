@@ -59,6 +59,7 @@ en: {
   v30Stat: "93,263 differences",
   v30StatLabel: "across all 30 readings compared to Hafs",
   v30ChartCap: "The 30 official readers and transmitters. The 7 original readers were chosen by Ibn Mujahid (d. 936 CE). 14 transmissions were documented by Al-Shatibi (d. 1194 CE). 3 more readers (6 transmissions) were added by Al-Jazari (d. 1429 CE). Hafs (circled) became the global standard only in 1924. Source: Islamic Qira'at scholarship.",
+  hatun37Cap:"Hatun Tash's current collection of 37 different Qira'at Arabic Qurans. Each is a physically distinct printed edition with different text. If all Qurans were identical, why do 37 different versions exist as published books? Source: DCCI Ministries (Pfander Films).",
   hatunH: "Physical Evidence: Multiple Qurans Exist as Printed Books",
   hatunP: "These are not theoretical. They are real, physical, printed Qurans — each with different text — available for purchase in Islamic bookstores worldwide.",
   hatunCap: "Hatun Tash's collection of 26 different Quran editions (now 37). Each labeled with its reader/transmitter name. Every one contains textual differences from the others. Source: DCCI Ministries.",
@@ -75,6 +76,7 @@ hi: {
   v30Stat: "93,263 अंतर",
   v30StatLabel: "हफ़्स की तुलना में सभी 30 पाठों में",
   v30ChartCap: "30 आधिकारिक पाठक और संचारक। मूल 7 पाठकों को इब्न मुजाहिद (मृ. 936 ई.) ने चुना। 14 संचरणों को अल-शातिबी (मृ. 1194 ई.) ने प्रलेखित किया। 3 और पाठक (6 संचरण) अल-जज़री (मृ. 1429 ई.) ने जोड़े। हफ़्स (गोले में) केवल 1924 में वैश्विक मानक बना।",
+  hatun37Cap:"Hatun Tash's current collection of 37 different Qira'at Arabic Qurans. Each is a physically distinct printed edition with different text. If all Qurans were identical, why do 37 different versions exist as published books? Source: DCCI Ministries (Pfander Films).",
   hatunH: "भौतिक साक्ष्य: कई कुरान मुद्रित पुस्तकों के रूप में मौजूद हैं",
   hatunP: "ये सैद्धांतिक नहीं हैं। ये वास्तविक, भौतिक, मुद्रित कुरान हैं — प्रत्येक अलग पाठ के साथ — दुनिया भर की इस्लामी किताबों की दुकानों में उपलब्ध।",
   hatunCap: "हातून ताश का 26 अलग कुरान संस्करणों का संग्रह (अब 37)। प्रत्येक अपने पाठक/संचारक नाम के साथ लेबल। स्रोत: DCCI मंत्रालय।",
@@ -91,6 +93,7 @@ ur: {
   v30Stat: "93,263 اختلافات",
   v30StatLabel: "حفص کے مقابلے میں تمام 30 قراءتوں میں",
   v30ChartCap: "30 سرکاری قراء اور راوی۔ اصل 7 قراء کو ابن مجاہد (وفات 936 عیسوی) نے منتخب کیا۔ 14 روایات کو الشاطبی (وفات 1194 عیسوی) نے مستند کیا۔ 3 مزید قراء (6 روایات) الجزری (وفات 1429 عیسوی) نے شامل کیے۔ حفص (دائرے میں) صرف 1924 میں عالمی معیار بنا۔",
+  hatun37Cap:"Hatun Tash's current collection of 37 different Qira'at Arabic Qurans. Each is a physically distinct printed edition with different text. If all Qurans were identical, why do 37 different versions exist as published books? Source: DCCI Ministries (Pfander Films).",
   hatunH: "مادی ثبوت: متعدد قرآن مطبوعہ کتابوں کے طور پر موجود ہیں",
   hatunP: "یہ نظریاتی نہیں ہیں۔ یہ حقیقی، مادی، مطبوعہ قرآن ہیں — ہر ایک مختلف متن کے ساتھ — دنیا بھر کی اسلامی کتابوں کی دکانوں میں دستیاب۔",
   hatunCap: "حاتون تاش کا 26 مختلف قرآن ایڈیشنز کا مجموعہ (اب 37)۔ ہر ایک اپنے قاری/راوی نام کے ساتھ لیبل۔ ماخذ: DCCI وزارتیں۔",
@@ -107,6 +110,7 @@ fa: {
   v30Stat: "93,263 تفاوت",
   v30StatLabel: "در تمام 30 قرائت در مقایسه با حفص",
   v30ChartCap: "30 قاری و راوی رسمی. 7 قاری اصلی توسط ابن مجاهد (درگذشت 936 م.) انتخاب شدند. 14 روایت توسط الشاطبی (درگذشت 1194 م.) مستند شدند. 3 قاری دیگر (6 روایت) توسط الجزری (درگذشت 1429 م.) افزوده شدند. حفص (دایره شده) تنها در 1924 استاندارد جهانی شد.",
+  hatun37Cap:"Hatun Tash's current collection of 37 different Qira'at Arabic Qurans. Each is a physically distinct printed edition with different text. If all Qurans were identical, why do 37 different versions exist as published books? Source: DCCI Ministries (Pfander Films).",
   hatunH: "شواهد فیزیکی: قرآن‌های متعدد به صورت کتاب‌های چاپی وجود دارند",
   hatunP: "اینها نظری نیستند. اینها قرآن‌های واقعی، فیزیکی و چاپ شده هستند — هر کدام با متن متفاوت — در کتابفروشی‌های اسلامی سراسر جهان موجودند.",
   hatunCap: "مجموعه 26 نسخه متفاوت قرآن حاتون تاش (اکنون 37). هر کدام با نام قاری/راوی خود برچسب‌گذاری شده. منبع: وزارت‌های DCCI.",
@@ -153,8 +157,12 @@ function buildV30Section(lang) {
   h += '<h3 style="font-size:1.1rem;margin:32px 0 10px;font-weight:600" data-i="hatunH">' + t.hatunH + '</h3>';
   h += '<p style="color:var(--text-2);font-size:.9rem;margin-bottom:16px" data-i="hatunP">' + t.hatunP + '</p>';
 
-  // Hatun's 26 Qurans image
-  h += '<div class="card" style="margin:16px 0"><img src="images/hatuns-26-qurans.jpg" alt="Hatun Tash 26 different Quran editions" style="width:100%;height:auto" loading="lazy">';
+  // Hatun's 37 Qurans image (latest)
+  h += '<div class="card" style="margin:16px 0"><img src="images/hatuns-37-qurans.jpg" alt="Hatun Tash current 37 Qiraat Arabic Qurans" style="width:100%;height:auto" loading="lazy">';
+  h += '<div class="card-cap" data-i="hatun37Cap">' + (t.hatun37Cap||t.hatunCap) + '</div></div>';
+
+  // Hatun's 26 labeled Qurans
+  h += '<div class="card" style="margin:16px 0"><img src="images/hatuns-26-qurans.jpg" alt="Hatun Tash 26 labeled Quran editions" style="width:100%;height:auto" loading="lazy">';
   h += '<div class="card-cap" data-i="hatunCap">' + t.hatunCap + '</div></div>';
 
   // Bernie Power's 23 Qurans
