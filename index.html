@@ -5,253 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Different Versions of the Quran — Historical Evidence</title>
     <meta name="description" content="Comprehensive research on the 10+ canonical Quranic recitations, their historical origins, textual differences, and manuscript evidence.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
         *{margin:0;padding:0;box-sizing:border-box}
-
-        /* ─── Theme tokens ─── */
-        :root{
-            --bg:#090909;
-            --bg-card:#111;
-            --bg-surface:#0d0d0d;
-            --text:#fff;
-            --text-2:#aaa;
-            --text-3:#666;
-            --border:rgba(255,255,255,.08);
-            --tag:rgba(255,255,255,.06);
-        }
-        [data-theme="light"]{
-            --bg:#fff;
-            --bg-card:#f6f6f6;
-            --bg-surface:#fafafa;
-            --text:#111;
-            --text-2:#555;
-            --text-3:#999;
-            --border:rgba(0,0,0,.08);
-            --tag:rgba(0,0,0,.05);
-        }
-
-        body{
-            background:var(--bg);
-            color:var(--text);
-            font-family:'Inter',system-ui,-apple-system,sans-serif;
-            line-height:1.65;
-            -webkit-font-smoothing:antialiased;
-            transition:background .3s,color .3s;
-        }
-
+        :root{--bg:#090909;--bg-card:#111;--bg-surface:#0d0d0d;--text:#fff;--text-2:#aaa;--text-3:#666;--border:rgba(255,255,255,.08);--tag:rgba(255,255,255,.06)}
+        [data-theme="light"]{--bg:#fff;--bg-card:#f6f6f6;--bg-surface:#fafafa;--text:#111;--text-2:#555;--text-3:#999;--border:rgba(0,0,0,.08);--tag:rgba(0,0,0,.05)}
+        body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,-apple-system,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
         .w{max-width:920px;margin:0 auto;padding:0 20px}
-
-        /* ─── Top bar ─── */
-        .bar{
-            position:fixed;top:0;left:0;right:0;z-index:100;
-            background:color-mix(in srgb,var(--bg) 90%,transparent);
-            backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-            border-bottom:1px solid var(--border);
-            padding:10px 20px;
-            display:flex;justify-content:space-between;align-items:center;
-        }
-        .bar-title{
-            font-size:.7rem;text-transform:uppercase;letter-spacing:2.5px;
-            color:var(--text-3);font-weight:600;
-        }
+        .bar{position:fixed;top:0;left:0;right:0;z-index:100;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;justify-content:space-between;align-items:center}
+        .bar-title{font-size:.7rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--text-3);font-weight:600}
         .bar-actions{display:flex;gap:6px;align-items:center}
-        .bar-btn{
-            padding:5px 12px;border:1px solid var(--border);background:transparent;
-            color:var(--text-2);font-family:inherit;font-size:.75rem;font-weight:500;
-            border-radius:4px;cursor:pointer;transition:all .2s;
-        }
+        .bar-btn{padding:5px 12px;border:1px solid var(--border);background:transparent;color:var(--text-2);font-family:inherit;font-size:.75rem;font-weight:500;border-radius:4px;cursor:pointer;transition:all .2s}
         .bar-btn:hover{border-color:var(--text-3);color:var(--text)}
         .bar-btn.active{background:var(--text);color:var(--bg);border-color:var(--text)}
-        .theme-toggle{
-            width:32px;height:32px;border-radius:50%;border:1px solid var(--border);
-            background:transparent;color:var(--text-2);cursor:pointer;
-            display:flex;align-items:center;justify-content:center;font-size:14px;
-            transition:all .2s;
-        }
+        .theme-toggle{width:32px;height:32px;border-radius:50%;border:1px solid var(--border);background:transparent;color:var(--text-2);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:14px;transition:all .2s}
         .theme-toggle:hover{border-color:var(--text-3);color:var(--text)}
-
-        /* ─── Hero ─── */
         .hero{padding:90px 0 50px;text-align:center}
-        .hero-tag{
-            display:inline-block;font-size:.65rem;text-transform:uppercase;
-            letter-spacing:3px;color:var(--text-3);
-            border:1px solid var(--border);padding:5px 14px;border-radius:20px;
-            margin-bottom:24px;font-weight:500;
-        }
-        .hero h1{
-            font-size:clamp(1.8rem,5.5vw,3.2rem);font-weight:700;
-            line-height:1.12;margin-bottom:18px;letter-spacing:-.03em;
-        }
+        .hero-tag{display:inline-block;font-size:.65rem;text-transform:uppercase;letter-spacing:3px;color:var(--text-3);border:1px solid var(--border);padding:5px 14px;border-radius:20px;margin-bottom:24px;font-weight:500}
+        .hero h1{font-size:clamp(1.8rem,5.5vw,3.2rem);font-weight:700;line-height:1.12;margin-bottom:18px;letter-spacing:-.03em}
         .hero p{font-size:1rem;color:var(--text-2);max-width:600px;margin:0 auto}
-
-        /* ─── Key finding ─── */
-        .callout{
-            background:var(--bg-card);border:1px solid var(--border);
-            border-radius:8px;padding:24px 28px;margin:36px 0;
-        }
-        .callout .lbl{
-            font-size:.6rem;text-transform:uppercase;letter-spacing:2.5px;
-            color:var(--text-3);margin-bottom:10px;font-weight:600;
-        }
+        .callout{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:24px 28px;margin:36px 0}
+        .callout .lbl{font-size:.6rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--text-3);margin-bottom:10px;font-weight:600}
         .callout p{font-size:.95rem;line-height:1.7;color:var(--text-2)}
         .callout strong{color:var(--text)}
-
-        /* ─── Stats ─── */
-        .stats{
-            display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:32px 0;
-        }
-        .stat{
-            background:var(--bg-card);border:1px solid var(--border);
-            border-radius:8px;padding:20px 16px;text-align:center;
-        }
+        .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:32px 0}
+        .stat{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:20px 16px;text-align:center}
         .stat-n{font-size:1.6rem;font-weight:700;letter-spacing:-.02em}
-        .stat-l{
-            font-size:.6rem;text-transform:uppercase;letter-spacing:1.5px;
-            color:var(--text-3);margin-top:4px;font-weight:500;
-        }
-
-        /* ─── Sections ─── */
+        .stat-l{font-size:.6rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-3);margin-top:4px;font-weight:500}
         .sec{margin:72px 0}
-        .sec-lbl{
-            font-size:.6rem;text-transform:uppercase;letter-spacing:3px;
-            color:var(--text-3);margin-bottom:10px;font-weight:600;
-        }
-        .sec h2{
-            font-size:1.6rem;font-weight:700;margin-bottom:12px;letter-spacing:-.02em;
-        }
+        .sec-lbl{font-size:.6rem;text-transform:uppercase;letter-spacing:3px;color:var(--text-3);margin-bottom:10px;font-weight:600}
+        .sec h2{font-size:1.6rem;font-weight:700;margin-bottom:12px;letter-spacing:-.02em}
         .sec>p{color:var(--text-2);margin-bottom:28px;max-width:600px;font-size:.95rem}
-
-        /* ─── Version cards ─── */
-        .card{
-            background:var(--bg-card);border:1px solid var(--border);
-            border-radius:8px;overflow:hidden;margin-bottom:20px;
-            transition:border-color .3s;
-        }
+        .card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-bottom:20px;transition:border-color .3s}
         .card:hover{border-color:rgba(128,128,128,.25)}
         .card img{width:100%;height:260px;object-fit:cover;display:block}
-        .card-cap{
-            font-size:.7rem;color:var(--text-3);padding:8px 24px;
-            border-top:1px solid var(--border);background:var(--bg-surface);
-            line-height:1.5;
-        }
+        .card-cap{font-size:.7rem;color:var(--text-3);padding:8px 24px;border-top:1px solid var(--border);background:var(--bg-surface);line-height:1.5}
         .card-body{padding:24px}
-        .card-head{
-            display:flex;justify-content:space-between;align-items:flex-start;
-            flex-wrap:wrap;gap:10px;margin-bottom:14px;
-        }
+        .card-head{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:10px;margin-bottom:14px}
         .card-name{font-size:1.3rem;font-weight:700;letter-spacing:-.01em}
         .tags{display:flex;gap:5px;flex-wrap:wrap}
-        .tag{
-            font-size:.6rem;text-transform:uppercase;letter-spacing:1px;font-weight:600;
-            padding:3px 9px;border-radius:3px;background:var(--tag);color:var(--text-2);
-        }
+        .tag{font-size:.6rem;text-transform:uppercase;letter-spacing:1px;font-weight:600;padding:3px 9px;border-radius:3px;background:var(--tag);color:var(--text-2)}
         .tag.p{background:var(--text);color:var(--bg)}
-        .dets{
-            display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-            gap:14px;margin-top:18px;
-        }
-        .det-lbl{
-            font-size:.6rem;text-transform:uppercase;letter-spacing:1.5px;
-            color:var(--text-3);margin-bottom:3px;font-weight:600;
-        }
+        .dets{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:18px}
+        .det-lbl{font-size:.6rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-3);margin-bottom:3px;font-weight:600}
         .det-val{font-size:.9rem;color:var(--text)}
-        .card-diff{
-            margin-top:18px;padding-top:18px;border-top:1px solid var(--border);
-            color:var(--text-2);font-size:.9rem;line-height:1.7;
-        }
+        .card-diff{margin-top:18px;padding-top:18px;border-top:1px solid var(--border);color:var(--text-2);font-size:.9rem;line-height:1.7}
         .card-diff strong{color:var(--text)}
-
-        /* ─── Table ─── */
         .tw{overflow-x:auto;margin:20px 0;border:1px solid var(--border);border-radius:8px}
         table{width:100%;border-collapse:collapse;font-size:.85rem}
-        th{
-            background:var(--bg-card);text-align:left;padding:12px 14px;
-            font-weight:600;font-size:.6rem;text-transform:uppercase;
-            letter-spacing:1px;color:var(--text-3);border-bottom:1px solid var(--border);
-        }
+        th{background:var(--bg-card);text-align:left;padding:12px 14px;font-weight:600;font-size:.6rem;text-transform:uppercase;letter-spacing:1px;color:var(--text-3);border-bottom:1px solid var(--border)}
         td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text-2)}
         tr:last-child td{border-bottom:none}
         tr:hover td{background:var(--tag)}
         td strong{color:var(--text)}
-
-        /* ─── Timeline ─── */
         .tl{position:relative;margin:28px 0;padding-left:20px}
-        .tl::before{
-            content:'';position:absolute;left:0;top:6px;bottom:6px;
-            width:1px;background:var(--border);
-        }
+        .tl::before{content:'';position:absolute;left:0;top:6px;bottom:6px;width:1px;background:var(--border)}
         .tl-i{position:relative;margin-bottom:28px;padding-left:20px}
-        .tl-i::before{
-            content:'';position:absolute;left:-24px;top:7px;
-            width:7px;height:7px;border-radius:50%;background:var(--text-3);
-        }
+        .tl-i::before{content:'';position:absolute;left:-24px;top:7px;width:7px;height:7px;border-radius:50%;background:var(--text-3)}
         .tl-d{font-size:.85rem;font-weight:700;color:var(--text);margin-bottom:3px}
         .tl-t{color:var(--text-2);font-size:.9rem;line-height:1.65}
         .tl-h{color:var(--text);font-weight:600}
         sup{font-size:.6em;color:var(--text-3)}
-
-        /* ─── Sources ─── */
         .src ol{counter-reset:s;list-style:none;padding:0}
-        .src li{
-            counter-increment:s;padding:10px 0;
-            border-bottom:1px solid var(--border);
-            font-size:.85rem;color:var(--text-2);
-            display:flex;gap:10px;line-height:1.6;
-        }
-        .src li::before{
-            content:counter(s);flex-shrink:0;
-            width:22px;height:22px;background:var(--tag);border-radius:4px;
-            display:flex;align-items:center;justify-content:center;
-            font-size:.65rem;font-weight:600;color:var(--text-3);
-        }
+        .src li{counter-increment:s;padding:10px 0;border-bottom:1px solid var(--border);font-size:.85rem;color:var(--text-2);display:flex;gap:10px;line-height:1.6}
+        .src li::before{content:counter(s);flex-shrink:0;width:22px;height:22px;background:var(--tag);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:600;color:var(--text-3)}
         .src li:last-child{border-bottom:none}
-
-        /* ─── Footer ─── */
-        footer{
-            margin-top:72px;padding:36px 0;border-top:1px solid var(--border);
-            text-align:center;color:var(--text-3);font-size:.8rem;
-        }
+        footer{margin-top:72px;padding:36px 0;border-top:1px solid var(--border);text-align:center;color:var(--text-3);font-size:.8rem}
         footer .v{font-style:italic;color:var(--text-2);margin-top:10px}
-
-        /* ─── Responsive ─── */
-        @media(max-width:640px){
-            .hero{padding:76px 0 32px}
-            .stats{grid-template-columns:1fr 1fr}
-            .card img{height:180px}
-            .card-body{padding:18px}
-            .dets{grid-template-columns:1fr}
-            .bar-title{display:none}
-        }
-        @media(max-width:380px){
-            .stats{grid-template-columns:1fr}
-        }
-
-        /* ─── RTL support (Urdu, Farsi) ─── */
-        [dir="rtl"] body{direction:rtl;text-align:right}
         [dir="rtl"] .bar{flex-direction:row-reverse}
         [dir="rtl"] .bar-actions{flex-direction:row-reverse}
+        [dir="rtl"] .hero,.sec,[dir="rtl"] .card-body,[dir="rtl"] footer{text-align:right}
         [dir="rtl"] .card-head{flex-direction:row-reverse}
         [dir="rtl"] .tags{flex-direction:row-reverse}
         [dir="rtl"] .tl{padding-left:0;padding-right:20px}
         [dir="rtl"] .tl::before{left:auto;right:0}
         [dir="rtl"] .tl-i{padding-left:0;padding-right:20px}
         [dir="rtl"] .tl-i::before{left:auto;right:-24px}
-        [dir="rtl"] .src li{flex-direction:row-reverse}
-        [dir="rtl"] th{text-align:right}
-
-        /* ─── Google Translate cleanup ─── */
-        .goog-te-banner-frame,.skiptranslate{display:none!important}
-        body{top:0!important}
-        .goog-te-gadget{font-size:0!important}
+        [dir="rtl"] .src li{flex-direction:row-reverse;text-align:right}
+        [dir="rtl"] th,[dir="rtl"] td{text-align:right}
+        @media(max-width:640px){.hero{padding:76px 0 32px}.stats{grid-template-columns:1fr 1fr}.card img{height:180px}.card-body{padding:18px}.dets{grid-template-columns:1fr}.bar-title{display:none}}
+        @media(max-width:380px){.stats{grid-template-columns:1fr}}
     </style>
 </head>
 <body>
 
 <div class="bar">
-    <span class="bar-title">Quran Versions</span>
+    <span class="bar-title" data-i="navTitle">Quran Versions</span>
     <div class="bar-actions">
         <button class="bar-btn active" onclick="setLang('en')">EN</button>
         <button class="bar-btn" onclick="setLang('hi')">हिन्दी</button>
@@ -261,303 +100,200 @@
     </div>
 </div>
 
-<div id="google_translate_element" style="display:none"></div>
-
 <div class="w">
-
     <div class="hero">
-        <span class="hero-tag">Historical Evidence — Fully Cited</span>
-        <h1>The Different Versions<br>of the Quran</h1>
-        <p>An investigation into the 10+ canonical Quranic recitations, their origins, and documented textual differences — verified from Islamic and academic scholarship.</p>
+        <span class="hero-tag" data-i="heroTag">Historical Evidence — Fully Cited</span>
+        <h1 data-i="heroH1">The Different Versions<br>of the Quran</h1>
+        <p data-i="heroP">An investigation into the 10+ canonical Quranic recitations, their origins, and documented textual differences — verified from Islamic and academic scholarship.</p>
     </div>
 
     <div class="callout">
-        <div class="lbl">Key Finding</div>
-        <p><strong>Multiple Qurans exist.</strong> There are at least <strong>10 canonically accepted Quranic recitations (qira'at)</strong> with documented textual differences — different words, verb forms, singular/plural nouns, pronouns, and grammar. Over <strong>10,000+ variants</strong> are documented in Islamic scholarship.<sup>[1]</sup></p>
+        <div class="lbl" data-i="kfLabel">Key Finding</div>
+        <p data-i="kfText"><strong>Multiple Qurans exist.</strong> There are at least <strong>10 canonically accepted Quranic recitations (qira'at)</strong> with documented textual differences — different words, verb forms, singular/plural nouns, pronouns, and grammar. Over <strong>10,000+ variants</strong> are documented in Islamic scholarship.<sup>[1]</sup></p>
     </div>
 
     <div class="stats">
-        <div class="stat"><div class="stat-n">10</div><div class="stat-l">Canonical Readings</div></div>
-        <div class="stat"><div class="stat-n">20</div><div class="stat-l">Transmissions</div></div>
-        <div class="stat"><div class="stat-n">1,354</div><div class="stat-l">Hafs vs Warsh</div></div>
-        <div class="stat"><div class="stat-n">10,243+</div><div class="stat-l">Total Variants</div></div>
+        <div class="stat"><div class="stat-n">10</div><div class="stat-l" data-i="s1">Canonical Readings</div></div>
+        <div class="stat"><div class="stat-n">20</div><div class="stat-l" data-i="s2">Transmissions</div></div>
+        <div class="stat"><div class="stat-n">1,354</div><div class="stat-l" data-i="s3">Hafs vs Warsh</div></div>
+        <div class="stat"><div class="stat-n">10,243+</div><div class="stat-l" data-i="s4">Total Variants</div></div>
     </div>
 
-    <!-- ════════════ VERSIONS ════════════ -->
     <div class="sec">
-        <div class="sec-lbl">The Canonical Recitations</div>
-        <h2>The Different Qurans in Use Today</h2>
-        <p>Each has its own chain of transmission, its own printed edition, and documented textual differences from the others.</p>
+        <div class="sec-lbl" data-i="secLabel1">The Canonical Recitations</div>
+        <h2 data-i="secH1">The Different Qurans in Use Today</h2>
+        <p data-i="secP1">Each has its own chain of transmission, its own printed edition, and documented textual differences from the others.</p>
 
-        <!-- Hafs -->
         <div class="card">
-            <img src="images/hafs-quran.jpg" alt="Hafs Quran edition" loading="lazy">
-            <div class="card-cap">Modern Hafs edition — the standard used by ~95% of Muslims worldwide. Source: Wikimedia Commons</div>
+            <img src="images/hafs-quran.jpg" alt="Hafs Quran" loading="eager">
+            <div class="card-cap" data-i="cap1">Modern Hafs edition — the standard used by ~95% of Muslims worldwide. Source: Wikimedia Commons</div>
             <div class="card-body">
-                <div class="card-head">
-                    <div class="card-name">Hafs 'an 'Asim</div>
-                    <div class="tags"><span class="tag p">Most Popular — 95%</span><span class="tag">8th Century</span></div>
-                </div>
+                <div class="card-head"><div class="card-name" data-i="n1">Hafs 'an 'Asim</div><div class="tags"><span class="tag p" data-i="t1a">Most Popular — 95%</span><span class="tag" data-i="t1b">8th Century</span></div></div>
                 <div class="dets">
-                    <div><div class="det-lbl">Origin</div><div class="det-val">Kufa, Iraq</div></div>
-                    <div><div class="det-lbl">Reader</div><div class="det-val">Aasim ibn Abi al-Najud (d. 745 CE)</div></div>
-                    <div><div class="det-lbl">Transmitter</div><div class="det-val">Hafs ibn Sulayman (d. 796 CE)</div></div>
-                    <div><div class="det-lbl">Used In</div><div class="det-val">Middle East, Asia, most of the Muslim world</div></div>
+                    <div><div class="det-lbl" data-i="origin">Origin</div><div class="det-val" data-i="v1origin">Kufa, Iraq</div></div>
+                    <div><div class="det-lbl" data-i="reader">Reader</div><div class="det-val" data-i="v1reader">Aasim ibn Abi al-Najud (d. 745 CE)</div></div>
+                    <div><div class="det-lbl" data-i="transmitter">Transmitter</div><div class="det-val" data-i="v1trans">Hafs ibn Sulayman (d. 796 CE)</div></div>
+                    <div><div class="det-lbl" data-i="usedIn">Used In</div><div class="det-val" data-i="v1used">Middle East, Asia, most of the Muslim world</div></div>
                 </div>
-                <div class="card-diff"><strong>Why it became dominant:</strong> The 1924 Cairo Edition by Al-Azhar adopted this reading. Saudi Arabia distributed millions via the King Fahd Printing Complex. Printing technology — not early consensus — made Hafs the global standard.<sup>[2]</sup></div>
+                <div class="card-diff" data-i="v1diff"><strong>Why it became dominant:</strong> The 1924 Cairo Edition by Al-Azhar adopted this reading. Saudi Arabia distributed millions via the King Fahd Printing Complex. Printing technology — not early consensus — made Hafs the global standard.<sup>[2]</sup></div>
             </div>
         </div>
 
-        <!-- Warsh -->
         <div class="card">
-            <img src="images/blue-quran.jpg" alt="Blue Quran — North African tradition" loading="lazy">
-            <div class="card-cap">Blue Quran leaf (9th–10th c.), North African Quranic tradition where Warsh remains dominant. Source: Google Art Project / Wikimedia</div>
+            <img src="images/blue-quran.jpg" alt="Blue Quran — Warsh tradition" loading="lazy">
+            <div class="card-cap" data-i="cap2">Blue Quran leaf (9th–10th c.), North African Quranic tradition where Warsh remains dominant. Source: Google Art Project / Wikimedia</div>
             <div class="card-body">
-                <div class="card-head">
-                    <div class="card-name">Warsh 'an Nafi'</div>
-                    <div class="tags"><span class="tag">2nd Most Popular — 3-5%</span><span class="tag">8th Century</span></div>
-                </div>
+                <div class="card-head"><div class="card-name" data-i="n2">Warsh 'an Nafi'</div><div class="tags"><span class="tag" data-i="t2a">2nd Most Popular — 3-5%</span><span class="tag" data-i="t2b">8th Century</span></div></div>
                 <div class="dets">
-                    <div><div class="det-lbl">Origin</div><div class="det-val">Medina, Saudi Arabia</div></div>
-                    <div><div class="det-lbl">Reader</div><div class="det-val">Nafi' al-Madani (d. 785 CE)</div></div>
-                    <div><div class="det-lbl">Transmitter</div><div class="det-val">Warsh / Uthman ibn Sa'id (d. 812 CE)</div></div>
-                    <div><div class="det-lbl">Used In</div><div class="det-val">Morocco, Algeria, Mauritania, Tunisia, West Africa, Sudan</div></div>
+                    <div><div class="det-lbl" data-i="origin">Origin</div><div class="det-val" data-i="v2origin">Medina, Saudi Arabia</div></div>
+                    <div><div class="det-lbl" data-i="reader">Reader</div><div class="det-val" data-i="v2reader">Nafi' al-Madani (d. 785 CE)</div></div>
+                    <div><div class="det-lbl" data-i="transmitter">Transmitter</div><div class="det-val" data-i="v2trans">Warsh / Uthman ibn Sa'id (d. 812 CE)</div></div>
+                    <div><div class="det-lbl" data-i="usedIn">Used In</div><div class="det-val" data-i="v2used">Morocco, Algeria, Mauritania, Tunisia, West Africa, Sudan</div></div>
                 </div>
-                <div class="card-diff"><strong>Key differences from Hafs:</strong> 1,354 documented textual variants<sup>[4]</sup> — different words, verb forms, pronouns, singular/plural. The Basmalah is NOT considered verse 1 in Warsh, meaning Hafs has 452 extra words.<sup>[11]</sup></div>
+                <div class="card-diff" data-i="v2diff"><strong>Key differences from Hafs:</strong> 1,354 documented textual variants<sup>[4]</sup> — different words, verb forms, pronouns, singular/plural. The Basmalah is NOT considered verse 1 in Warsh, meaning Hafs has 452 extra words.<sup>[11]</sup></div>
             </div>
         </div>
 
-        <!-- Qalun -->
         <div class="card">
-            <img src="images/hijazi-folio.jpg" alt="Hijazi script Quran folio" loading="lazy">
-            <div class="card-cap">Quran folio in Hijazi script, 8th c. — BnF, Arabe 334. Source: Wikimedia Commons</div>
+            <img src="images/hijazi-folio.jpg" alt="Hijazi script Quran" loading="lazy">
+            <div class="card-cap" data-i="cap3">Quran folio in Hijazi script, 8th c. — BnF, Arabe 334. Source: Wikimedia Commons</div>
             <div class="card-body">
-                <div class="card-head">
-                    <div class="card-name">Qalun 'an Nafi'</div>
-                    <div class="tags"><span class="tag">9th Century</span></div>
-                </div>
+                <div class="card-head"><div class="card-name" data-i="n3">Qalun 'an Nafi'</div><div class="tags"><span class="tag" data-i="t3a">9th Century</span></div></div>
                 <div class="dets">
-                    <div><div class="det-lbl">Reader</div><div class="det-val">Nafi' al-Madani (same reader as Warsh)</div></div>
-                    <div><div class="det-lbl">Transmitter</div><div class="det-val">Qalun / 'Isa ibn Mina (d. 835 CE)</div></div>
-                    <div><div class="det-lbl">Used In</div><div class="det-val">Libya, Tunisia, parts of Qatar</div></div>
+                    <div><div class="det-lbl" data-i="reader">Reader</div><div class="det-val" data-i="v3reader">Nafi' al-Madani (same reader as Warsh)</div></div>
+                    <div><div class="det-lbl" data-i="transmitter">Transmitter</div><div class="det-val" data-i="v3trans">Qalun / 'Isa ibn Mina (d. 835 CE)</div></div>
+                    <div><div class="det-lbl" data-i="usedIn">Used In</div><div class="det-val" data-i="v3used">Libya, Tunisia, parts of Qatar</div></div>
                 </div>
-                <div class="card-diff"><strong>Notable:</strong> Same reader as Warsh, different transmission — demonstrating that even one reader produced divergent transmitted texts.<sup>[3]</sup></div>
+                <div class="card-diff" data-i="v3diff"><strong>Notable:</strong> Same reader as Warsh, different transmission — demonstrating that even one reader produced divergent transmitted texts.<sup>[3]</sup></div>
             </div>
         </div>
 
-        <!-- Al-Duri -->
         <div class="card">
             <img src="images/sanaa-manuscript.jpg" alt="Sana'a manuscript" loading="lazy">
-            <div class="card-cap">Sana'a manuscript (before 671 CE) — palimpsest with erased lower text showing variant readings. Source: Stanford / Wikimedia</div>
+            <div class="card-cap" data-i="cap4">Sana'a manuscript (before 671 CE) — palimpsest with erased lower text showing variant readings. Source: Stanford / Wikimedia</div>
             <div class="card-body">
-                <div class="card-head">
-                    <div class="card-name">Al-Duri 'an Abu 'Amr</div>
-                    <div class="tags"><span class="tag">9th Century</span></div>
-                </div>
+                <div class="card-head"><div class="card-name" data-i="n4">Al-Duri 'an Abu 'Amr</div><div class="tags"><span class="tag" data-i="t4a">9th Century</span></div></div>
                 <div class="dets">
-                    <div><div class="det-lbl">Origin</div><div class="det-val">Basra, Iraq</div></div>
-                    <div><div class="det-lbl">Reader</div><div class="det-val">Abu 'Amr ibn al-'Ala' (d. 770 CE)</div></div>
-                    <div><div class="det-lbl">Transmitter</div><div class="det-val">Al-Duri (d. 860 CE)</div></div>
-                    <div><div class="det-lbl">Used In</div><div class="det-val">Sudan, Chad, Central & East Africa, parts of Yemen</div></div>
+                    <div><div class="det-lbl" data-i="origin">Origin</div><div class="det-val" data-i="v4origin">Basra, Iraq</div></div>
+                    <div><div class="det-lbl" data-i="reader">Reader</div><div class="det-val" data-i="v4reader">Abu 'Amr ibn al-'Ala' (d. 770 CE)</div></div>
+                    <div><div class="det-lbl" data-i="transmitter">Transmitter</div><div class="det-val" data-i="v4trans">Al-Duri (d. 860 CE)</div></div>
+                    <div><div class="det-lbl" data-i="usedIn">Used In</div><div class="det-val" data-i="v4used">Sudan, Chad, Central & East Africa, parts of Yemen</div></div>
                 </div>
             </div>
         </div>
 
-        <!-- Hisham -->
         <div class="card">
             <img src="images/birmingham-quran.jpg" alt="Birmingham Quran manuscript" loading="lazy">
-            <div class="card-cap">Birmingham Quran (568–645 CE) — possibly the oldest manuscript, Hijazi script without diacritics. Source: University of Birmingham / Wikimedia</div>
+            <div class="card-cap" data-i="cap5">Birmingham Quran (568–645 CE) — possibly the oldest manuscript, Hijazi script without diacritics. Source: University of Birmingham / Wikimedia</div>
             <div class="card-body">
-                <div class="card-head">
-                    <div class="card-name">Hisham 'an Ibn Amir</div>
-                    <div class="tags"><span class="tag">8th Century</span></div>
-                </div>
+                <div class="card-head"><div class="card-name" data-i="n5">Hisham 'an Ibn Amir</div><div class="tags"><span class="tag" data-i="t5a">8th Century</span></div></div>
                 <div class="dets">
-                    <div><div class="det-lbl">Origin</div><div class="det-val">Damascus, Syria</div></div>
-                    <div><div class="det-lbl">Reader</div><div class="det-val">Ibn Amir ad-Dimashqi (d. 736 CE)</div></div>
-                    <div><div class="det-lbl">Transmitter</div><div class="det-val">Hisham (d. 859 CE)</div></div>
-                    <div><div class="det-lbl">Used In</div><div class="det-val">Parts of Yemen</div></div>
+                    <div><div class="det-lbl" data-i="origin">Origin</div><div class="det-val" data-i="v5origin">Damascus, Syria</div></div>
+                    <div><div class="det-lbl" data-i="reader">Reader</div><div class="det-val" data-i="v5reader">Ibn Amir ad-Dimashqi (d. 736 CE)</div></div>
+                    <div><div class="det-lbl" data-i="transmitter">Transmitter</div><div class="det-val" data-i="v5trans">Hisham (d. 859 CE)</div></div>
+                    <div><div class="det-lbl" data-i="usedIn">Used In</div><div class="det-val" data-i="v5used">Parts of Yemen</div></div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- ════════════ REMAINING 5 ════════════ -->
     <div class="sec">
-        <div class="sec-lbl">Additional Canonical Readings</div>
-        <h2>The Remaining Five</h2>
-        <p>Less commonly recited today, but all canonically accepted within Islamic scholarship.</p>
+        <div class="sec-lbl" data-i="secLabel2">Additional Canonical Readings</div>
+        <h2 data-i="secH2">The Remaining Five</h2>
+        <p data-i="secP2">Less commonly recited today, but all canonically accepted within Islamic scholarship.</p>
         <div class="tw"><table>
-            <thead><tr><th>Reading</th><th>Reader (Died)</th><th>Origin</th><th>Transmitters</th><th>Status</th></tr></thead>
+            <thead><tr><th data-i="thReading">Reading</th><th data-i="thReader">Reader (Died)</th><th data-i="thOrigin">Origin</th><th data-i="thTrans">Transmitters</th><th data-i="thStatus">Status</th></tr></thead>
             <tbody>
-                <tr><td><strong>Ibn Kathir</strong></td><td>738 CE</td><td>Mecca</td><td>Al-Bazzi, Qunbul</td><td>Rarely used</td></tr>
-                <tr><td><strong>Hamzah</strong></td><td>773 CE</td><td>Kufa, Iraq</td><td>Khalaf, Khallad</td><td>Rarely used</td></tr>
-                <tr><td><strong>Al-Kisa'i</strong></td><td>804 CE</td><td>Kufa, Iraq</td><td>Al-Layth, Al-Duri</td><td>Rarely used</td></tr>
-                <tr><td><strong>Abu Ja'far</strong></td><td>~130 AH</td><td>Medina</td><td>Ibn Wardan, Ibn Jummaz</td><td>Rarely used</td></tr>
-                <tr><td><strong>Ya'qub</strong></td><td>205 AH</td><td>Basra, Iraq</td><td>Ruways, Rawh</td><td>Rarely used</td></tr>
+                <tr><td><strong>Ibn Kathir</strong></td><td>738 CE</td><td>Mecca</td><td>Al-Bazzi, Qunbul</td><td data-i="rare">Rarely used</td></tr>
+                <tr><td><strong>Hamzah</strong></td><td>773 CE</td><td>Kufa, Iraq</td><td>Khalaf, Khallad</td><td data-i="rare">Rarely used</td></tr>
+                <tr><td><strong>Al-Kisa'i</strong></td><td>804 CE</td><td>Kufa, Iraq</td><td>Al-Layth, Al-Duri</td><td data-i="rare">Rarely used</td></tr>
+                <tr><td><strong>Abu Ja'far</strong></td><td>~130 AH</td><td>Medina</td><td>Ibn Wardan, Ibn Jummaz</td><td data-i="rare">Rarely used</td></tr>
+                <tr><td><strong>Ya'qub</strong></td><td>205 AH</td><td>Basra, Iraq</td><td>Ruways, Rawh</td><td data-i="rare">Rarely used</td></tr>
             </tbody>
         </table></div>
-        <p style="font-size:.8rem;color:var(--text-3)">Source: Qadhi, <em>An Introduction to the Sciences of the Quran</em>, p. 199.<sup>[3]</sup></p>
     </div>
 
-    <!-- ════════════ TIMELINE ════════════ -->
     <div class="sec">
-        <div class="sec-lbl">Historical Context</div>
-        <h2>How Did This Happen?</h2>
-        <p>From oral recitation to multiple printed versions.</p>
+        <div class="sec-lbl" data-i="secLabel3">Historical Context</div>
+        <h2 data-i="secH3">How Did This Happen?</h2>
+        <p data-i="secP3">From oral recitation to multiple printed versions.</p>
         <div class="tl">
-            <div class="tl-i"><div class="tl-d">610–632 CE</div><div class="tl-t">Oral transmission begins. Early Arabic script lacked vowels and consonant dots — the same word could be read multiple ways.<sup>[5]</sup></div></div>
-            <div class="tl-i"><div class="tl-d">~650 CE</div><div class="tl-t"><span class="tl-h">Caliph Uthman's standardization.</span> One consonantal text compiled. Variant codices destroyed. But the ambiguous script still allowed multiple vocal readings.<sup>[6]</sup></div></div>
-            <div class="tl-i"><div class="tl-d">8th Century</div><div class="tl-t">Famous readers emerge — <span class="tl-h">Nafi' (Medina), Aasim (Kufa), Ibn Kathir (Mecca)</span> — each developing distinct recitation traditions from the Uthmanic text.</div></div>
-            <div class="tl-i"><div class="tl-d">936 CE</div><div class="tl-t"><span class="tl-h">Ibn Mujahid canonizes 7 readings.</span> Two readers who recited differently were tried and forced to recant.<sup>[7]</sup></div></div>
-            <div class="tl-i"><div class="tl-d">1429 CE</div><div class="tl-t">Ibn al-Jazari adds <span class="tl-h">3 more readings</span> → total of 10 canonical qira'at.<sup>[8]</sup></div></div>
-            <div class="tl-i"><div class="tl-d">1924</div><div class="tl-t"><span class="tl-h">The turning point.</span> Egypt publishes the Cairo Edition using Hafs. Saudi mass distribution follows. Printing technology — not early consensus — created Hafs dominance.<sup>[2]</sup></div></div>
+            <div class="tl-i"><div class="tl-d" data-i="tl1d">610–632 CE</div><div class="tl-t" data-i="tl1">Oral transmission begins. Early Arabic script lacked vowels and consonant dots — the same word could be read multiple ways.<sup>[5]</sup></div></div>
+            <div class="tl-i"><div class="tl-d" data-i="tl2d">~650 CE</div><div class="tl-t" data-i="tl2"><span class="tl-h">Caliph Uthman's standardization.</span> One consonantal text compiled. Variant codices destroyed. But the ambiguous script still allowed multiple vocal readings.<sup>[6]</sup></div></div>
+            <div class="tl-i"><div class="tl-d" data-i="tl3d">8th Century</div><div class="tl-t" data-i="tl3">Famous readers emerge — <span class="tl-h">Nafi' (Medina), Aasim (Kufa), Ibn Kathir (Mecca)</span> — each developing distinct recitation traditions from the Uthmanic text.</div></div>
+            <div class="tl-i"><div class="tl-d" data-i="tl4d">936 CE</div><div class="tl-t" data-i="tl4"><span class="tl-h">Ibn Mujahid canonizes 7 readings.</span> Two readers who recited differently were tried and forced to recant.<sup>[7]</sup></div></div>
+            <div class="tl-i"><div class="tl-d" data-i="tl5d">1429 CE</div><div class="tl-t" data-i="tl5">Ibn al-Jazari adds <span class="tl-h">3 more readings</span> → total of 10 canonical qira'at.<sup>[8]</sup></div></div>
+            <div class="tl-i"><div class="tl-d" data-i="tl6d">1924</div><div class="tl-t" data-i="tl6"><span class="tl-h">The turning point.</span> Egypt publishes the Cairo Edition using Hafs. Saudi mass distribution follows. Printing technology — not early consensus — created Hafs dominance.<sup>[2]</sup></div></div>
         </div>
     </div>
 
-    <!-- ════════════ DIFFERENCES ════════════ -->
     <div class="sec">
-        <div class="sec-lbl">The Evidence</div>
-        <h2>Documented Textual Differences</h2>
-        <p>Not pronunciation. Different words, grammar, and meanings — documented by Islamic scholars.</p>
+        <div class="sec-lbl" data-i="secLabel4">The Evidence</div>
+        <h2 data-i="secH4">Documented Textual Differences</h2>
+        <p data-i="secP4">Not pronunciation. Different words, grammar, and meanings — documented by Islamic scholars.</p>
         <div class="tw"><table>
-            <thead><tr><th>Verse</th><th>Hafs</th><th>Warsh</th><th>Difference</th></tr></thead>
+            <thead><tr><th data-i="thVerse">Verse</th><th data-i="thHafs">Hafs</th><th data-i="thWarsh">Warsh</th><th data-i="thDiff">Difference</th></tr></thead>
             <tbody>
                 <tr><td>Q 1:4</td><td><strong>Maaliki</strong> (Owner)</td><td><strong>Maliki</strong> (King)</td><td>Different word<sup>[4]</sup></td></tr>
                 <tr><td>Q 2:140</td><td><strong>taquluna</strong> (you say)</td><td><strong>yaquluna</strong> (they say)</td><td>Different pronoun<sup>[4]</sup></td></tr>
-                <tr><td>Q 2:184</td><td><strong>miskiinin</strong> (a poor man)</td><td><strong>masakiina</strong> (poor men)</td><td>Singular → plural — affects law<sup>[9]</sup></td></tr>
+                <tr><td>Q 2:184</td><td><strong>miskiinin</strong> (a poor man)</td><td><strong>masakiina</strong> (poor men)</td><td>Singular → plural<sup>[9]</sup></td></tr>
                 <tr><td>Q 3:146</td><td><strong>qatala</strong> (fought)</td><td><strong>qutila</strong> (was killed)</td><td>Active → passive<sup>[4]</sup></td></tr>
                 <tr><td>Q 21:4</td><td><strong>qaala</strong> (He said)</td><td><strong>qul</strong> (Say!)</td><td>Statement → command<sup>[4]</sup></td></tr>
-                <tr><td>Q 43:19</td><td><strong>'ibadu</strong> (slaves of)</td><td><strong>'inda</strong> (with)</td><td>Completely different meaning<sup>[4]</sup></td></tr>
+                <tr><td>Q 43:19</td><td><strong>'ibadu</strong> (slaves of)</td><td><strong>'inda</strong> (with)</td><td>Different meaning<sup>[4]</sup></td></tr>
                 <tr><td>Q 48:17</td><td><strong>nudkhilhu</strong> (We make enter)</td><td><strong>yudkhilhu</strong> (He makes enter)</td><td>We vs. He<sup>[4]</sup></td></tr>
             </tbody>
         </table></div>
     </div>
 
-    <!-- ════════════ SOURCES ════════════ -->
     <div class="sec src">
-        <div class="sec-lbl">Bibliography</div>
-        <h2>Sources & Citations</h2>
-        <p>Every claim verified from academic and Islamic scholarly sources.</p>
+        <div class="sec-lbl" data-i="secLabel5">Bibliography</div>
+        <h2 data-i="secH5">Sources & Citations</h2>
+        <p data-i="secP5">Every claim verified from academic and Islamic scholarly sources.</p>
         <ol>
-            <li>Omar & Makram. <em>Mu'jam al-Qira'at al-Qur'aniyah</em> (Encyclopedia of Quranic Readings). 6 vols. Cairo, 1997. Documents 10,243+ variants.</li>
-            <li>Reynolds, G.S. "Variant Readings: The Birmingham Qur'an." <em>TLS</em>, 2015. Mattson, I. <em>The Story of the Quran</em>, 2013, p. 129.</li>
-            <li>Qadhi, Abu Ammaar Yasir. <em>An Introduction to the Sciences of the Quran</em>. 1999, p. 199.</li>
-            <li>Green, Samuel. "The Different Arabic Versions of the Qur'an." Answering Islam.</li>
-            <li>Von Denffer, Ahmad. <em>Ulum Al-Qur'an</em>. The Islamic Foundation, 1994, p. 57.</li>
+            <li>Omar & Makram. <em>Mu'jam al-Qira'at al-Qur'aniyah</em>. 6 vols. Cairo, 1997. 10,243+ variants.</li>
+            <li>Reynolds, G.S. "Variant Readings." <em>TLS</em>, 2015. Mattson, I. <em>The Story of the Quran</em>, 2013.</li>
+            <li>Qadhi, A.Y. <em>An Introduction to the Sciences of the Quran</em>. 1999, p. 199.</li>
+            <li>Green, S. "The Different Arabic Versions of the Qur'an." Answering Islam.</li>
+            <li>Von Denffer, A. <em>Ulum Al-Qur'an</em>. Islamic Foundation, 1994, p. 57.</li>
             <li><em>Sahih al-Bukhari</em> 4987; vol 6, bk 61, no 510.</li>
             <li>Melchert, C. "Ibn Mujahid and the Seven Readings." <em>Studia Islamica</em>, 2000.</li>
-            <li>Van Putten, M. <em>Quranic Arabic: Hijazi Origins to Classical Reading Traditions</em>. Brill, 2022.</li>
-            <li>Qadhi. <em>Sciences of the Quran</em>, pp. 157-158. Legal implications.</li>
-            <li>Fahd Khaaruun. <em>Making Easy the Readings</em>. ~3,000 variants among 10 readings.</li>
-            <li>Qadhi. <em>Sciences of the Quran</em>, pp. 157-158. Basmalah controversy.</li>
-            <li>University of Birmingham. "Birmingham Qur'an manuscript." 22 July 2015.</li>
-            <li>Sadeghi & Bergmann. "Codex of a Companion of the Prophet." <em>Arabica</em>, 2010.</li>
+            <li>Van Putten, M. <em>Quranic Arabic</em>. Brill, 2022.</li>
+            <li>Qadhi. <em>Sciences of the Quran</em>, pp. 157-158.</li>
+            <li>Fahd Khaaruun. <em>Making Easy the Readings</em>. ~3,000 variants.</li>
+            <li>Qadhi. <em>Sciences of the Quran</em>, pp. 157-158. Basmalah.</li>
+            <li>University of Birmingham. "Birmingham Qur'an manuscript." 2015.</li>
+            <li>Sadeghi & Bergmann. "Codex of a Companion." <em>Arabica</em>, 2010.</li>
             <li>Déroche, F. <em>La transmission écrite du Coran</em>. Brill, 2009.</li>
             <li>Nasser, S.H. <em>Transmission of the Variant Readings</em>. Brill, 2012.</li>
         </ol>
     </div>
 
-    <!-- ════════════ CONCLUSION ════════════ -->
     <div class="sec">
-        <div class="sec-lbl">Conclusion</div>
-        <h2>What the Evidence Shows</h2>
+        <div class="sec-lbl" data-i="secLabel6">Conclusion</div>
+        <h2 data-i="secH6">What the Evidence Shows</h2>
         <div class="callout" style="margin-top:12px">
-            <p><strong>The claim that "all Qurans are identical" is demonstrably false.</strong></p>
-            <p style="margin-top:10px">10 canonical qira'at exist with 20 transmissions. Thousands of documented textual variants. Hafs became dominant in the 20th century through printing, not consensus. Early manuscripts confirm script ambiguity.</p>
-            <p style="margin-top:10px"><strong>This is not pronunciation or dialect</strong> — these are substantive textual differences recognized within Islamic tradition itself.</p>
+            <p data-i="conc1"><strong>The claim that "all Qurans are identical" is demonstrably false.</strong></p>
+            <p style="margin-top:10px" data-i="conc2">10 canonical qira'at exist with 20 transmissions. Thousands of documented textual variants. Hafs became dominant in the 20th century through printing, not consensus. Early manuscripts confirm script ambiguity.</p>
+            <p style="margin-top:10px" data-i="conc3"><strong>This is not pronunciation or dialect</strong> — these are substantive textual differences recognized within Islamic tradition itself.</p>
         </div>
     </div>
 </div>
 
 <footer><div class="w">
-    <p>Research compiled April 2026</p>
-    <p class="v">"You will know the truth, and the truth will set you free." — John 8:32</p>
+    <p data-i="footer1">Research compiled April 2026</p>
+    <p class="v" data-i="footer2">"You will know the truth, and the truth will set you free." — John 8:32</p>
 </div></footer>
 
 <script>
-/* ── Theme toggle ── */
 function toggleTheme(){
-    const h=document.documentElement;
-    const next=h.getAttribute('data-theme')==='dark'?'light':'dark';
+    var h=document.documentElement;
+    var next=h.getAttribute('data-theme')==='dark'?'light':'dark';
     h.setAttribute('data-theme',next);
     localStorage.setItem('theme',next);
     document.querySelector('.theme-toggle').textContent=next==='dark'?'◐':'◑';
 }
-(function(){
-    const s=localStorage.getItem('theme');
-    if(s){document.documentElement.setAttribute('data-theme',s);
-    document.querySelector('.theme-toggle').textContent=s==='dark'?'◐':'◑';}
-})();
-
-/* ── Language switcher via Google Translate ── */
-function googleTranslateElementInit(){
-    new google.translate.TranslateElement({
-        pageLanguage:'en',
-        includedLanguages:'hi,ur,fa',
-        autoDisplay:false,
-        multilanguagePage:false
-    },'google_translate_element');
-}
-
-var LANGS={en:0,hi:1,ur:2,fa:3};
-
-function setLang(lang){
-    var btns=document.querySelectorAll('.bar-btn');
-    btns.forEach(function(b){b.classList.remove('active')});
-    if(LANGS[lang]!==undefined) btns[LANGS[lang]].classList.add('active');
-
-    if(lang==='en'){
-        // Nuke cookies + clean reload
-        ['','.github.io','billy872.github.io'].forEach(function(d){
-            var c='googtrans=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC';
-            if(d) c+=';domain='+d;
-            document.cookie=c;
-        });
-        window.location.assign(window.location.pathname);
-    } else {
-        // Set cookie for target language
-        document.cookie='googtrans=/en/'+lang+';path=/';
-        document.cookie='googtrans=/en/'+lang+';path=/;domain=.github.io';
-        // Trigger Google Translate select
-        waitForGT(function(sel){
-            sel.value=lang;
-            sel.dispatchEvent(new Event('change'));
-        });
-        // Handle RTL for Urdu and Farsi
-        if(lang==='ur'||lang==='fa'){
-            document.documentElement.setAttribute('dir','rtl');
-        } else {
-            document.documentElement.removeAttribute('dir');
-        }
-    }
-}
-
-function waitForGT(cb){
-    var n=0;
-    var iv=setInterval(function(){
-        var sel=document.querySelector('.goog-te-combo');
-        if(sel){clearInterval(iv);cb(sel);}
-        if(++n>40){clearInterval(iv);}
-    },150);
-}
-
-// Auto-apply saved language on return visit
-(function(){
-    var c=document.cookie;
-    var langs=['hi','ur','fa'];
-    var btns=document.querySelectorAll('.bar-btn');
-    for(var i=0;i<langs.length;i++){
-        if(c.indexOf('googtrans=/en/'+langs[i])!==-1){
-            btns[0].classList.remove('active');
-            if(btns[LANGS[langs[i]]]) btns[LANGS[langs[i]]].classList.add('active');
-            if(langs[i]==='ur'||langs[i]==='fa') document.documentElement.setAttribute('dir','rtl');
-            break;
-        }
-    }
-})();
+(function(){var s=localStorage.getItem('theme');if(s){document.documentElement.setAttribute('data-theme',s);document.querySelector('.theme-toggle').textContent=s==='dark'?'◐':'◑';}})();
 </script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+<script src="i18n.js"></script>
 </body>
 </html>
