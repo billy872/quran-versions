@@ -229,6 +229,9 @@ window.setLang = function(lang) {
   // Update search placeholder
   var search = document.getElementById('surah-search');
   if (search) search.placeholder = t.searchPh;
+  // Force correct text direction
+  var dirs = {en:'ltr', hi:'ltr', ur:'rtl', fa:'rtl'};
+  document.documentElement.setAttribute('dir', dirs[lang] || 'ltr');
 };
 
 document.addEventListener('DOMContentLoaded', buildSurahSection);

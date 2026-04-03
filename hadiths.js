@@ -250,6 +250,9 @@ window.setLang=function(lang){
     var key=el.getAttribute('data-i');
     if(t[key]!==undefined) el.innerHTML=t[key];
   });
+  // Force correct text direction (final authority)
+  var dirs={en:'ltr',hi:'ltr',ur:'rtl',fa:'rtl'};
+  document.documentElement.setAttribute('dir',dirs[lang]||'ltr');
 };
 
 document.addEventListener('DOMContentLoaded',buildHadithSection);
