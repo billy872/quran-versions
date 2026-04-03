@@ -84,6 +84,15 @@
         [dir="rtl"] .src li{flex-direction:row-reverse;text-align:right}
         [dir="rtl"] blockquote{border-left:none;border-right:2px solid var(--border);padding-left:0;padding-right:16px}
         [dir="rtl"] th,[dir="rtl"] td{text-align:right}
+        .verdict-box{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;overflow:hidden;margin:36px 0}
+        .claim-bar{padding:24px 28px;border-bottom:1px solid var(--border)}
+        .claim-label{font-size:.55rem;text-transform:uppercase;letter-spacing:3px;color:var(--text-3);font-weight:700;margin-bottom:8px}
+        .claim-text{font-size:1.15rem;font-weight:600;line-height:1.5;color:var(--text)}
+        .verdict-bar{padding:24px 28px;background:var(--bg-surface)}
+        .verdict-label{font-size:.55rem;text-transform:uppercase;letter-spacing:3px;font-weight:700;margin-bottom:8px;color:var(--text-3)}
+        .verdict-result{font-size:1.8rem;font-weight:700;letter-spacing:-.02em;line-height:1.2;margin-bottom:8px}
+        .verdict-explain{font-size:.95rem;color:var(--text-2);line-height:1.65}
+        .verdict-explain strong{color:var(--text)}
         .surah-search{width:100%;padding:10px 14px;background:var(--bg-card);border:1px solid var(--border);border-radius:6px;color:var(--text);font-family:inherit;font-size:.9rem;margin-bottom:16px;outline:none;transition:border-color .2s}
         .surah-search:focus{border-color:var(--text-3)}
         .surah-search::placeholder{color:var(--text-3)}
@@ -109,6 +118,19 @@
         <span class="hero-tag" data-i="heroTag">Historical Evidence — Fully Cited</span>
         <h1 data-i="heroH1">The Different Versions<br>of the Quran</h1>
         <p data-i="heroP">An investigation into the 10+ canonical Quranic recitations, their origins, and documented textual differences — verified from Islamic and academic scholarship.</p>
+    </div>
+
+    <!-- CLAIM & VERDICT -->
+    <div class="verdict-box">
+        <div class="claim-bar">
+            <div class="claim-label" data-i="claimLabel">The Claim</div>
+            <div class="claim-text" data-i="claimText">"The Quran has been perfectly preserved, letter for letter, without any variation whatsoever. Every Quran in the world is identical."</div>
+        </div>
+        <div class="verdict-bar">
+            <div class="verdict-label" data-i="verdictLabel">The Verdict — After Investigation</div>
+            <div class="verdict-result" data-i="verdictResult">FALSE.</div>
+            <div class="verdict-explain" data-i="verdictExplain"><strong>At least 10 different Qurans</strong> are in use today with <strong>10,243+ documented textual differences</strong> between them — including different words, different meanings, different grammar, and different verse counts. This is not a matter of pronunciation. These are substantive textual variants <strong>recognized and documented by Islamic scholars themselves.</strong> The most popular version (Hafs) only became dominant in 1924 through Egyptian printing — not through early Islamic consensus.</div>
+        </div>
     </div>
 
     <div class="callout">

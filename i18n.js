@@ -53,7 +53,12 @@ en: {
   conc2: "10 canonical qira'at exist with 20 transmissions. Thousands of documented textual variants. Hafs became dominant in the 20th century through printing, not consensus. Early manuscripts confirm script ambiguity.",
   conc3: "<strong>This is not pronunciation or dialect</strong> — these are substantive textual differences recognized within Islamic tradition itself.",
   footer1: "Research compiled April 2026",
-  footer2: '"You will know the truth, and the truth will set you free." — John 8:32'
+  footer2: '"You will know the truth, and the truth will set you free." — John 8:32',
+  claimLabel: "The Claim",
+  claimText: '"The Quran has been perfectly preserved, letter for letter, without any variation whatsoever. Every Quran in the world is identical."',
+  verdictLabel: "The Verdict — After Investigation",
+  verdictResult: "FALSE.",
+  verdictExplain: '<strong>At least 10 different Qurans</strong> are in use today with <strong>10,243+ documented textual differences</strong> between them — including different words, different meanings, different grammar, and different verse counts. This is not a matter of pronunciation. These are substantive textual variants <strong>recognized and documented by Islamic scholars themselves.</strong> The most popular version (Hafs) only became dominant in 1924 through Egyptian printing — not through early Islamic consensus.'
 },
 hi: {
   dir: "ltr",
@@ -108,7 +113,12 @@ hi: {
   conc2: "10 प्रामाणिक किराअत 20 संचरणों के साथ मौजूद हैं। हजारों प्रलेखित पाठ्य भिन्नताएं। हफ़्स 20वीं सदी में मुद्रण के माध्यम से प्रमुख बना, सहमति से नहीं।",
   conc3: "<strong>यह उच्चारण या बोली का मामला नहीं है</strong> — ये इस्लामी परंपरा के भीतर ही मान्यता प्राप्त महत्वपूर्ण पाठ्य अंतर हैं।",
   footer1: "शोध संकलित अप्रैल 2026",
-  footer2: '"तुम सत्य को जानोगे, और सत्य तुम्हें स्वतंत्र करेगा।" — यूहन्ना 8:32'
+  footer2: '"तुम सत्य को जानोगे, और सत्य तुम्हें स्वतंत्र करेगा।" — यूहन्ना 8:32',
+  claimLabel: "दावा",
+  claimText: '"कुरान को अक्षर-अक्षर पूर्ण रूप से संरक्षित किया गया है, बिना किसी भिन्नता के। दुनिया की हर कुरान एक जैसी है।"',
+  verdictLabel: "निर्णय — जांच के बाद",
+  verdictResult: "गलत।",
+  verdictExplain: 'आज <strong>कम से कम 10 अलग-अलग कुरान</strong> उपयोग में हैं जिनमें <strong>10,243+ प्रलेखित पाठ्य अंतर</strong> हैं — विभिन्न शब्द, अलग-अलग अर्थ, अलग व्याकरण, और अलग आयत संख्या। यह उच्चारण का मामला नहीं है। ये महत्वपूर्ण पाठ्य भिन्नताएं हैं <strong>जिन्हें स्वयं इस्लामी विद्वानों ने मान्यता दी है और प्रलेखित किया है।</strong> सबसे लोकप्रिय संस्करण (हफ़्स) 1924 में मिस्र की छपाई से ही प्रमुख बना — प्रारंभिक इस्लामी सहमति से नहीं।'
 },
 ur: {
   dir: "rtl",
@@ -163,7 +173,12 @@ ur: {
   conc2: "10 مستند قراءتیں 20 روایات کے ساتھ موجود ہیں۔ ہزاروں دستاویزی متنی اختلافات۔ حفص 20ویں صدی میں چھپائی سے غالب ہوا۔",
   conc3: "<strong>یہ تلفظ یا لہجے کا معاملہ نہیں ہے</strong> — یہ اسلامی روایت کے اندر تسلیم شدہ اہم متنی اختلافات ہیں۔",
   footer1: "تحقیق مرتب اپریل 2026",
-  footer2: '"تم سچائی کو جانو گے، اور سچائی تمہیں آزاد کرے گی۔" — یوحنا 8:32'
+  footer2: '"تم سچائی کو جانو گے، اور سچائی تمہیں آزاد کرے گی۔" — یوحنا 8:32',
+  claimLabel: "دعویٰ",
+  claimText: '"قرآن کو حرف بہ حرف مکمل طور پر محفوظ کیا گیا ہے، بغیر کسی فرق کے۔ دنیا کا ہر قرآن ایک جیسا ہے۔"',
+  verdictLabel: "فیصلہ — تحقیق کے بعد",
+  verdictResult: "غلط۔",
+  verdictExplain: 'آج <strong>کم از کم 10 مختلف قرآن</strong> زیر استعمال ہیں جن میں <strong>10,243+ دستاویزی متنی اختلافات</strong> ہیں — مختلف الفاظ، مختلف معانی، مختلف گرامر، اور مختلف آیات کی تعداد۔ یہ تلفظ کا معاملہ نہیں ہے۔ یہ اہم متنی اختلافات ہیں <strong>جنہیں خود اسلامی علماء نے تسلیم کیا اور دستاویزی شکل دی ہے۔</strong> سب سے مقبول نسخہ (حفص) صرف 1924 میں مصری چھپائی سے غالب ہوا — ابتدائی اسلامی اتفاق رائے سے نہیں۔'
 },
 fa: {
   dir: "rtl",
@@ -218,7 +233,12 @@ fa: {
   conc2: "10 قرائت معتبر با 20 روایت وجود دارند. هزاران تفاوت متنی مستند. حفص در قرن بیستم از طریق چاپ غالب شد.",
   conc3: "<strong>این تلفظ یا لهجه نیست</strong> — اینها تفاوت‌های متنی اساسی هستند که در خود سنت اسلامی به رسمیت شناخته شده‌اند.",
   footer1: "تحقیق تنظیم شده آوریل 2026",
-  footer2: '"حقیقت را خواهید شناخت، و حقیقت شما را آزاد خواهد کرد." — یوحنا 8:32'
+  footer2: '"حقیقت را خواهید شناخت، و حقیقت شما را آزاد خواهد کرد." — یوحنا 8:32',
+  claimLabel: "ادعا",
+  claimText: '"قرآن حرف به حرف بدون هیچ تفاوتی کاملاً حفظ شده است. هر قرآنی در جهان یکسان است."',
+  verdictLabel: "حکم — پس از بررسی",
+  verdictResult: "نادرست.",
+  verdictExplain: 'امروز <strong>حداقل 10 قرآن متفاوت</strong> در استفاده هستند با <strong>10,243+ تفاوت متنی مستند</strong> — کلمات متفاوت، معانی متفاوت، دستور زبان متفاوت، و تعداد آیات متفاوت. این تلفظ نیست. اینها تفاوت‌های متنی اساسی هستند <strong>که توسط خود علمای اسلامی به رسمیت شناخته و مستند شده‌اند.</strong> محبوب‌ترین نسخه (حفص) تنها در سال 1924 از طریق چاپ مصری غالب شد — نه از طریق اجماع اولیه اسلامی.'
 }
 };
 
