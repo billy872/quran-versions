@@ -229,6 +229,19 @@
             .stats{grid-template-columns:1fr}
         }
 
+        /* ─── RTL support (Urdu, Farsi) ─── */
+        [dir="rtl"] body{direction:rtl;text-align:right}
+        [dir="rtl"] .bar{flex-direction:row-reverse}
+        [dir="rtl"] .bar-actions{flex-direction:row-reverse}
+        [dir="rtl"] .card-head{flex-direction:row-reverse}
+        [dir="rtl"] .tags{flex-direction:row-reverse}
+        [dir="rtl"] .tl{padding-left:0;padding-right:20px}
+        [dir="rtl"] .tl::before{left:auto;right:0}
+        [dir="rtl"] .tl-i{padding-left:0;padding-right:20px}
+        [dir="rtl"] .tl-i::before{left:auto;right:-24px}
+        [dir="rtl"] .src li{flex-direction:row-reverse}
+        [dir="rtl"] th{text-align:right}
+
         /* ─── Google Translate cleanup ─── */
         .goog-te-banner-frame,.skiptranslate{display:none!important}
         body{top:0!important}
@@ -242,6 +255,8 @@
     <div class="bar-actions">
         <button class="bar-btn active" onclick="setLang('en')">EN</button>
         <button class="bar-btn" onclick="setLang('hi')">हिन्दी</button>
+        <button class="bar-btn" onclick="setLang('ur')">اردو</button>
+        <button class="bar-btn" onclick="setLang('fa')">فارسی</button>
         <button class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode">◐</button>
     </div>
 </div>
@@ -479,50 +494,66 @@ function toggleTheme(){
 function googleTranslateElementInit(){
     new google.translate.TranslateElement({
         pageLanguage:'en',
-        includedLanguages:'hi',
+        includedLanguages:'hi,ur,fa',
         autoDisplay:false,
         multilanguagePage:false
     },'google_translate_element');
 }
 
+var LANGS={en:0,hi:1,ur:2,fa:3};
+
 function setLang(lang){
     var btns=document.querySelectorAll('.bar-btn');
-    btns[0].classList.toggle('active',lang==='en');
-    btns[1].classList.toggle('active',lang==='hi');
+    btns.forEach(function(b){b.classList.remove('active')});
+    if(LANGS[lang]!==undefined) btns[LANGS[lang]].classList.add('active');
 
-    if(lang==='hi'){
-        // Set cookie first (Google Translate reads this)
-        document.cookie='googtrans=/en/hi;path=/';
-        document.cookie='googtrans=/en/hi;path=/;domain=.github.io';
-        // Then trigger the select
+    if(lang==='en'){
+        // Nuke cookies + clean reload
+        ['','.github.io','billy872.github.io'].forEach(function(d){
+            var c='googtrans=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC';
+            if(d) c+=';domain='+d;
+            document.cookie=c;
+        });
+        window.location.assign(window.location.pathname);
+    } else {
+        // Set cookie for target language
+        document.cookie='googtrans=/en/'+lang+';path=/';
+        document.cookie='googtrans=/en/'+lang+';path=/;domain=.github.io';
+        // Trigger Google Translate select
         waitForGT(function(sel){
-            sel.value='hi';
+            sel.value=lang;
             sel.dispatchEvent(new Event('change'));
         });
-    } else {
-        // Nuke all googtrans cookies then hard reload — only reliable way
-        document.cookie='googtrans=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC';
-        document.cookie='googtrans=;path=/;domain=.github.io;expires=Thu, 01 Jan 1970 00:00:00 UTC';
-        document.cookie='googtrans=;path=/;domain=billy872.github.io;expires=Thu, 01 Jan 1970 00:00:00 UTC';
-        // Immediate clean reload
-        window.location.assign(window.location.pathname);
+        // Handle RTL for Urdu and Farsi
+        if(lang==='ur'||lang==='fa'){
+            document.documentElement.setAttribute('dir','rtl');
+        } else {
+            document.documentElement.removeAttribute('dir');
+        }
     }
 }
 
 function waitForGT(cb){
-    var attempts=0;
+    var n=0;
     var iv=setInterval(function(){
         var sel=document.querySelector('.goog-te-combo');
         if(sel){clearInterval(iv);cb(sel);}
-        if(++attempts>30){clearInterval(iv);}
+        if(++n>40){clearInterval(iv);}
     },150);
 }
 
-// Auto-apply Hindi if cookie was set (returning user)
+// Auto-apply saved language on return visit
 (function(){
-    if(document.cookie.indexOf('googtrans=/en/hi')!==-1){
-        var btns=document.querySelectorAll('.bar-btn');
-        if(btns.length>1){btns[0].classList.remove('active');btns[1].classList.add('active');}
+    var c=document.cookie;
+    var langs=['hi','ur','fa'];
+    var btns=document.querySelectorAll('.bar-btn');
+    for(var i=0;i<langs.length;i++){
+        if(c.indexOf('googtrans=/en/'+langs[i])!==-1){
+            btns[0].classList.remove('active');
+            if(btns[LANGS[langs[i]]]) btns[LANGS[langs[i]]].classList.add('active');
+            if(langs[i]==='ur'||langs[i]==='fa') document.documentElement.setAttribute('dir','rtl');
+            break;
+        }
     }
 })();
 </script>
