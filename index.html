@@ -83,6 +83,9 @@
         [dir="rtl"] .tl-i::before{left:auto;right:-24px}
         [dir="rtl"] .src li{flex-direction:row-reverse;text-align:right}
         [dir="rtl"] th,[dir="rtl"] td{text-align:right}
+        .surah-search{width:100%;padding:10px 14px;background:var(--bg-card);border:1px solid var(--border);border-radius:6px;color:var(--text);font-family:inherit;font-size:.9rem;margin-bottom:16px;outline:none;transition:border-color .2s}
+        .surah-search:focus{border-color:var(--text-3)}
+        .surah-search::placeholder{color:var(--text-3)}
         @media(max-width:640px){.hero{padding:76px 0 32px}.stats{grid-template-columns:1fr 1fr}.card img{height:180px}.card-body{padding:18px}.dets{grid-template-columns:1fr}.bar-title{display:none}}
         @media(max-width:380px){.stats{grid-template-columns:1fr}}
     </style>
@@ -245,6 +248,8 @@
         </table></div>
     </div>
 
+    <div id="surah-section"></div>
+
     <div class="sec src">
         <div class="sec-lbl" data-i="secLabel5">Bibliography</div>
         <h2 data-i="secH5">Sources & Citations</h2>
@@ -295,5 +300,6 @@ function toggleTheme(){
 (function(){var s=localStorage.getItem('theme');if(s){document.documentElement.setAttribute('data-theme',s);document.querySelector('.theme-toggle').textContent=s==='dark'?'◐':'◑';}})();
 </script>
 <script src="i18n.js"></script>
+<script src="surahs.js"></script>
 </body>
 </html>
