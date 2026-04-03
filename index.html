@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" dir="ltr" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
         *{margin:0;padding:0;box-sizing:border-box}
         :root{--bg:#090909;--bg-card:#111;--bg-surface:#0d0d0d;--text:#fff;--text-2:#aaa;--text-3:#666;--border:rgba(255,255,255,.08);--tag:rgba(255,255,255,.06)}
         [data-theme="light"]{--bg:#fff;--bg-card:#f6f6f6;--bg-surface:#fafafa;--text:#111;--text-2:#555;--text-3:#999;--border:rgba(0,0,0,.08);--tag:rgba(0,0,0,.05)}
-        body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,-apple-system,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
+        body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,-apple-system,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s;text-align:left;direction:ltr}
         .w{max-width:920px;margin:0 auto;padding:0 20px}
         .bar{position:fixed;top:0;left:0;right:0;z-index:100;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;justify-content:space-between;align-items:center}
         .bar-title{font-size:.7rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--text-3);font-weight:600}
@@ -72,9 +72,25 @@
         .src li:last-child{border-bottom:none}
         footer{margin-top:72px;padding:36px 0;border-top:1px solid var(--border);text-align:center;color:var(--text-3);font-size:.8rem}
         footer .v{font-style:italic;color:var(--text-2);margin-top:10px}
+        /* ─── LTR explicit reset (English, Hindi) ─── */
+        [dir="ltr"] .hero{text-align:center}
+        [dir="ltr"] .sec,[dir="ltr"] .card-body,[dir="ltr"] footer,[dir="ltr"] .callout,[dir="ltr"] .verdict-bar,[dir="ltr"] .claim-bar{text-align:left}
+        [dir="ltr"] .bar{flex-direction:row}
+        [dir="ltr"] .bar-actions{flex-direction:row}
+        [dir="ltr"] .card-head{flex-direction:row}
+        [dir="ltr"] .tags{flex-direction:row}
+        [dir="ltr"] .tl{padding-left:20px;padding-right:0}
+        [dir="ltr"] .tl::before{left:0;right:auto}
+        [dir="ltr"] .tl-i{padding-left:20px;padding-right:0}
+        [dir="ltr"] .tl-i::before{left:-24px;right:auto}
+        [dir="ltr"] .src li{flex-direction:row;text-align:left}
+        [dir="ltr"] blockquote{border-left:2px solid var(--border);border-right:none;padding-left:14px;padding-right:0}
+        [dir="ltr"] th,[dir="ltr"] td{text-align:left}
+        /* ─── RTL (Urdu, Farsi) ─── */
+        [dir="rtl"] .hero{text-align:center}
+        [dir="rtl"] .sec,[dir="rtl"] .card-body,[dir="rtl"] footer,[dir="rtl"] .callout,[dir="rtl"] .verdict-bar,[dir="rtl"] .claim-bar{text-align:right}
         [dir="rtl"] .bar{flex-direction:row-reverse}
         [dir="rtl"] .bar-actions{flex-direction:row-reverse}
-        [dir="rtl"] .hero,.sec,[dir="rtl"] .card-body,[dir="rtl"] footer{text-align:right}
         [dir="rtl"] .card-head{flex-direction:row-reverse}
         [dir="rtl"] .tags{flex-direction:row-reverse}
         [dir="rtl"] .tl{padding-left:0;padding-right:20px}
