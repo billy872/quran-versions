@@ -82,6 +82,7 @@
         [dir="rtl"] .tl-i{padding-left:0;padding-right:20px}
         [dir="rtl"] .tl-i::before{left:auto;right:-24px}
         [dir="rtl"] .src li{flex-direction:row-reverse;text-align:right}
+        [dir="rtl"] blockquote{border-left:none;border-right:2px solid var(--border);padding-left:0;padding-right:16px}
         [dir="rtl"] th,[dir="rtl"] td{text-align:right}
         .surah-search{width:100%;padding:10px 14px;background:var(--bg-card);border:1px solid var(--border);border-radius:6px;color:var(--text);font-family:inherit;font-size:.9rem;margin-bottom:16px;outline:none;transition:border-color .2s}
         .surah-search:focus{border-color:var(--text-3)}
@@ -250,6 +251,8 @@
 
     <div id="surah-section"></div>
 
+    <div id="hadith-section"></div>
+
     <div class="sec src">
         <div class="sec-lbl" data-i="secLabel5">Bibliography</div>
         <h2 data-i="secH5">Sources & Citations</h2>
@@ -301,5 +304,6 @@ function toggleTheme(){
 </script>
 <script src="i18n.js"></script>
 <script src="surahs.js"></script>
+<script src="hadiths.js"></script>
 </body>
 </html>
