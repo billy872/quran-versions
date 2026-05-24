@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Answering Islam — Honest Questions, Careful Answers</title>
+<meta name="description" content="A growing compendium of careful, source-cited answers to common Muslim apologetic questions. Truth-focused, fully cited, and available in English, Hindi, Urdu, and Farsi.">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    *{margin:0;padding:0;box-sizing:border-box}
+    :root{--bg:#090909;--bg-card:#111;--bg-surface:#0d0d0d;--text:#fff;--text-2:#aaa;--text-3:#666;--border:rgba(255,255,255,.08);--tag:rgba(255,255,255,.06);--accent:#d4a95e}
+    [data-theme="light"]{--bg:#fff;--bg-card:#f6f6f6;--bg-surface:#fafafa;--text:#111;--text-2:#555;--text-3:#999;--border:rgba(0,0,0,.08);--tag:rgba(0,0,0,.05);--accent:#a67a3a}
+    body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,-apple-system,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s;text-align:left;direction:ltr}
+    .w{max-width:920px;margin:0 auto;padding:0 20px}
+    .bar{position:fixed;top:0;left:0;right:0;z-index:100;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+    .bar-title{font-size:.7rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--text-3);font-weight:600}
+    .bar-actions{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+    .bar-btn{padding:5px 12px;border:1px solid var(--border);background:transparent;color:var(--text-2);font-family:inherit;font-size:.75rem;font-weight:500;border-radius:4px;cursor:pointer;transition:all .2s;text-decoration:none;display:inline-flex;align-items:center}
+    .bar-btn:hover{border-color:var(--text-3);color:var(--text)}
+    .bar-btn.active{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .bar-link{padding:5px 12px;border:1px solid var(--border);background:transparent;color:var(--text-2);font-family:inherit;font-size:.75rem;font-weight:500;border-radius:4px;text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:all .2s}
+    .bar-link:hover{border-color:var(--text-3);color:var(--text)}
+    .theme-toggle{width:32px;height:32px;border-radius:50%;border:1px solid var(--border);background:transparent;color:var(--text-2);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:14px;transition:all .2s}
+    .theme-toggle:hover{border-color:var(--text-3);color:var(--text)}
+    .hero{padding:110px 0 40px;text-align:center}
+    .hero-tag{display:inline-block;font-size:.65rem;text-transform:uppercase;letter-spacing:3px;color:var(--text-3);border:1px solid var(--border);padding:5px 14px;border-radius:20px;margin-bottom:24px;font-weight:500}
+    .hero h1{font-size:clamp(1.8rem,5.5vw,3.2rem);font-weight:700;line-height:1.12;margin-bottom:18px;letter-spacing:-.03em}
+    .hero p{font-size:1rem;color:var(--text-2);max-width:640px;margin:0 auto}
+    .callout{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:24px 28px;margin:36px 0}
+    .callout .lbl{font-size:.6rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--text-3);margin-bottom:10px;font-weight:600}
+    .callout p{font-size:.95rem;line-height:1.7;color:var(--text-2)}
+    .callout strong{color:var(--text)}
+    .filter-row{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 12px;align-items:center}
+    .filter-lbl{font-size:.6rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--text-3);font-weight:600;margin-right:6px}
+    .filter-chip{padding:6px 12px;border:1px solid var(--border);background:transparent;color:var(--text-2);font-family:inherit;font-size:.78rem;font-weight:500;border-radius:999px;cursor:pointer;transition:all .15s}
+    .filter-chip:hover{border-color:var(--text-3);color:var(--text)}
+    .filter-chip.active{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .sec{margin:48px 0 72px}
+    .sec-lbl{font-size:.6rem;text-transform:uppercase;letter-spacing:3px;color:var(--text-3);margin-bottom:10px;font-weight:600}
+    .sec h2{font-size:1.6rem;font-weight:700;margin-bottom:12px;letter-spacing:-.02em}
+    .sec>p{color:var(--text-2);margin-bottom:28px;max-width:600px;font-size:.95rem}
+    .qa-card{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:24px;transition:border-color .3s}
+    .qa-card:hover{border-color:rgba(128,128,128,.25)}
+    .qa-head{padding:22px 26px 0;display:flex;flex-direction:column;gap:10px}
+    .qa-cats{display:flex;flex-wrap:wrap;gap:5px}
+    .qa-cat{font-size:.58rem;text-transform:uppercase;letter-spacing:1.5px;font-weight:600;padding:3px 9px;border-radius:3px;background:var(--tag);color:var(--text-2);border:1px solid var(--border)}
+    .qa-claim-lbl{font-size:.55rem;text-transform:uppercase;letter-spacing:3px;color:var(--text-3);font-weight:700;margin-top:6px}
+    .qa-claim{font-size:1.05rem;font-weight:600;line-height:1.5;color:var(--text);font-style:italic;padding:0 26px;margin-top:6px}
+    .qa-body{padding:22px 26px 26px}
+    .qa-answer-lbl{font-size:.55rem;text-transform:uppercase;letter-spacing:3px;color:var(--accent);font-weight:700;margin-bottom:10px}
+    .qa-answer{font-size:.96rem;color:var(--text-2);line-height:1.75}
+    .qa-answer p{margin-bottom:12px}
+    .qa-answer p:last-child{margin-bottom:0}
+    .qa-answer strong{color:var(--text)}
+    .qa-answer em{color:var(--text)}
+    .qa-refs{margin-top:18px;padding-top:16px;border-top:1px solid var(--border)}
+    .qa-refs-lbl{font-size:.55rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--text-3);font-weight:700;margin-bottom:8px}
+    .qa-refs-list{display:flex;flex-wrap:wrap;gap:6px}
+    .qa-ref{font-size:.72rem;padding:4px 9px;border-radius:3px;background:var(--tag);color:var(--text-2);border:1px solid var(--border);font-family:inherit}
+    .qa-attr{margin-top:14px;font-size:.72rem;color:var(--text-3);line-height:1.6}
+    .qa-attr a{color:var(--accent);text-decoration:none;border-bottom:1px dashed var(--border)}
+    .qa-attr a:hover{border-bottom-color:var(--accent)}
+    .empty-note{padding:36px 28px;text-align:center;color:var(--text-3);font-size:.9rem;border:1px dashed var(--border);border-radius:10px}
+    .grow-card{margin:48px 0 0;padding:20px 24px;background:var(--bg-surface);border:1px dashed var(--border);border-radius:10px;text-align:center}
+    .grow-card .lbl{font-size:.6rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--text-3);font-weight:600;margin-bottom:6px}
+    .grow-card p{color:var(--text-2);font-size:.85rem;line-height:1.6}
+    .src ol{counter-reset:s;list-style:none;padding:0}
+    .src li{counter-increment:s;padding:10px 0;border-bottom:1px solid var(--border);font-size:.85rem;color:var(--text-2);display:flex;gap:10px;line-height:1.6}
+    .src li::before{content:counter(s);flex-shrink:0;width:22px;height:22px;background:var(--tag);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:600;color:var(--text-3)}
+    .src li:last-child{border-bottom:none}
+    footer{margin-top:72px;padding:36px 0;border-top:1px solid var(--border);text-align:center;color:var(--text-3);font-size:.8rem}
+    footer .v{font-style:italic;color:var(--text-2);margin-top:10px}
+
+    /* ─── LTR (English, Hindi) ─── */
+    [dir="ltr"] .bar{flex-direction:row}
+    [dir="ltr"] .bar-actions{flex-direction:row}
+    [dir="ltr"] .filter-row{flex-direction:row}
+    [dir="ltr"] .qa-claim,[dir="ltr"] .qa-body,[dir="ltr"] .qa-head,[dir="ltr"] .src li{text-align:left}
+
+    /* ─── RTL (Urdu, Farsi) ─── */
+    [dir="rtl"] .bar{flex-direction:row-reverse}
+    [dir="rtl"] .bar-actions{flex-direction:row-reverse}
+    [dir="rtl"] .filter-row{flex-direction:row-reverse}
+    [dir="rtl"] .qa-claim,[dir="rtl"] .qa-body,[dir="rtl"] .qa-head{text-align:right}
+    [dir="rtl"] .src li{flex-direction:row-reverse;text-align:right}
+    [dir="rtl"] .qa-cats{flex-direction:row-reverse}
+
+    @media(max-width:640px){
+        .hero{padding:100px 0 28px}
+        .qa-body{padding:18px}
+        .qa-head{padding:18px 18px 0}
+        .qa-claim{padding:0 18px}
+        .bar-title{display:none}
+        .filter-lbl{display:none}
+    }
+</style>
+</head>
+<body>
+
+<div class="bar">
+    <span class="bar-title" data-i="navTitle">Answering Islam</span>
+    <div class="bar-actions">
+        <a class="bar-link" href="index.html" data-i="navBackToQuran">← Quran Versions</a>
+        <button class="bar-btn active" data-lang="en" onclick="aiSetLang('en')">EN</button>
+        <button class="bar-btn" data-lang="hi" onclick="aiSetLang('hi')">हिन्दी</button>
+        <button class="bar-btn" data-lang="ur" onclick="aiSetLang('ur')">اردو</button>
+        <button class="bar-btn" data-lang="fa" onclick="aiSetLang('fa')">فارسی</button>
+        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode">◐</button>
+    </div>
+</div>
+
+<div class="w">
+    <div class="hero">
+        <span class="hero-tag" data-i="heroTag">Honest Questions · Careful Answers · Fully Cited</span>
+        <h1 data-i="heroH1">Answering Islam</h1>
+        <p data-i="heroP">A growing compendium of careful, source-cited responses to common Muslim apologetic questions. Truth-focused, gentle in tone, and rooted in the texts both traditions actually share.</p>
+    </div>
+
+    <div class="callout">
+        <div class="lbl" data-i="approachLabel">Our Approach</div>
+        <p data-i="approachText"><strong>This page is a living index.</strong> Each entry begins with a claim that is commonly raised, then offers an answer that prefers what the texts actually say over what either side wishes they said. We cite chapter and verse. We do not paraphrase to win. When we do not know, we say so.</p>
+    </div>
+
+    <div class="sec">
+        <div class="sec-lbl" data-i="filterLabel">Browse by category</div>
+        <div class="filter-row" id="aiFilterRow">
+            <span class="filter-lbl" data-i="filterShow">Show:</span>
+            <button class="filter-chip active" data-cat="__all" onclick="aiFilter('__all')" data-i="catAll">All</button>
+            <!-- category chips injected here -->
+        </div>
+    </div>
+
+    <div class="sec" id="aiEntriesSection">
+        <div class="sec-lbl" data-i="entriesLabel">Questions &amp; Answers</div>
+        <h2 data-i="entriesH">Where the texts speak for themselves.</h2>
+        <p data-i="entriesIntro">Each card carries the claim verbatim, a careful answer that points to scripture, and the references you can verify in any Bible. New entries are added as they are written and reviewed.</p>
+        <div id="aiEntriesList">
+            <!-- entries injected here -->
+        </div>
+        <div class="grow-card">
+            <div class="lbl" data-i="growLabel">Growing</div>
+            <p data-i="growText">This compendium will grow over time. More entries on the Trinity, the divinity of Christ, the cross and the resurrection, the reliability of the gospels, and Quranic history are in preparation.</p>
+        </div>
+    </div>
+
+    <div class="sec src">
+        <div class="sec-lbl" data-i="sourcesLabel">References</div>
+        <h2 data-i="sourcesH">Scripture cited in this compendium</h2>
+        <p data-i="sourcesIntro">All references are to the canonical 66-book Christian Bible. Verse numbering follows the standard chapter-and-verse system used across English, Hindi, Urdu, and Farsi Bible translations.</p>
+        <ol id="aiSourcesList">
+            <!-- sources injected here -->
+        </ol>
+    </div>
+</div>
+
+<footer><div class="w">
+    <p data-i="footer1">Answering Islam compendium · Compiled and revised May 2026</p>
+    <p class="v" data-i="footer2">"You will know the truth, and the truth will set you free." — John 8:32</p>
+</div></footer>
+
+<script>
+// Theme toggle — same pattern as index.html.
+function toggleTheme(){
+    var h = document.documentElement;
+    var next = h.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    h.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    document.querySelector('.theme-toggle').textContent = next === 'dark' ? '◐' : '◑';
+}
+(function(){
+    var s = localStorage.getItem('theme');
+    if (s) {
+        document.documentElement.setAttribute('data-theme', s);
+        document.querySelector('.theme-toggle').textContent = s === 'dark' ? '◐' : '◑';
+    }
+})();
+</script>
+
+<script>
+// ──────────────────────────────────────────────────────────────────
+// AI_DATA: the living compendium. Add new entries to AI_DATA.entries.
+// Each entry has four-language strings for claim and answer, a list
+// of canonical categories it belongs to, and a list of scripture
+// references it relies on.
+// ──────────────────────────────────────────────────────────────────
+window.AI_DATA = {
+  // Canonical category list. The chip row is built from this in the
+  // order shown. Add a new category here once, then add entries that
+  // belong to it via the `categories` array on each entry.
+  categories: {
+    en: ["Trinity", "Jesus' Divine Identity", "Gospel of John"],
+    hi: ["त्रिमूर्ति (ट्रिनिटी)", "यीशु की दिव्य पहचान", "यूहन्ना का सुसमाचार"],
+    ur: ["تثلیث (ٹرینٹی)", "یسوع کی الٰہی شناخت", "یوحنا کی انجیل"],
+    fa: ["تثلیث (تثلیث)", "هویت الهی عیسی", "انجیل یوحنا"]
+  },
+
+  entries: [
+    {
+      id: 'jesus-wrote-in-dirt',
+      // Use English category keys as the canonical id; translations are
+      // looked up at render time from AI_DATA.categories[lang].
+      categories: ["Trinity", "Jesus' Divine Identity", "Gospel of John"],
+      claim: {
+        en: "Muslims love to say Jesus never taught the Trinity.",
+        hi: "मुसलमान अक्सर कहते हैं कि यीशु ने कभी त्रिमूर्ति (ट्रिनिटी) की शिक्षा नहीं दी।",
+        ur: "مسلمان اکثر کہتے ہیں کہ یسوع نے کبھی تثلیث (ٹرینٹی) کی تعلیم نہیں دی۔",
+        fa: "مسلمانان اغلب می‌گویند که عیسی هرگز تثلیث را تعلیم نداده است."
+      },
+      answer: {
+        en:
+          "<p>Look carefully at <strong>John 8:1–11</strong>. The Pharisees drag a woman caught in adultery before Jesus and demand a verdict. Jesus does something strange: He <em>stoops down and writes in the dust with His finger.</em> The text mentions it twice. Most sermons skip past it. The connections the Old Testament invites the reader to make are remarkable.</p>" +
+          "<p><strong>1. Writing with the finger.</strong> In <strong>Exodus 31:18</strong>, the Law is given to Moses on tablets of stone <em>written with the finger of God.</em> The image of a finger writing on a hard surface, in a moment of judgment about sin, is a deliberate echo. Jesus does on the ground what only God did on Sinai.</p>" +
+          "<p><strong>2. Names written in the dust.</strong> In <strong>Jeremiah 17:13</strong>, the prophet says of those who reject the LORD &mdash; the fountain of living water &mdash; that <em>their names shall be written in the earth.</em> Jesus, surrounded by men who claim to honour the LORD but are about to reject Him, writes in the dust at their feet. The accusers slip away one by one (verse 9).</p>" +
+          "<p><strong>3. The fountain of living water.</strong> A few chapters earlier, in <strong>John 7:37–39</strong>, Jesus stands up at the feast and cries out: <em>&ldquo;If anyone thirsts, let him come to Me and drink. Whoever believes in Me, as the Scripture has said, out of his heart will flow rivers of living water.&rdquo;</em> John then writes: <em>&ldquo;This He spoke concerning the Spirit.&rdquo;</em> The role Jeremiah assigns to the LORD &mdash; the fountain of living water &mdash; Jesus takes as His own, and He explicitly ties it to the Spirit.</p>" +
+          "<p><strong>The pattern is whole.</strong> Jesus is the One who writes with the finger of God (Exodus). He is the LORD whose rejecters are written in the dust (Jeremiah). He is the source of the living water that <em>is</em> the Spirit (John 7). Father, Son, and Spirit are not three separate teachings stitched together &mdash; they are woven into a single moment of judgment and mercy in John 8.</p>" +
+          "<p>Jesus did not need to give a systematic theology lecture on the Trinity. He <em>showed</em> it &mdash; the way a king signs his name without giving a press conference about kingship.</p>",
+        hi:
+          "<p><strong>यूहन्ना 8:1–11</strong> को ध्यान से देखें। फरीसी एक स्त्री को, जो व्यभिचार में पकड़ी गई थी, यीशु के सामने घसीट लाते हैं और निर्णय की माँग करते हैं। यीशु एक अनोखा काम करते हैं: वे <em>झुककर अपनी उंगली से धरती पर लिखते हैं।</em> पाठ में इसका दो बार उल्लेख है। अधिकतर प्रवचनों में इसे छोड़ दिया जाता है। पुराने नियम में जो जोड़ बनते हैं, वे अद्भुत हैं।</p>" +
+          "<p><strong>1. उंगली से लिखना।</strong> <strong>निर्गमन 31:18</strong> में मूसा को व्यवस्था पत्थर की पटियाओं पर दी जाती है, जो <em>परमेश्वर की उंगली से लिखी गई</em> थी। पाप पर न्याय के समय किसी कठोर सतह पर उंगली से लिखने की छवि जानबूझकर की गई गूँज है। यीशु धरती पर वही करते हैं जो परमेश्वर ने सीनै पर्वत पर किया।</p>" +
+          "<p><strong>2. नाम धूल में लिखे जाना।</strong> <strong>यिर्मयाह 17:13</strong> में नबी उन लोगों के बारे में कहता है जो यहोवा को छोड़ देते हैं &mdash; जो <em>जीवित जल का सोता</em> है &mdash; कि <em>उनके नाम धरती पर लिखे जाएँगे।</em> यीशु, उन लोगों से घिरे हुए जो यहोवा का आदर करने का दावा करते हैं पर उन्हीं को ठुकराने वाले हैं, उनके पैरों के पास धूल में लिखते हैं। अभियोग लगाने वाले एक-एक करके चले जाते हैं (पद 9)।</p>" +
+          "<p><strong>3. जीवित जल का सोता।</strong> कुछ अध्याय पहले <strong>यूहन्ना 7:37–39</strong> में यीशु पर्व में खड़े होकर ऊँचे स्वर से कहते हैं: <em>&ldquo;यदि कोई प्यासा हो तो मेरे पास आकर पिए। जो मुझ पर विश्वास करेगा, जैसा पवित्र शास्त्र कहता है, उसके हृदय से जीवित जल की नदियाँ बह निकलेंगी।&rdquo;</em> फिर यूहन्ना लिखते हैं: <em>&ldquo;यह उन्होंने आत्मा के विषय में कहा।&rdquo;</em> यिर्मयाह ने जो भूमिका यहोवा को दी &mdash; जीवित जल का सोता &mdash; उसी को यीशु अपनी बताते हैं, और स्पष्ट रूप से उसे आत्मा से जोड़ते हैं।</p>" +
+          "<p><strong>पैटर्न पूरा है।</strong> यीशु ही वह हैं जो परमेश्वर की उंगली से लिखते हैं (निर्गमन)। वही यहोवा हैं जिनके ठुकराने वाले धूल में लिखे जाते हैं (यिर्मयाह)। वही जीवित जल के स्रोत हैं जो <em>आत्मा</em> है (यूहन्ना 7)। पिता, पुत्र और आत्मा तीन अलग-अलग शिक्षाएँ नहीं हैं जिन्हें बाद में जोड़ा गया हो &mdash; वे यूहन्ना 8 के न्याय और दया के एक ही क्षण में बुन दिए गए हैं।</p>" +
+          "<p>यीशु को त्रिमूर्ति पर व्याख्यान देने की आवश्यकता नहीं थी। उन्होंने उसे <em>दिखाया</em> &mdash; जैसे एक राजा बिना राजत्व पर भाषण दिए हस्ताक्षर करता है।</p>",
+        ur:
+          "<p><strong>یوحنا 8:1–11</strong> کو غور سے دیکھیں۔ فریسی ایک عورت کو، جو زنا میں پکڑی گئی تھی، یسوع کے سامنے گھسیٹ لاتے ہیں اور فیصلہ مانگتے ہیں۔ یسوع کچھ غیر معمولی کرتے ہیں: وہ <em>جھک کر اپنی انگلی سے زمین پر لکھتے ہیں۔</em> متن میں اس کا دو بار ذکر ہے۔ زیادہ تر تبلیغوں میں اسے نظر انداز کر دیا جاتا ہے۔ پرانے عہد نامے سے جو ربط بنتے ہیں وہ حیرت انگیز ہیں۔</p>" +
+          "<p><strong>1. انگلی سے لکھنا۔</strong> <strong>خروج 31:18</strong> میں موسیٰ کو شریعت پتھر کی لوحوں پر دی جاتی ہے، جو <em>خدا کی انگلی سے لکھی گئی</em> تھیں۔ گناہ پر فیصلے کے لمحے میں کسی سخت سطح پر انگلی سے لکھنے کی تصویر جان بوجھ کر دیا گیا اشارہ ہے۔ یسوع زمین پر وہی کرتے ہیں جو خدا نے کوہِ سینا پر کیا تھا۔</p>" +
+          "<p><strong>2. نام مٹی میں لکھے جانا۔</strong> <strong>یرمیاہ 17:13</strong> میں نبی ان لوگوں کے بارے میں کہتا ہے جو یہوواہ کو ترک کرتے ہیں &mdash; جو <em>زندہ پانی کا چشمہ</em> ہے &mdash; کہ <em>ان کے نام زمین پر لکھے جائیں گے۔</em> یسوع، اُن لوگوں سے گھرے ہوئے جو یہوواہ کی عزت کا دعویٰ کرتے ہیں مگر اُسی کو ٹھکرانے والے ہیں، اُن کے قدموں کے پاس مٹی پر لکھتے ہیں۔ الزام لگانے والے ایک ایک کر کے چلے جاتے ہیں (آیت 9)۔</p>" +
+          "<p><strong>3. زندہ پانی کا چشمہ۔</strong> چند ابواب پہلے <strong>یوحنا 7:37–39</strong> میں یسوع عید کے دن کھڑے ہو کر بلند آواز سے کہتے ہیں: <em>&ldquo;اگر کوئی پیاسا ہو تو میرے پاس آئے اور پیے۔ جو مجھ پر ایمان لائے گا، جیسا کہ کتابِ مقدّس نے کہا ہے، اُس کے باطن سے زندہ پانی کی ندیاں جاری ہوں گی۔&rdquo;</em> پھر یوحنا لکھتے ہیں: <em>&ldquo;یہ اُس نے رُوح کے بارے میں کہا۔&rdquo;</em> یرمیاہ نے جو کردار یہوواہ کو دیا &mdash; زندہ پانی کا چشمہ &mdash; یسوع اُسے اپنا ٹھہراتے ہیں اور صاف طور پر اُسے رُوح سے جوڑتے ہیں۔</p>" +
+          "<p><strong>نقش مکمل ہے۔</strong> یسوع وہی ہیں جو خدا کی انگلی سے لکھتے ہیں (خروج)۔ وہی یہوواہ ہیں جن کے رد کرنے والے مٹی میں لکھے جاتے ہیں (یرمیاہ)۔ وہی زندہ پانی کے سرچشمہ ہیں جو <em>رُوح</em> ہے (یوحنا 7)۔ باپ، بیٹا اور رُوح تین الگ الگ تعلیمیں نہیں ہیں جو بعد میں جوڑی گئی ہوں &mdash; وہ یوحنا 8 کے فیصلے اور رحم کے ایک ہی لمحے میں بُنی ہوئی ہیں۔</p>" +
+          "<p>یسوع کو تثلیث پر باضابطہ تقریر کی ضرورت نہیں تھی۔ اُنہوں نے اُسے <em>دکھایا</em> &mdash; جیسے کوئی بادشاہ بادشاہت پر تقریر کیے بغیر دستخط کرتا ہے۔</p>",
+        fa:
+          "<p>به دقت به <strong>یوحنا ۸:۱–۱۱</strong> نگاه کنید. فریسیان زنی را که در زنا گرفته شده بود نزد عیسی می‌کشانند و خواستار حکم می‌شوند. عیسی کاری عجیب می‌کند: <em>خم می‌شود و با انگشت خود بر روی خاک می‌نویسد.</em> متن دو بار به این اشاره می‌کند. بیشتر موعظه‌ها از کنار آن می‌گذرند. پیوندهایی که عهد عتیق فرا می‌خواند، حیرت‌انگیز هستند.</p>" +
+          "<p><strong>۱. نوشتن با انگشت.</strong> در <strong>خروج ۳۱:۱۸</strong>، شریعت بر دو لوح سنگی به موسی داده می‌شود که <em>به انگشت خدا نوشته شده</em> بود. تصویر انگشتی که در لحظهٔ داوری دربارهٔ گناه بر سطحی سخت می‌نویسد، یک بازتاب عمدی است. عیسی بر روی زمین همان کاری را می‌کند که فقط خدا بر کوه سینا انجام داد.</p>" +
+          "<p><strong>۲. نام‌هایی که در خاک نوشته می‌شوند.</strong> در <strong>ارمیا ۱۷:۱۳</strong>، نبی دربارهٔ کسانی که خداوند &mdash; <em>چشمهٔ آب زنده</em> &mdash; را رد می‌کنند می‌گوید که <em>نام‌هایشان در خاک نوشته خواهد شد.</em> عیسی در میان مردانی که ادعای حرمت خداوند را دارند ولی در شُرف رد کردن او هستند، در پای ایشان بر خاک می‌نویسد. متهمان یکی یکی می‌روند (آیه ۹).</p>" +
+          "<p><strong>۳. چشمهٔ آب زنده.</strong> چند فصل پیش‌تر، در <strong>یوحنا ۷:۳۷–۳۹</strong>، عیسی در روز عید برمی‌خیزد و بلند می‌گوید: <em>«اگر کسی تشنه باشد، نزد من بیاید و بنوشد. هر که به من ایمان آورد، چنانکه کتاب گفته است، از باطن او نهرهای آب زنده جاری خواهد شد.»</em> سپس یوحنا می‌نویسد: <em>«این را دربارهٔ روح فرمود.»</em> نقشی که ارمیا به خداوند می‌دهد &mdash; چشمهٔ آب زنده &mdash; عیسی برای خود می‌گیرد و آن را به‌روشنی به روح پیوند می‌زند.</p>" +
+          "<p><strong>الگو کامل است.</strong> عیسی همان است که با انگشت خدا می‌نویسد (خروج). همان خداوندی است که نام رد‌کنندگانش در خاک نوشته می‌شود (ارمیا). همان سرچشمهٔ آب زنده‌ای است که <em>روح</em> است (یوحنا ۷). پدر، پسر و روح سه تعلیم جدا نیستند که بعدها به هم دوخته شده باشند &mdash; آنها در یک لحظهٔ واحد از داوری و رحمت در یوحنا ۸ در هم تنیده‌اند.</p>" +
+          "<p>عیسی نیازی نداشت دربارهٔ تثلیث یک سخنرانی نظام‌مند بدهد. او آن را <em>نشان داد</em> &mdash; مانند پادشاهی که بی‌نیاز از سخنرانی دربارهٔ پادشاهی، امضای خود را می‌گذارد.</p>"
+      },
+      refs: ['John 8:1–11', 'Exodus 31:18', 'Jeremiah 17:13', 'John 7:37–39'],
+      attribution: {
+        en: 'Argument structure inspired by a public X post by Shahriq Khan; scripture connections drawn from the Bible directly.',
+        hi: 'तर्क की संरचना शहरीक खान द्वारा सार्वजनिक X पोस्ट से प्रेरित; धर्मग्रंथ के संदर्भ सीधे बाइबल से लिए गए।',
+        ur: 'دلیل کی ساخت شہریق خان کی عوامی X پوسٹ سے متاثر؛ کتابِ مقدّس کے حوالے براہِ راست بائبل سے۔',
+        fa: 'ساختار استدلال الهام‌گرفته از یک پست عمومی X از شهریق خان؛ ارجاعات کتاب مقدس مستقیماً از انجیل.'
+      },
+      sourceUrl: 'https://x.com/realshahriqkhan/status/2058261284035137689'
+    }
+  ],
+
+  // UI strings — keys mirror the data-i attributes in the markup.
+  ui: {
+    en: {
+      navTitle: "Answering Islam",
+      navBackToQuran: "← Quran Versions",
+      heroTag: "Honest Questions · Careful Answers · Fully Cited",
+      heroH1: "Answering Islam",
+      heroP: "A growing compendium of careful, source-cited responses to common Muslim apologetic questions. Truth-focused, gentle in tone, and rooted in the texts both traditions actually share.",
+      approachLabel: "Our Approach",
+      approachText: "<strong>This page is a living index.</strong> Each entry begins with a claim that is commonly raised, then offers an answer that prefers what the texts actually say over what either side wishes they said. We cite chapter and verse. We do not paraphrase to win. When we do not know, we say so.",
+      filterLabel: "Browse by category",
+      filterShow: "Show:",
+      catAll: "All",
+      entriesLabel: "Questions & Answers",
+      entriesH: "Where the texts speak for themselves.",
+      entriesIntro: "Each card carries the claim verbatim, a careful answer that points to scripture, and the references you can verify in any Bible. New entries are added as they are written and reviewed.",
+      growLabel: "Growing",
+      growText: "This compendium will grow over time. More entries on the Trinity, the divinity of Christ, the cross and the resurrection, the reliability of the gospels, and Quranic history are in preparation.",
+      sourcesLabel: "References",
+      sourcesH: "Scripture cited in this compendium",
+      sourcesIntro: "All references are to the canonical 66-book Christian Bible. Verse numbering follows the standard chapter-and-verse system used across English, Hindi, Urdu, and Farsi Bible translations.",
+      footer1: "Answering Islam compendium · Compiled and revised May 2026",
+      footer2: '"You will know the truth, and the truth will set you free." — John 8:32',
+      claimWord: "The claim",
+      answerWord: "Answer",
+      refsWord: "References cited",
+      attrPrefix: "Source attribution"
+    },
+    hi: {
+      navTitle: "इस्लाम के सवालों के जवाब",
+      navBackToQuran: "← क़ुरआन के संस्करण",
+      heroTag: "ईमानदार सवाल · सावधान उत्तर · पूरी तरह से संदर्भित",
+      heroH1: "इस्लाम के सवालों के जवाब",
+      heroP: "मुसलमानों द्वारा अक्सर पूछे जाने वाले अपोलोजेटिक सवालों के सावधान, स्रोत-संदर्भित उत्तरों का एक बढ़ता संग्रह। सत्य-केंद्रित, स्वर में कोमल, और उन्हीं ग्रंथों पर आधारित जो दोनों परंपराएँ साझा करती हैं।",
+      approachLabel: "हमारा दृष्टिकोण",
+      approachText: "<strong>यह पृष्ठ एक जीवंत सूचकांक है।</strong> हर प्रविष्टि उस दावे से शुरू होती है जो आम तौर पर उठाया जाता है, फिर एक ऐसा उत्तर देती है जो उस बात को प्राथमिकता देता है जो ग्रंथ वास्तव में कहते हैं, न कि उस बात को जो कोई पक्ष चाहता है कि वे कहें। हम अध्याय और पद उद्धृत करते हैं। हम जीतने के लिए पुनर्व्याख्या नहीं करते। जब हम नहीं जानते, हम कह देते हैं।",
+      filterLabel: "श्रेणी से देखें",
+      filterShow: "दिखाएँ:",
+      catAll: "सभी",
+      entriesLabel: "प्रश्न और उत्तर",
+      entriesH: "जहाँ ग्रंथ स्वयं बोलते हैं।",
+      entriesIntro: "हर कार्ड दावे को शब्दशः रखता है, एक सावधान उत्तर जो शास्त्र की ओर इंगित करता है, और संदर्भ जो किसी भी बाइबल में सत्यापित किए जा सकते हैं। नई प्रविष्टियाँ लिखे और समीक्षित होते ही जोड़ी जाती हैं।",
+      growLabel: "बढ़ता हुआ",
+      growText: "यह संग्रह समय के साथ बढ़ेगा। त्रिमूर्ति, मसीह की ईश्वरता, क्रूस और पुनरुत्थान, सुसमाचारों की विश्वसनीयता, और क़ुरआनी इतिहास पर और भी प्रविष्टियाँ तैयारी में हैं।",
+      sourcesLabel: "संदर्भ",
+      sourcesH: "इस संग्रह में उद्धृत शास्त्र",
+      sourcesIntro: "सभी संदर्भ कैनोनिकल 66-पुस्तकीय ईसाई बाइबल के हैं। पद-गणना अंग्रेज़ी, हिन्दी, उर्दू और फ़ारसी बाइबल अनुवादों में प्रयोग होने वाली मानक अध्याय-और-पद प्रणाली का अनुसरण करती है।",
+      footer1: "इस्लाम के सवालों के जवाब संग्रह · मई 2026 में संकलित और संशोधित",
+      footer2: '"तुम सत्य को जानोगे, और सत्य तुम्हें स्वतंत्र करेगा।" — यूहन्ना 8:32',
+      claimWord: "दावा",
+      answerWord: "उत्तर",
+      refsWord: "उद्धृत संदर्भ",
+      attrPrefix: "स्रोत"
+    },
+    ur: {
+      navTitle: "اسلام کے سوالات کے جوابات",
+      navBackToQuran: "← قرآن کے نسخے",
+      heroTag: "دیانتدار سوالات · محتاط جوابات · مکمل حوالہ‌جات کے ساتھ",
+      heroH1: "اسلام کے سوالات کے جوابات",
+      heroP: "مسلمانوں کے عام دفاعی سوالات کے محتاط، حوالہ‌جاتی جوابات کا ایک بڑھتا ہوا مجموعہ۔ سچائی پر مرکوز، لہجے میں نرم، اور انہی متون پر مبنی جنہیں دونوں روایات شریک کرتی ہیں۔",
+      approachLabel: "ہمارا طریقہ",
+      approachText: "<strong>یہ صفحہ ایک زندہ فہرست ہے۔</strong> ہر اندراج اُس دعویٰ سے شروع ہوتا ہے جو عام طور پر پیش کیا جاتا ہے، پھر ایک ایسا جواب دیتا ہے جو اُس بات کو ترجیح دیتا ہے جو متن واقعی کہتے ہیں، نہ اُس بات کو جو کوئی فریق چاہتا ہے کہ وہ کہیں۔ ہم باب اور آیت کا حوالہ دیتے ہیں۔ ہم جیتنے کے لیے تشریح نہیں بدلتے۔ جب ہمیں معلوم نہ ہو، تو ہم کہہ دیتے ہیں۔",
+      filterLabel: "زمرے سے دیکھیں",
+      filterShow: "دکھائیں:",
+      catAll: "تمام",
+      entriesLabel: "سوال و جواب",
+      entriesH: "جہاں متن خود بولتے ہیں۔",
+      entriesIntro: "ہر کارڈ دعویٰ کو لفظ بہ لفظ پیش کرتا ہے، ایک محتاط جواب جو کلامِ مقدّس کی طرف اشارہ کرتا ہے، اور وہ حوالہ‌جات جو کسی بھی بائبل میں دیکھے جا سکتے ہیں۔ نئے اندراج لکھے اور نظرثانی کیے جانے کے ساتھ ساتھ شامل ہوتے ہیں۔",
+      growLabel: "بڑھتا ہوا",
+      growText: "یہ مجموعہ وقت کے ساتھ بڑھے گا۔ تثلیث، مسیح کی الٰہی حیثیت، صلیب اور قیامت، اناجیل کی صحت، اور قرآنی تاریخ پر مزید اندراج تیاری میں ہیں۔",
+      sourcesLabel: "حوالہ‌جات",
+      sourcesH: "اس مجموعے میں نقل شدہ کلامِ مقدّس",
+      sourcesIntro: "تمام حوالہ‌جات ۶۶ کتابی مسیحی بائبل کے کینن سے ہیں۔ آیت کی شماری اُسی معیاری باب و آیت کے نظام کی پیروی کرتی ہے جو انگریزی، ہندی، اردو اور فارسی بائبل ترجموں میں استعمال ہوتا ہے۔",
+      footer1: "اسلام کے سوالات کے جوابات کا مجموعہ · مئی ۲۰۲۶ میں مرتب اور نظرثانی شدہ",
+      footer2: '"تم سچائی کو جان لو گے، اور سچائی تمہیں آزاد کرے گی۔" — یوحنا ۸:۳۲',
+      claimWord: "دعویٰ",
+      answerWord: "جواب",
+      refsWord: "نقل کیے گئے حوالہ‌جات",
+      attrPrefix: "ماخذ"
+    },
+    fa: {
+      navTitle: "پاسخ به اسلام",
+      navBackToQuran: "← نسخه‌های قرآن",
+      heroTag: "پرسش‌های صادقانه · پاسخ‌های محتاط · با ارجاع کامل",
+      heroH1: "پاسخ به اسلام",
+      heroP: "مجموعه‌ای در حال رشد از پاسخ‌های دقیق و مستند به پرسش‌های دفاعی رایج مسلمانان. حقیقت‌محور، با لحنی ملایم، و ریشه در همان متونی که هر دو سنت در آن مشترک‌اند.",
+      approachLabel: "رویکرد ما",
+      approachText: "<strong>این صفحه یک نمایه زنده است.</strong> هر مدخل با ادعایی که معمولاً مطرح می‌شود آغاز می‌شود، سپس پاسخی می‌دهد که آنچه را متون واقعاً می‌گویند ترجیح می‌دهد، نه آنچه را که هر طرف می‌خواهد آنها بگویند. ما فصل و آیه را ذکر می‌کنیم. برای بُرد، تفسیر را تغییر نمی‌دهیم. وقتی نمی‌دانیم، می‌گوییم.",
+      filterLabel: "بر اساس دسته‌بندی",
+      filterShow: "نمایش:",
+      catAll: "همه",
+      entriesLabel: "پرسش و پاسخ",
+      entriesH: "جایی که متون خود سخن می‌گویند.",
+      entriesIntro: "هر کارت ادعای اصلی را عیناً منعکس می‌کند، پاسخی محتاط که به کتاب مقدس اشاره می‌کند، و ارجاعاتی که در هر انجیلی قابل بررسی است. مدخل‌های جدید با نگارش و بازبینی اضافه می‌شوند.",
+      growLabel: "در حال رشد",
+      growText: "این مجموعه با گذشت زمان رشد می‌کند. مدخل‌های بیشتری دربارهٔ تثلیث، الوهیت مسیح، صلیب و رستاخیز، اعتبار اناجیل، و تاریخ قرآن در دست تهیه است.",
+      sourcesLabel: "ارجاعات",
+      sourcesH: "متن مقدس ذکرشده در این مجموعه",
+      sourcesIntro: "همهٔ ارجاعات از کتاب مقدس مسیحی ۶۶ کتابی متعارف هستند. شماره‌گذاری آیات از همان سیستم استاندارد فصل و آیه پیروی می‌کند که در ترجمه‌های انگلیسی، هندی، اردو و فارسی به‌کار می‌رود.",
+      footer1: "مجموعهٔ پاسخ به اسلام · گردآوری و بازبینی در مه ۲۰۲۶",
+      footer2: '«حقیقت را خواهید شناخت، و حقیقت شما را آزاد خواهد کرد.» — یوحنا ۸:۳۲',
+      claimWord: "ادعا",
+      answerWord: "پاسخ",
+      refsWord: "ارجاعات ذکرشده",
+      attrPrefix: "منبع"
+    }
+  },
+
+  // Direction by language.
+  dir: { en: 'ltr', hi: 'ltr', ur: 'rtl', fa: 'rtl' },
+
+  // Canonical scripture reference list — appears in the References
+  // section. As entries grow, add new refs once here and reference
+  // them from entry.refs by exact string.
+  sourceRefs: {
+    en: [
+      "John 8:1–11 — Jesus stoops down and writes in the dust with His finger when the Pharisees bring the woman caught in adultery; the accusers slip away one by one.",
+      "Exodus 31:18 — The two tablets of the Testimony, written with the finger of God.",
+      "Jeremiah 17:13 — \"O LORD, the hope of Israel, all who forsake You shall be ashamed. Those who depart from Me shall be written in the earth, because they have forsaken the LORD, the fountain of living waters.\"",
+      "John 7:37–39 — Jesus stands up at the feast and offers living water to anyone who comes to Him; John explicitly identifies this living water with the Spirit."
+    ],
+    hi: [
+      "यूहन्ना 8:1–11 — फरीसी जब व्यभिचार में पकड़ी गई स्त्री को लाते हैं, यीशु झुककर अपनी उंगली से धरती पर लिखते हैं; अभियोग लगाने वाले एक-एक करके चले जाते हैं।",
+      "निर्गमन 31:18 — साक्षी की दो पटियाँ, परमेश्वर की उंगली से लिखी गई।",
+      "यिर्मयाह 17:13 — «हे यहोवा, इस्राएल की आशा, जो तुझे छोड़ देते हैं वे लज्जित होंगे। जो मुझसे फिर जाते हैं उनके नाम धरती पर लिखे जाएँगे, क्योंकि उन्होंने यहोवा को, जीवित जल के सोते को, छोड़ दिया है।»",
+      "यूहन्ना 7:37–39 — यीशु पर्व में खड़े होकर हर एक प्यासे को जीवित जल देने की बात कहते हैं; यूहन्ना स्पष्ट रूप से इस जीवित जल को आत्मा से जोड़ते हैं।"
+    ],
+    ur: [
+      "یوحنا ۸:۱–۱۱ — جب فریسی زنا میں پکڑی گئی عورت کو لاتے ہیں، یسوع جھک کر اپنی انگلی سے زمین پر لکھتے ہیں؛ الزام لگانے والے ایک ایک کر کے چلے جاتے ہیں۔",
+      "خروج ۳۱:۱۸ — شہادت کی دو لوحیں، خدا کی انگلی سے لکھی گئیں۔",
+      "یرمیاہ ۱۷:۱۳ — «اے یہوواہ، اسرائیل کی اُمید! وہ سب جو تجھے ترک کرتے ہیں شرمندہ ہوں گے۔ جو مجھ سے پھر جاتے ہیں اُن کے نام زمین پر لکھے جائیں گے، کیونکہ اُنہوں نے یہوواہ، زندہ پانی کے چشمے کو ترک کیا ہے۔»",
+      "یوحنا ۷:۳۷–۳۹ — یسوع عید کے دن کھڑے ہو کر ہر پیاسے کو زندہ پانی پیش کرتے ہیں؛ یوحنا صاف طور پر اس زندہ پانی کو رُوح سے جوڑتے ہیں۔"
+    ],
+    fa: [
+      "یوحنا ۸:۱–۱۱ — وقتی فریسیان زنی را که در زنا گرفته شده بود نزد عیسی می‌آورند، عیسی خم می‌شود و با انگشت خود بر روی خاک می‌نویسد؛ متهمان یکی‌یکی می‌روند.",
+      "خروج ۳۱:۱۸ — دو لوح شهادت، نوشته‌شده با انگشت خدا.",
+      "ارمیا ۱۷:۱۳ — «ای خداوند، امید اسرائیل! تمامی کسانی که تو را ترک می‌کنند خجل خواهند شد. آنان که از من برگردند نام‌هایشان بر خاک نوشته خواهد شد، زیرا خداوند را، چشمهٔ آب زنده، ترک کرده‌اند.»",
+      "یوحنا ۷:۳۷–۳۹ — عیسی در روز عید برمی‌خیزد و به هر تشنه‌ای آب زنده پیشنهاد می‌کند؛ یوحنا به‌روشنی این آب زنده را با روح یکی می‌داند."
+    ]
+  }
+};
+</script>
+
+<script>
+// ──────────────────────────────────────────────────────────────────
+// Render + language switching. All keyed off AI_DATA above.
+// ──────────────────────────────────────────────────────────────────
+
+var AI_STATE = { lang: 'en', cat: '__all' };
+
+function aiCurrentLang() { return AI_STATE.lang; }
+
+function aiRenderCategoryChips() {
+    var row = document.getElementById('aiFilterRow');
+    if (!row) return;
+    // Remove any previously-injected chips (keep label + "All").
+    Array.prototype.slice.call(row.querySelectorAll('.filter-chip[data-cat]:not([data-cat="__all"])'))
+        .forEach(function (el) { el.parentNode.removeChild(el); });
+    // English category list is the canonical id list. Visible labels
+    // come from AI_DATA.categories[lang].
+    var enCats = AI_DATA.categories.en;
+    var labels = AI_DATA.categories[AI_STATE.lang] || enCats;
+    enCats.forEach(function (cat, i) {
+        var btn = document.createElement('button');
+        btn.className = 'filter-chip' + (AI_STATE.cat === cat ? ' active' : '');
+        btn.setAttribute('data-cat', cat);
+        btn.textContent = labels[i] || cat;
+        btn.onclick = (function (c) { return function () { aiFilter(c); }; })(cat);
+        row.appendChild(btn);
+    });
+}
+
+function aiEscape(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function aiRenderEntries() {
+    var list = document.getElementById('aiEntriesList');
+    if (!list) return;
+    var lang = AI_STATE.lang;
+    var ui = AI_DATA.ui[lang] || AI_DATA.ui.en;
+    var entries = AI_DATA.entries.filter(function (e) {
+        if (AI_STATE.cat === '__all') return true;
+        return (e.categories || []).indexOf(AI_STATE.cat) !== -1;
+    });
+    if (entries.length === 0) {
+        list.innerHTML = '<div class="empty-note">' + aiEscape(ui.catAll || 'No entries') + '</div>';
+        return;
+    }
+    var enCats = AI_DATA.categories.en;
+    var catLabels = AI_DATA.categories[lang] || enCats;
+    var html = entries.map(function (e) {
+        var catChips = (e.categories || []).map(function (c) {
+            var i = enCats.indexOf(c);
+            var label = (i !== -1 && catLabels[i]) ? catLabels[i] : c;
+            return '<span class="qa-cat">' + aiEscape(label) + '</span>';
+        }).join('');
+        var refs = (e.refs || []).map(function (r) {
+            return '<span class="qa-ref">' + aiEscape(r) + '</span>';
+        }).join('');
+        var claim = (e.claim && (e.claim[lang] || e.claim.en)) || '';
+        var answer = (e.answer && (e.answer[lang] || e.answer.en)) || '';
+        var attribution = (e.attribution && (e.attribution[lang] || e.attribution.en)) || '';
+        var attrHtml = '';
+        if (attribution) {
+            attrHtml =
+                '<div class="qa-attr">' +
+                    aiEscape(ui.attrPrefix || 'Source attribution') + ': ' +
+                    aiEscape(attribution) +
+                    (e.sourceUrl ? ' &middot; <a href="' + aiEscape(e.sourceUrl) + '" target="_blank" rel="noopener noreferrer">link</a>' : '') +
+                '</div>';
+        }
+        return '' +
+            '<article class="qa-card" data-cats="' + aiEscape((e.categories || []).join('|')) + '">' +
+                '<div class="qa-head">' +
+                    '<div class="qa-cats">' + catChips + '</div>' +
+                    '<div class="qa-claim-lbl">' + aiEscape(ui.claimWord || 'Claim') + '</div>' +
+                '</div>' +
+                '<div class="qa-claim">&ldquo;' + aiEscape(claim) + '&rdquo;</div>' +
+                '<div class="qa-body">' +
+                    '<div class="qa-answer-lbl">' + aiEscape(ui.answerWord || 'Answer') + '</div>' +
+                    '<div class="qa-answer">' + answer + '</div>' +
+                    (refs ?
+                        '<div class="qa-refs">' +
+                            '<div class="qa-refs-lbl">' + aiEscape(ui.refsWord || 'References cited') + '</div>' +
+                            '<div class="qa-refs-list">' + refs + '</div>' +
+                        '</div>' : '') +
+                    attrHtml +
+                '</div>' +
+            '</article>';
+    }).join('');
+    list.innerHTML = html;
+}
+
+function aiRenderSources() {
+    var ol = document.getElementById('aiSourcesList');
+    if (!ol) return;
+    var lang = AI_STATE.lang;
+    var refs = (AI_DATA.sourceRefs && AI_DATA.sourceRefs[lang]) || AI_DATA.sourceRefs.en;
+    ol.innerHTML = refs.map(function (line) {
+        return '<li>' + line + '</li>';
+    }).join('');
+}
+
+function aiApplyUiStrings() {
+    var lang = AI_STATE.lang;
+    var ui = AI_DATA.ui[lang] || AI_DATA.ui.en;
+    document.querySelectorAll('[data-i]').forEach(function (el) {
+        var key = el.getAttribute('data-i');
+        if (ui[key] !== undefined) el.innerHTML = ui[key];
+    });
+    // The page <title> stays in English so the URL/title bar reads
+    // sensibly in any browser; the visible H1 is translated above.
+}
+
+function aiSetLang(lang) {
+    if (!AI_DATA.ui[lang]) return;
+    AI_STATE.lang = lang;
+    document.documentElement.setAttribute('dir', AI_DATA.dir[lang] || 'ltr');
+    document.documentElement.lang = lang === 'ur' ? 'ur' : lang === 'fa' ? 'fa' : lang === 'hi' ? 'hi' : 'en';
+    document.querySelectorAll('.bar-btn[data-lang]').forEach(function (b) {
+        b.classList.toggle('active', b.getAttribute('data-lang') === lang);
+    });
+    aiApplyUiStrings();
+    aiRenderCategoryChips();
+    aiRenderEntries();
+    aiRenderSources();
+    localStorage.setItem('lang', lang);
+}
+
+function aiFilter(cat) {
+    AI_STATE.cat = cat;
+    aiRenderCategoryChips();
+    aiRenderEntries();
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    var saved = localStorage.getItem('lang');
+    if (saved && AI_DATA.ui[saved]) {
+        aiSetLang(saved);
+    } else {
+        aiSetLang('en');
+    }
+});
+</script>
+
+</body>
+</html>

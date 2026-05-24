@@ -3,6 +3,7 @@ var T = {
 en: {
   dir: "ltr",
   navTitle: "Quran Versions",
+  navAnsweringIslam: "Answering Islam →",
   heroTag: "Historical Evidence — Fully Cited",
   heroH1: "The Different Versions<br>of the Quran",
   heroP: "An investigation into the 10+ canonical Quranic recitations, their origins, and documented textual differences — verified from Islamic and academic scholarship.",
@@ -63,6 +64,7 @@ en: {
 hi: {
   dir: "ltr",
   navTitle: "कुरान के संस्करण",
+  navAnsweringIslam: "इस्लाम के सवालों के जवाब →",
   heroTag: "ऐतिहासिक साक्ष्य — पूर्ण रूप से उद्धृत",
   heroH1: "कुरान के विभिन्न<br>संस्करण",
   heroP: "10+ प्रामाणिक कुरानी पाठों, उनके मूल और प्रलेखित पाठ्य अंतरों की जांच — इस्लामी और शैक्षणिक विद्वता से सत्यापित।",
@@ -123,6 +125,7 @@ hi: {
 ur: {
   dir: "rtl",
   navTitle: "قرآن کے نسخے",
+  navAnsweringIslam: "اسلام کے سوالات کے جوابات ←",
   heroTag: "تاریخی شواہد — مکمل حوالہ جات",
   heroH1: "قرآن کے مختلف<br>نسخے",
   heroP: "10+ مستند قرآنی قراءتوں، ان کی تاریخی اصل، اور دستاویزی متنی اختلافات کی تحقیق — اسلامی اور علمی تحقیق سے تصدیق شدہ۔",
@@ -183,6 +186,7 @@ ur: {
 fa: {
   dir: "rtl",
   navTitle: "نسخه‌های قرآن",
+  navAnsweringIslam: "پاسخ به اسلام ←",
   heroTag: "شواهد تاریخی — با منابع کامل",
   heroH1: "نسخه‌های مختلف<br>قرآن",
   heroP: "بررسی 10+ قرائت معتبر قرآنی، خاستگاه تاریخی و تفاوت‌های متنی مستند — تأیید شده از منابع اسلامی و آکادمیک.",
