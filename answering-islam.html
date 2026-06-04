@@ -133,7 +133,7 @@
     <div class="sec" id="aiEntriesSection">
         <div class="sec-lbl" data-i="entriesLabel">Questions &amp; Answers</div>
         <h2 data-i="entriesH">Where the texts speak for themselves.</h2>
-        <p data-i="entriesIntro">Each card carries the claim verbatim, a careful answer that points to scripture, and the references you can verify in any Bible. New entries are added as they are written and reviewed.</p>
+        <p data-i="entriesIntro">Each card carries the claim verbatim, a careful answer that points to the relevant primary sources, and references you can verify in context. New entries are added as they are written and reviewed.</p>
         <div id="aiEntriesList">
             <!-- entries injected here -->
         </div>
@@ -145,8 +145,8 @@
 
     <div class="sec src">
         <div class="sec-lbl" data-i="sourcesLabel">References</div>
-        <h2 data-i="sourcesH">Scripture cited in this compendium</h2>
-        <p data-i="sourcesIntro">All references are to the canonical 66-book Christian Bible. Verse numbering follows the standard chapter-and-verse system used across English, Hindi, Urdu, and Farsi Bible translations.</p>
+        <h2 data-i="sourcesH">Sources cited in this compendium</h2>
+        <p data-i="sourcesIntro">References include Biblical passages and, where relevant, Islamic primary sources such as hadith collections and classical commentary. Check every citation in its own context.</p>
         <ol id="aiSourcesList">
             <!-- sources injected here -->
         </ol>
@@ -188,10 +188,10 @@ window.AI_DATA = {
   // order shown. Add a new category here once, then add entries that
   // belong to it via the `categories` array on each entry.
   categories: {
-    en: ["Trinity", "Jesus' Divine Identity", "Gospel of John", "Incarnation", "Cross & Sacrifice"],
-    hi: ["त्रिमूर्ति (ट्रिनिटी)", "यीशु की दिव्य पहचान", "यूहन्ना का सुसमाचार", "देहधारण", "क्रूस और बलिदान"],
-    ur: ["تثلیث (ٹرینٹی)", "یسوع کی الٰہی شناخت", "یوحنا کی انجیل", "تجسّد", "صلیب اور قربانی"],
-    fa: ["تثلیث (تثلیث)", "هویت الهی عیسی", "انجیل یوحنا", "تجسّد", "صلیب و قربانی"]
+    en: ["Trinity", "Jesus' Divine Identity", "Gospel of John", "Incarnation", "Cross & Sacrifice", "Muhammad", "Aisha", "Hadith"],
+    hi: ["त्रिमूर्ति (ट्रिनिटी)", "यीशु की दिव्य पहचान", "यूहन्ना का सुसमाचार", "देहधारण", "क्रूस और बलिदान", "मुहम्मद", "आइशा", "हदीस"],
+    ur: ["تثلیث (ٹرینٹی)", "یسوع کی الٰہی شناخت", "یوحنا کی انجیل", "تجسّد", "صلیب اور قربانی", "محمد", "عائشہ", "حدیث"],
+    fa: ["تثلیث (تثلیث)", "هویت الهی عیسی", "انجیل یوحنا", "تجسّد", "صلیب و قربانی", "محمد", "عایشه", "حدیث"]
   },
 
   entries: [
@@ -282,6 +282,42 @@ window.AI_DATA = {
         "fa": "اعتراض و چارچوب شبانی از پست عمومی X شهریق خان گرفته شده؛ استدلال الهیاتی و زنجیرهٔ آیات مستقیماً از متون عهد جدید بررسی شده است."
       },
       "sourceUrl": "https://x.com/realshahriqkhan/status/2060875700354093456"
+    },
+    {
+      id: 'aisha-dolls-prepubescent',
+      categories: ["Muhammad", "Aisha", "Hadith"],
+      claim: {
+        en: "Aisha was a grown woman when Muhammad consummated the marriage; the reports about dolls do not prove she was prepubescent.",
+        hi: "आइशा शादी के consummation के समय वयस्क स्त्री थीं; गुड़ियों वाली रिवायत यह साबित नहीं करती कि वह puberty से पहले थीं।",
+        ur: "عائشہ رخصتی/ازدواجی تعلق کے وقت بالغ عورت تھیں؛ گڑیوں والی روایت یہ ثابت نہیں کرتی کہ وہ نابالغ تھیں۔",
+        fa: "عایشه هنگام زفاف/برقراری ازدواج زنی بالغ بود؛ روایتِ عروسک‌ها ثابت نمی‌کند که او پیش از بلوغ بوده است."
+      },
+      answer: {
+        en:
+          "<p>The claim is not supported by the primary hadith evidence. <strong>Sahih al-Bukhari 6130</strong> records Aisha saying: <em>\"I used to play with the dolls in the presence of the Prophet, and my girl friends also used to play with me...\"</em> The English edition includes the explanatory note: <em>\"The playing with the dolls and similar images is forbidden, but it was allowed for Aisha at that time, as she was a little girl, not yet reached the age of puberty.\"</em> The note cites <strong>Fath al-Bari</strong>.</p>" +
+          "<p>This matters because the hadith is placed after Aisha was living with Muhammad, not before the marriage contract. The same canonical collection also gives the age chronology plainly: <strong>Sahih al-Bukhari 5133</strong> says Muhammad married Aisha when she was six and consummated the marriage when she was nine; <strong>Bukhari 5158</strong> repeats the same report through Urwa; <strong>Bukhari 3894</strong> describes Aisha being called in from playing on a swing with her girl friends before being taken into the house; and <strong>Bukhari 3896</strong> again states marriage at six and consummation at nine.</p>" +
+          "<p>So the careful conclusion is limited but strong: in the mainstream Sunni hadith record, Aisha is presented as a young girl, and the dolls report was understood by the Bukhari translator/commentarial tradition as evidence that she had <em>not yet reached puberty</em>. A defender may dispute the reliability of these hadith or propose a minority reconstruction of her age, but he cannot honestly say that the canonical hadith evidence itself presents her as a grown woman.</p>",
+        hi:
+          "<p>यह दावा प्राथमिक हदीस-साक्ष्य से समर्थित नहीं है। <strong>सहीह अल-बुखारी 6130</strong> में आइशा कहती हैं: <em>\"मैं नबी की उपस्थिति में गुड़ियों से खेलती थी, और मेरी सहेलियाँ भी मेरे साथ खेलती थीं...\"</em> अंग्रेज़ी संस्करण की व्याख्यात्मक टिप्पणी जोड़ती है: <em>\"गुड़ियों और समान चित्रों से खेलना निषिद्ध है, लेकिन उस समय आइशा के लिए अनुमति थी, क्योंकि वह छोटी लड़की थीं, अभी puberty की उम्र तक नहीं पहुँची थीं।\"</em> यह टिप्पणी <strong>फ़त्ह अल-बारी</strong> का हवाला देती है।</p>" +
+          "<p>यह महत्वपूर्ण है क्योंकि यह रिवायत आइशा के मुहम्मद के साथ रहने के बाद के प्रसंग में आती है, केवल निकाह-समझौते से पहले नहीं। वही canonical संग्रह उम्र की समयरेखा स्पष्ट देता है: <strong>सहीह अल-बुखारी 5133</strong> कहता है कि मुहम्मद ने आइशा से छह वर्ष की उम्र में विवाह किया और नौ वर्ष की उम्र में consummation किया; <strong>बुखारी 5158</strong> उर्वा के रास्ते यही दोहराता है; <strong>बुखारी 3894</strong> बताता है कि आइशा अपनी सहेलियों के साथ झूले पर खेल रही थीं जब उन्हें घर में ले जाया गया; और <strong>बुखारी 3896</strong> फिर विवाह छह और consummation नौ बताता है।</p>" +
+          "<p>इसलिए सावधान निष्कर्ष सीमित लेकिन मजबूत है: मुख्यधारा सुन्नी हदीस-रिकॉर्ड में आइशा को छोटी लड़की के रूप में प्रस्तुत किया गया है, और गुड़ियों वाली रिवायत को बुखारी के अनुवाद/शरह परंपरा ने इस रूप में समझा कि वह <em>अभी puberty तक नहीं पहुँची थीं</em>। कोई बचावकर्ता इन हदीसों की विश्वसनीयता पर बहस कर सकता है या उम्र की अल्पमत पुनर्रचना प्रस्तावित कर सकता है, पर वह ईमानदारी से यह नहीं कह सकता कि canonical हदीस-साक्ष्य उन्हें grown woman के रूप में प्रस्तुत करता है।</p>",
+        ur:
+          "<p>یہ دعویٰ بنیادی حدیثی شواہد سے ثابت نہیں ہوتا۔ <strong>صحیح البخاری 6130</strong> میں عائشہ کہتی ہیں: <em>\"میں نبی کی موجودگی میں گڑیوں سے کھیلتی تھی، اور میری سہیلیاں بھی میرے ساتھ کھیلتی تھیں...\"</em> انگریزی ایڈیشن کی تشریحی عبارت اضافہ کرتی ہے: <em>\"گڑیوں اور ایسی تصویروں سے کھیلنا منع ہے، مگر اُس وقت عائشہ کے لیے جائز تھا، کیونکہ وہ چھوٹی لڑکی تھیں، ابھی بلوغت کی عمر کو نہیں پہنچی تھیں۔\"</em> یہ نوٹ <strong>فتح الباری</strong> کا حوالہ دیتا ہے۔</p>" +
+          "<p>یہ اہم ہے کیونکہ روایت صرف نکاح کے عقد سے پہلے کی نہیں بلکہ عائشہ کے محمد کے ساتھ رہنے کے بعد کے پس منظر میں آتی ہے۔ اسی مستند مجموعے میں عمر کی ترتیب صاف دی گئی ہے: <strong>صحیح البخاری 5133</strong> کہتا ہے کہ محمد نے عائشہ سے چھ سال کی عمر میں نکاح کیا اور نو سال کی عمر میں ازدواجی تعلق قائم کیا؛ <strong>بخاری 5158</strong> عروہ کے طریق سے یہی بات دہراتا ہے؛ <strong>بخاری 3894</strong> بیان کرتا ہے کہ عائشہ اپنی سہیلیوں کے ساتھ جھولے پر کھیل رہی تھیں جب انہیں گھر میں لے جایا گیا؛ اور <strong>بخاری 3896</strong> دوبارہ نکاح چھ سال اور رخصتی/ازدواجی تعلق نو سال بتاتا ہے۔</p>" +
+          "<p>لہٰذا محتاط مگر مضبوط نتیجہ یہ ہے: مرکزی سنی حدیثی ریکارڈ میں عائشہ کو کم عمر لڑکی کے طور پر پیش کیا گیا ہے، اور گڑیوں والی روایت کو بخاری کے مترجم/شرحی روایت نے اس طرح سمجھا کہ وہ <em>ابھی بلوغت کو نہیں پہنچی تھیں</em>۔ کوئی مدافع ان احادیث کی صحت پر بحث کر سکتا ہے یا عمر کی اقلیتی reconstruction پیش کر سکتا ہے، مگر ایمانداری سے یہ نہیں کہہ سکتا کہ canonical حدیثی شواہد خود انہیں بالغ عورت کے طور پر پیش کرتے ہیں۔</p>",
+        fa:
+          "<p>این ادعا با شواهد اصلی حدیثی پشتیبانی نمی‌شود. <strong>صحیح بخاری ۶۱۳۰</strong> از عایشه نقل می‌کند: <em>«من در حضور پیامبر با عروسک‌ها بازی می‌کردم و دوستان دخترم نیز با من بازی می‌کردند...»</em> یادداشت توضیحی ترجمهٔ انگلیسی می‌افزاید: <em>«بازی با عروسک‌ها و تصاویر مشابه ممنوع است، اما در آن زمان برای عایشه مجاز بود، زیرا او دختر کوچکی بود و هنوز به سن بلوغ نرسیده بود.»</em> این یادداشت به <strong>فتح الباری</strong> ارجاع می‌دهد.</p>" +
+          "<p>این نکته مهم است، زیرا روایت مربوط به زمانی است که عایشه با محمد زندگی می‌کرد، نه صرفاً پیش از عقد. همان مجموعهٔ معتبر، ترتیب سنی را صریح بیان می‌کند: <strong>صحیح بخاری ۵۱۳۳</strong> می‌گوید محمد در شش‌سالگی با عایشه ازدواج کرد و در نه‌سالگی زفاف/ازدواج را برقرار کرد؛ <strong>بخاری ۵۱۵۸</strong> همین گزارش را از طریق عروه تکرار می‌کند؛ <strong>بخاری ۳۸۹۴</strong> می‌گوید عایشه با دوستان دخترش روی تاب بازی می‌کرد که او را به خانه بردند؛ و <strong>بخاری ۳۸۹۶</strong> دوباره ازدواج در شش‌سالگی و زفاف در نه‌سالگی را بیان می‌کند.</p>" +
+          "<p>پس نتیجهٔ محتاط اما قوی این است: در روایت رایج حدیثیِ اهل‌سنت، عایشه به صورت دختر کم‌سن ارائه می‌شود، و روایت عروسک‌ها در سنت ترجمه/شرح بخاری چنین فهمیده شده که او <em>هنوز به بلوغ نرسیده بود</em>. مدافع می‌تواند دربارهٔ اعتبار این احادیث بحث کند یا بازسازی اقلیتی از سن او پیشنهاد دهد؛ اما نمی‌تواند صادقانه بگوید شواهد حدیثیِ معتبر خود او را زن بالغ نشان می‌دهند.</p>"
+      },
+      refs: ['Sahih al-Bukhari 6130', 'Fath al-Bari', 'Sahih al-Bukhari 5133', 'Sahih al-Bukhari 5158', 'Sahih al-Bukhari 3894', 'Sahih al-Bukhari 3896'],
+      attribution: {
+        en: 'Objection prompt drawn from a public X post by Dr. David Wood quoting Bukhari 6130; hadith references checked against Sunnah.com text.',
+        hi: 'आपत्ति का prompt Dr. David Wood की सार्वजनिक X पोस्ट से लिया गया जिसमें Bukhari 6130 उद्धृत था; हदीस-संदर्भ Sunnah.com पाठ से जाँचे गए।',
+        ur: 'اعتراض کا prompt Dr. David Wood کی عوامی X پوسٹ سے لیا گیا جس میں Bukhari 6130 نقل تھا؛ حدیثی حوالہ‌جات Sunnah.com کے متن سے جانچے گئے۔',
+        fa: 'پرامپت اعتراض از پست عمومی X دکتر دیوید وود گرفته شد که بخاری ۶۱۳۰ را نقل کرده بود؛ ارجاعات حدیثی با متن Sunnah.com بررسی شد.'
+      },
+      sourceUrl: 'https://x.com/acts17david/status/2062239174934077613'
     }
   ],
 
@@ -300,12 +336,12 @@ window.AI_DATA = {
       catAll: "All",
       entriesLabel: "Questions & Answers",
       entriesH: "Where the texts speak for themselves.",
-      entriesIntro: "Each card carries the claim verbatim, a careful answer that points to scripture, and the references you can verify in any Bible. New entries are added as they are written and reviewed.",
+      entriesIntro: "Each card carries the claim verbatim, a careful answer that points to the relevant primary sources, and references you can verify in context. New entries are added as they are written and reviewed.",
       growLabel: "Growing",
       growText: "This compendium will grow over time. More entries on the Trinity, the divinity of Christ, the cross and the resurrection, the reliability of the gospels, and Quranic history are in preparation.",
       sourcesLabel: "References",
-      sourcesH: "Scripture cited in this compendium",
-      sourcesIntro: "All references are to the canonical 66-book Christian Bible. Verse numbering follows the standard chapter-and-verse system used across English, Hindi, Urdu, and Farsi Bible translations.",
+      sourcesH: "Sources cited in this compendium",
+      sourcesIntro: "References include Biblical passages and, where relevant, Islamic primary sources such as hadith collections and classical commentary. Check every citation in its own context.",
       footer1: "Answering Islam compendium · Compiled and revised May 2026",
       footer2: '"You will know the truth, and the truth will set you free." — John 8:32',
       claimWord: "The claim",
@@ -326,12 +362,12 @@ window.AI_DATA = {
       catAll: "सभी",
       entriesLabel: "प्रश्न और उत्तर",
       entriesH: "जहाँ ग्रंथ स्वयं बोलते हैं।",
-      entriesIntro: "हर कार्ड दावे को शब्दशः रखता है, एक सावधान उत्तर जो शास्त्र की ओर इंगित करता है, और संदर्भ जो किसी भी बाइबल में सत्यापित किए जा सकते हैं। नई प्रविष्टियाँ लिखे और समीक्षित होते ही जोड़ी जाती हैं।",
+      entriesIntro: "हर कार्ड दावे को शब्दशः रखता है, एक सावधान उत्तर जो संबंधित प्राथमिक स्रोतों की ओर इंगित करता है, और संदर्भ जिन्हें उनके अपने प्रसंग में जाँचा जा सकता है। नई प्रविष्टियाँ लिखे और समीक्षित होते ही जोड़ी जाती हैं।",
       growLabel: "बढ़ता हुआ",
       growText: "यह संग्रह समय के साथ बढ़ेगा। त्रिमूर्ति, मसीह की ईश्वरता, क्रूस और पुनरुत्थान, सुसमाचारों की विश्वसनीयता, और क़ुरआनी इतिहास पर और भी प्रविष्टियाँ तैयारी में हैं।",
       sourcesLabel: "संदर्भ",
-      sourcesH: "इस संग्रह में उद्धृत शास्त्र",
-      sourcesIntro: "सभी संदर्भ कैनोनिकल 66-पुस्तकीय ईसाई बाइबल के हैं। पद-गणना अंग्रेज़ी, हिन्दी, उर्दू और फ़ारसी बाइबल अनुवादों में प्रयोग होने वाली मानक अध्याय-और-पद प्रणाली का अनुसरण करती है।",
+      sourcesH: "इस संग्रह में उद्धृत स्रोत",
+      sourcesIntro: "संदर्भों में बाइबल के पद और जहाँ आवश्यक हो, इस्लामी प्राथमिक स्रोत जैसे हदीस-संग्रह और classical commentary शामिल हैं। हर उद्धरण को उसके अपने संदर्भ में जाँचें।",
       footer1: "इस्लाम के सवालों के जवाब संग्रह · मई 2026 में संकलित और संशोधित",
       footer2: '"तुम सत्य को जानोगे, और सत्य तुम्हें स्वतंत्र करेगा।" — यूहन्ना 8:32',
       claimWord: "दावा",
@@ -352,12 +388,12 @@ window.AI_DATA = {
       catAll: "تمام",
       entriesLabel: "سوال و جواب",
       entriesH: "جہاں متن خود بولتے ہیں۔",
-      entriesIntro: "ہر کارڈ دعویٰ کو لفظ بہ لفظ پیش کرتا ہے، ایک محتاط جواب جو کلامِ مقدّس کی طرف اشارہ کرتا ہے، اور وہ حوالہ‌جات جو کسی بھی بائبل میں دیکھے جا سکتے ہیں۔ نئے اندراج لکھے اور نظرثانی کیے جانے کے ساتھ ساتھ شامل ہوتے ہیں۔",
+      entriesIntro: "ہر کارڈ دعویٰ کو لفظ بہ لفظ پیش کرتا ہے، ایک محتاط جواب جو متعلقہ بنیادی مآخذ کی طرف اشارہ کرتا ہے، اور ایسے حوالہ‌جات دیتا ہے جنہیں اپنے سیاق میں جانچا جا سکتا ہے۔ نئے اندراج لکھے اور نظرثانی کیے جانے کے ساتھ ساتھ شامل ہوتے ہیں۔",
       growLabel: "بڑھتا ہوا",
       growText: "یہ مجموعہ وقت کے ساتھ بڑھے گا۔ تثلیث، مسیح کی الٰہی حیثیت، صلیب اور قیامت، اناجیل کی صحت، اور قرآنی تاریخ پر مزید اندراج تیاری میں ہیں۔",
       sourcesLabel: "حوالہ‌جات",
-      sourcesH: "اس مجموعے میں نقل شدہ کلامِ مقدّس",
-      sourcesIntro: "تمام حوالہ‌جات ۶۶ کتابی مسیحی بائبل کے کینن سے ہیں۔ آیت کی شماری اُسی معیاری باب و آیت کے نظام کی پیروی کرتی ہے جو انگریزی، ہندی، اردو اور فارسی بائبل ترجموں میں استعمال ہوتا ہے۔",
+      sourcesH: "اس مجموعے میں نقل شدہ مآخذ",
+      sourcesIntro: "حوالہ‌جات میں بائبلی آیات اور جہاں متعلق ہو، اسلامی بنیادی مآخذ جیسے حدیثی مجموعے اور کلاسیکی شرح شامل ہیں۔ ہر اقتباس کو اس کے اپنے سیاق میں جانچیں۔",
       footer1: "اسلام کے سوالات کے جوابات کا مجموعہ · مئی ۲۰۲۶ میں مرتب اور نظرثانی شدہ",
       footer2: '"تم سچائی کو جان لو گے، اور سچائی تمہیں آزاد کرے گی۔" — یوحنا ۸:۳۲',
       claimWord: "دعویٰ",
@@ -378,12 +414,12 @@ window.AI_DATA = {
       catAll: "همه",
       entriesLabel: "پرسش و پاسخ",
       entriesH: "جایی که متون خود سخن می‌گویند.",
-      entriesIntro: "هر کارت ادعای اصلی را عیناً منعکس می‌کند، پاسخی محتاط که به کتاب مقدس اشاره می‌کند، و ارجاعاتی که در هر انجیلی قابل بررسی است. مدخل‌های جدید با نگارش و بازبینی اضافه می‌شوند.",
+      entriesIntro: "هر کارت ادعای اصلی را عیناً منعکس می‌کند، پاسخی محتاط که به منابع اصلی مرتبط اشاره می‌کند، و ارجاعاتی که می‌توان در زمینهٔ خودشان بررسی کرد. مدخل‌های جدید با نگارش و بازبینی اضافه می‌شوند.",
       growLabel: "در حال رشد",
       growText: "این مجموعه با گذشت زمان رشد می‌کند. مدخل‌های بیشتری دربارهٔ تثلیث، الوهیت مسیح، صلیب و رستاخیز، اعتبار اناجیل، و تاریخ قرآن در دست تهیه است.",
       sourcesLabel: "ارجاعات",
-      sourcesH: "متن مقدس ذکرشده در این مجموعه",
-      sourcesIntro: "همهٔ ارجاعات از کتاب مقدس مسیحی ۶۶ کتابی متعارف هستند. شماره‌گذاری آیات از همان سیستم استاندارد فصل و آیه پیروی می‌کند که در ترجمه‌های انگلیسی، هندی، اردو و فارسی به‌کار می‌رود.",
+      sourcesH: "منابع ذکرشده در این مجموعه",
+      sourcesIntro: "ارجاعات شامل آیات کتاب مقدس و، در موارد مربوط، منابع اصلی اسلامی مانند مجموعه‌های حدیث و شرح کلاسیک هستند. هر نقل‌قول را در زمینهٔ خودش بررسی کنید.",
       footer1: "مجموعهٔ پاسخ به اسلام · گردآوری و بازبینی در مه ۲۰۲۶",
       footer2: '«حقیقت را خواهید شناخت، و حقیقت شما را آزاد خواهد کرد.» — یوحنا ۸:۳۲',
       claimWord: "ادعا",
@@ -413,7 +449,10 @@ window.AI_DATA = {
       "Hebrews 2:14–17 — The Son shared flesh and blood so that through death He might defeat death and become a merciful high priest.",
       "Hebrews 4:15 — Jesus is able to sympathize with human weakness, having been tested as we are, yet without sin.",
       "Mark 10:45 — The Son of Man came not to be served but to serve and give His life as a ransom for many.",
-      "1 Peter 2:24 — Christ bore our sins in His body on the tree."
+      "1 Peter 2:24 — Christ bore our sins in His body on the tree.",
+      "Sahih al-Bukhari 6130 — Aisha reports playing with dolls in Muhammad's presence; the English note cites Fath al-Bari and says this was allowed because she was a little girl who had not yet reached puberty.",
+      "Sahih al-Bukhari 5133 / 5158 / 3896 — Reports stating marriage at six and consummation at nine.",
+      "Sahih al-Bukhari 3894 — Aisha describes being called in from playing on a swing with her girl friends before being taken into the house."
     ],
     hi: [
       "यूहन्ना 8:1–11 — फरीसी जब व्यभिचार में पकड़ी गई स्त्री को लाते हैं, यीशु झुककर अपनी उंगली से धरती पर लिखते हैं; अभियोग लगाने वाले एक-एक करके चले जाते हैं।",
@@ -428,7 +467,10 @@ window.AI_DATA = {
       "इब्रानियों 2:14–17 — पुत्र मांस और लहू में सहभागी हुआ ताकि मृत्यु के द्वारा मृत्यु को पराजित करे और दयालु महायाजक बने।",
       "इब्रानियों 4:15 — यीशु हमारी निर्बलताओं में सहानुभूति रख सकते हैं; वे हमारी तरह परखे गए, फिर भी निष्पाप रहे।",
       "मरकुस 10:45 — मनुष्य का पुत्र सेवा लेने नहीं, सेवा करने और बहुतों के लिए अपना प्राण छुड़ौती में देने आया।",
-      "1 पतरस 2:24 — मसीह ने हमारे पापों को अपने शरीर पर लकड़ी पर उठा लिया।"
+      "1 पतरस 2:24 — मसीह ने हमारे पापों को अपने शरीर पर लकड़ी पर उठा लिया।",
+      "सहीह अल-बुखारी 6130 — आइशा मुहम्मद की उपस्थिति में गुड़ियों से खेलने की बात कहती हैं; अंग्रेज़ी नोट फ़त्ह अल-बारी का हवाला देकर कहता है कि यह इसलिए अनुमति था क्योंकि वह छोटी लड़की थीं और puberty तक नहीं पहुँची थीं।",
+      "सहीह अल-बुखारी 5133 / 5158 / 3896 — विवाह छह वर्ष और consummation नौ वर्ष में होने की रिवायतें।",
+      "सहीह अल-बुखारी 3894 — आइशा बताती हैं कि उन्हें सहेलियों के साथ झूले पर खेलते हुए बुलाकर घर में ले जाया गया।"
     ],
     ur: [
       "یوحنا ۸:۱–۱۱ — جب فریسی زنا میں پکڑی گئی عورت کو لاتے ہیں، یسوع جھک کر اپنی انگلی سے زمین پر لکھتے ہیں؛ الزام لگانے والے ایک ایک کر کے چلے جاتے ہیں۔",
@@ -443,7 +485,10 @@ window.AI_DATA = {
       "عبرانیوں 2:14–17 — بیٹا گوشت اور خون میں شریک ہوا تاکہ موت کے ذریعے موت کو شکست دے اور رحیم سردار کاہن بنے۔",
       "عبرانیوں 4:15 — یسوع ہماری کمزوریوں میں ہمدردی کر سکتا ہے؛ وہ ہماری طرح آزمایا گیا مگر گناہ کے بغیر۔",
       "مرقس 10:45 — ابنِ آدم خدمت لینے نہیں بلکہ خدمت کرنے اور بہتوں کے بدلے اپنی جان فدیہ میں دینے آیا۔",
-      "1 پطرس 2:24 — مسیح نے ہمارے گناہوں کو اپنے بدن پر لکڑی پر اٹھا لیا۔"
+      "1 پطرس 2:24 — مسیح نے ہمارے گناہوں کو اپنے بدن پر لکڑی پر اٹھا لیا۔",
+      "صحیح البخاری 6130 — عائشہ محمد کی موجودگی میں گڑیوں سے کھیلنے کا ذکر کرتی ہیں؛ انگریزی نوٹ فتح الباری کا حوالہ دے کر کہتا ہے کہ یہ اس لیے جائز تھا کہ وہ چھوٹی لڑکی تھیں اور بلوغت تک نہیں پہنچی تھیں۔",
+      "صحیح البخاری 5133 / 5158 / 3896 — نکاح چھ سال اور ازدواجی تعلق نو سال میں ہونے کی روایات۔",
+      "صحیح البخاری 3894 — عائشہ بتاتی ہیں کہ انہیں سہیلیوں کے ساتھ جھولے پر کھیلتے ہوئے بلا کر گھر میں لے جایا گیا۔"
     ],
     fa: [
       "یوحنا ۸:۱–۱۱ — وقتی فریسیان زنی را که در زنا گرفته شده بود نزد عیسی می‌آورند، عیسی خم می‌شود و با انگشت خود بر روی خاک می‌نویسد؛ متهمان یکی‌یکی می‌روند.",
@@ -458,7 +503,10 @@ window.AI_DATA = {
       "عبرانیان ۲:۱۴–۱۷ — پسر در گوشت و خون شریک شد تا از راه مرگ، مرگ را شکست دهد و کاهن اعظم رحیم گردد.",
       "عبرانیان ۴:۱۵ — عیسی می‌تواند با ضعف‌های ما همدردی کند؛ او مانند ما آزموده شد، اما بی‌گناه بود.",
       "مرقس ۱۰:۴۵ — پسر انسان نیامد تا خدمتش کنند، بلکه تا خدمت کند و جان خود را فدیهٔ بسیاری سازد.",
-      "اول پطرس ۲:۲۴ — مسیح گناهان ما را در بدن خود بر چوب حمل کرد."
+      "اول پطرس ۲:۲۴ — مسیح گناهان ما را در بدن خود بر چوب حمل کرد.",
+      "صحیح بخاری ۶۱۳۰ — عایشه از بازی با عروسک‌ها در حضور محمد سخن می‌گوید؛ یادداشت انگلیسی با ارجاع به فتح الباری می‌گوید این اجازه به دلیل دختر کوچک بودن و نرسیدن به بلوغ بود.",
+      "صحیح بخاری ۵۱۳۳ / ۵۱۵۸ / ۳۸۹۶ — گزارش‌هایی که ازدواج در شش‌سالگی و زفاف در نه‌سالگی را بیان می‌کنند.",
+      "صحیح بخاری ۳۸۹۴ — عایشه می‌گوید هنگام بازی با دوستان دخترش روی تاب، او را صدا زدند و به خانه بردند."
     ]
   }
 };
