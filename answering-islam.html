@@ -13,7 +13,7 @@
     body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,-apple-system,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s;text-align:left;direction:ltr}
     .w{max-width:920px;margin:0 auto;padding:0 20px}
     .bar{position:fixed;top:0;left:0;right:0;z-index:100;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
-    .bar-title{font-size:.7rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--text-3);font-weight:600}
+    .bar-title{font-size:.7rem;letter-spacing:.01em;color:var(--text-3);font-weight:600}
     .bar-actions{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
     .bar-btn{padding:5px 12px;border:1px solid var(--border);background:transparent;color:var(--text-2);font-family:inherit;font-size:.75rem;font-weight:500;border-radius:4px;cursor:pointer;transition:all .2s;text-decoration:none;display:inline-flex;align-items:center}
     .bar-btn:hover{border-color:var(--text-3);color:var(--text)}
@@ -23,38 +23,38 @@
     .theme-toggle{width:32px;height:32px;border-radius:50%;border:1px solid var(--border);background:transparent;color:var(--text-2);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:14px;transition:all .2s}
     .theme-toggle:hover{border-color:var(--text-3);color:var(--text)}
     .hero{padding:110px 0 40px;text-align:center}
-    .hero-tag{display:inline-block;font-size:.65rem;text-transform:uppercase;letter-spacing:3px;color:var(--text-3);border:1px solid var(--border);padding:5px 14px;border-radius:20px;margin-bottom:24px;font-weight:500}
+    .hero-tag{display:inline-block;font-size:.65rem;letter-spacing:.01em;color:var(--text-3);border:1px solid var(--border);padding:5px 14px;border-radius:20px;margin-bottom:24px;font-weight:500}
     .hero h1{font-size:clamp(1.8rem,5.5vw,3.2rem);font-weight:700;line-height:1.12;margin-bottom:18px;letter-spacing:-.03em}
     .hero p{font-size:1rem;color:var(--text-2);max-width:640px;margin:0 auto}
     .callout{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:24px 28px;margin:36px 0}
-    .callout .lbl{font-size:.6rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--text-3);margin-bottom:10px;font-weight:600}
+    .callout .lbl{font-size:.6rem;letter-spacing:.01em;color:var(--text-3);margin-bottom:10px;font-weight:600}
     .callout p{font-size:.95rem;line-height:1.7;color:var(--text-2)}
     .callout strong{color:var(--text)}
     .filter-row{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 12px;align-items:center}
-    .filter-lbl{font-size:.6rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--text-3);font-weight:600;margin-right:6px}
+    .filter-lbl{font-size:.6rem;letter-spacing:.01em;color:var(--text-3);font-weight:600;margin-right:6px}
     .filter-chip{padding:6px 12px;border:1px solid var(--border);background:transparent;color:var(--text-2);font-family:inherit;font-size:.78rem;font-weight:500;border-radius:999px;cursor:pointer;transition:all .15s}
     .filter-chip:hover{border-color:var(--text-3);color:var(--text)}
     .filter-chip.active{background:var(--text);color:var(--bg);border-color:var(--text)}
     .sec{margin:48px 0 72px}
-    .sec-lbl{font-size:.6rem;text-transform:uppercase;letter-spacing:3px;color:var(--text-3);margin-bottom:10px;font-weight:600}
+    .sec-lbl{font-size:.6rem;letter-spacing:.01em;color:var(--text-3);margin-bottom:10px;font-weight:600}
     .sec h2{font-size:1.6rem;font-weight:700;margin-bottom:12px;letter-spacing:-.02em}
     .sec>p{color:var(--text-2);margin-bottom:28px;max-width:600px;font-size:.95rem}
     .qa-card{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:24px;transition:border-color .3s}
     .qa-card:hover{border-color:rgba(128,128,128,.25)}
     .qa-head{padding:22px 26px 0;display:flex;flex-direction:column;gap:10px}
     .qa-cats{display:flex;flex-wrap:wrap;gap:5px}
-    .qa-cat{font-size:.58rem;text-transform:uppercase;letter-spacing:1.5px;font-weight:600;padding:3px 9px;border-radius:3px;background:var(--tag);color:var(--text-2);border:1px solid var(--border)}
-    .qa-claim-lbl{font-size:.55rem;text-transform:uppercase;letter-spacing:3px;color:var(--text-3);font-weight:700;margin-top:6px}
+    .qa-cat{font-size:.58rem;letter-spacing:.01em;font-weight:600;padding:3px 9px;border-radius:3px;background:var(--tag);color:var(--text-2);border:1px solid var(--border)}
+    .qa-claim-lbl{font-size:.55rem;letter-spacing:.01em;color:var(--text-3);font-weight:700;margin-top:6px}
     .qa-claim{font-size:1.05rem;font-weight:600;line-height:1.5;color:var(--text);font-style:italic;padding:0 26px;margin-top:6px}
     .qa-body{padding:22px 26px 26px}
-    .qa-answer-lbl{font-size:.55rem;text-transform:uppercase;letter-spacing:3px;color:var(--accent);font-weight:700;margin-bottom:10px}
+    .qa-answer-lbl{font-size:.55rem;letter-spacing:.01em;color:var(--accent);font-weight:700;margin-bottom:10px}
     .qa-answer{font-size:.96rem;color:var(--text-2);line-height:1.75}
     .qa-answer p{margin-bottom:12px}
     .qa-answer p:last-child{margin-bottom:0}
     .qa-answer strong{color:var(--text)}
     .qa-answer em{color:var(--text)}
     .qa-refs{margin-top:18px;padding-top:16px;border-top:1px solid var(--border)}
-    .qa-refs-lbl{font-size:.55rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--text-3);font-weight:700;margin-bottom:8px}
+    .qa-refs-lbl{font-size:.55rem;letter-spacing:.01em;color:var(--text-3);font-weight:700;margin-bottom:8px}
     .qa-refs-list{display:flex;flex-wrap:wrap;gap:6px}
     .qa-ref{font-size:.72rem;padding:4px 9px;border-radius:3px;background:var(--tag);color:var(--text-2);border:1px solid var(--border);font-family:inherit}
     .qa-attr{margin-top:14px;font-size:.72rem;color:var(--text-3);line-height:1.6}
@@ -62,7 +62,7 @@
     .qa-attr a:hover{border-bottom-color:var(--accent)}
     .empty-note{padding:36px 28px;text-align:center;color:var(--text-3);font-size:.9rem;border:1px dashed var(--border);border-radius:10px}
     .grow-card{margin:48px 0 0;padding:20px 24px;background:var(--bg-surface);border:1px dashed var(--border);border-radius:10px;text-align:center}
-    .grow-card .lbl{font-size:.6rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--text-3);font-weight:600;margin-bottom:6px}
+    .grow-card .lbl{font-size:.6rem;letter-spacing:.01em;color:var(--text-3);font-weight:600;margin-bottom:6px}
     .grow-card p{color:var(--text-2);font-size:.85rem;line-height:1.6}
     .src ol{counter-reset:s;list-style:none;padding:0}
     .src li{counter-increment:s;padding:10px 0;border-bottom:1px solid var(--border);font-size:.85rem;color:var(--text-2);display:flex;gap:10px;line-height:1.6}
@@ -188,10 +188,10 @@ window.AI_DATA = {
   // order shown. Add a new category here once, then add entries that
   // belong to it via the `categories` array on each entry.
   categories: {
-    en: ["Trinity", "Jesus' Divine Identity", "Gospel of John", "Incarnation", "Cross & Sacrifice", "Muhammad", "Aisha", "Hadith", "Quran", "False Prophecy"],
-    hi: ["त्रिमूर्ति (ट्रिनिटी)", "यीशु की दिव्य पहचान", "यूहन्ना का सुसमाचार", "देहधारण", "क्रूस और बलिदान", "मुहम्मद", "आइशा", "हदीस", "क़ुरआन", "झूठी नबूवत"],
-    ur: ["تثلیث (ٹرینٹی)", "یسوع کی الٰہی شناخت", "یوحنا کی انجیل", "تجسّد", "صلیب اور قربانی", "محمد", "عائشہ", "حدیث", "قرآن", "جھوٹی نبوت"],
-    fa: ["تثلیث (تثلیث)", "هویت الهی عیسی", "انجیل یوحنا", "تجسّد", "صلیب و قربانی", "محمد", "عایشه", "حدیث", "قرآن", "نبوت دروغین"]
+    en: ["Trinity", "Jesus' Divine Identity", "Gospel of John", "Incarnation", "Cross & Sacrifice", "Muhammad", "Aisha", "Hadith", "Quran", "False Prophecy", "Revelation", "Scripture Test"],
+    hi: ["त्रिमूर्ति (ट्रिनिटी)", "यीशु की दिव्य पहचान", "यूहन्ना का सुसमाचार", "देहधारण", "क्रूस और बलिदान", "मुहम्मद", "आइशा", "हदीस", "क़ुरआन", "झूठी नबूवत", "प्रकाशन", "शास्त्रीय कसौटी"],
+    ur: ["تثلیث (ٹرینٹی)", "یسوع کی الٰہی شناخت", "یوحنا کی انجیل", "تجسّد", "صلیب اور قربانی", "محمد", "عائشہ", "حدیث", "قرآن", "جھوٹی نبوت", "وحی", "کتابی کسوٹی"],
+    fa: ["تثلیث (تثلیث)", "هویت الهی عیسی", "انجیل یوحنا", "تجسّد", "صلیب و قربانی", "محمد", "عایشه", "حدیث", "قرآن", "نبوت دروغین", "وحی", "آزمون کتاب مقدس"]
   },
 
   entries: [
@@ -354,7 +354,47 @@ window.AI_DATA = {
         fa: 'پرامپت اعتراض از پست عمومی X حساب GodLogic_GL گرفته شد؛ ترجمهٔ قرآن با Quran.com Saheeh International و گزارش‌های حدیثی با متن Sunnah.com بررسی شدند.'
       },
       sourceUrl: 'https://x.com/godlogic_gl/status/2062603622244827527'
-    }
+    },
+    {
+      "id": "muhammad-first-revelation-scripture-test",
+      "categories": [
+            "Muhammad",
+            "Hadith",
+            "Quran",
+            "Revelation",
+            "Scripture Test"
+      ],
+      "claim": {
+            "en": "Muhammad's first revelation was a terrifying cave encounter later interpreted by Waraqah through earlier Scripture; therefore claimed revelation should be tested by the Scriptures that came before it, not by experience alone.",
+            "hi": "मुहम्मद का पहला प्रकाशन एक डरावना गुफ़ा-अनुभव था, जिसे बाद में वरक़ा ने पहले के शास्त्रों की रोशनी में समझाया; इसलिए किसी भी दावे वाली वह़ी को केवल अनुभव से नहीं, उससे पहले आए शास्त्रों से जाँचना चाहिए।",
+            "ur": "محمد کی پہلی وحی ایک خوفناک غار کا تجربہ تھی، جس کی بعد میں ورقہ نے پہلے کے صحائف کی روشنی میں تشریح کی؛ اس لیے کسی بھی دعوائے وحی کو صرف تجربے سے نہیں بلکہ پہلے سے موجود صحائف سے پرکھنا چاہیے۔",
+            "fa": "نخستین وحی محمد تجربه‌ای هراس‌آور در غار بود که بعدها ورقه آن را از راه کتاب‌های پیشین تفسیر کرد؛ بنابراین هر ادعای وحی باید نه فقط با تجربه، بلکه با کتاب‌های پیش از آن آزموده شود."
+      },
+      "answer": {
+            "en": "<p>The X post is pointing to a real feature of the early Islamic reports. <strong>Sahih al-Bukhari 3</strong> says the being in Hira caught Muhammad and pressed him three times until he could bear it no more, then Muhammad returned with his heart beating severely and said, <em>\"Cover me! Cover me!\"</em> and <em>\"I fear that something may happen to me.\"</em> <strong>Sahih Muslim 160a</strong> preserves the same basic pattern: gripping, fear, trembling, Khadijah's reassurance, and then Waraqah's interpretation.</p><p>The important historical point is not merely that Muhammad was afraid. Fear by itself does not disprove a prophet; biblical prophets also tremble. The sharper point is that the first interpretive frame in the report comes from outside the Qur'an. Waraqah is described as a Christian who wrote from the Gospel, and he identifies the experience with the <em>namus</em> sent to Moses. At that moment, the Qur'an was not yet a completed public standard; the experience is being assessed through prior revelation.</p><p>That gives a fair test. The Qur'an itself can appeal backward: <strong>Qur'an 10:94</strong> tells Muhammad, if in doubt about what was sent down to him, to ask those reading the Scripture before him; <strong>Qur'an 5:47</strong> tells the People of the Gospel to judge by what God revealed in it; and <strong>Qur'an 5:68</strong> says the People of the Book stand on nothing until they uphold the Torah and Gospel. The Bible also commands testing: <strong>Deuteronomy 13:1–5</strong> rejects signs that lead away from the LORD, <strong>Galatians 1:8</strong> rejects another gospel even if preached by an angel, and <strong>1 John 4:1</strong> says not to believe every spirit but to test the spirits.</p><p>So the careful conclusion is this: the first-revelation report does not by itself prove Muhammad false. But it strongly justifies testing Islam by the earlier revelation it itself invokes. If a later messenger contradicts the apostolic gospel — especially the death, burial, resurrection, and lordship of Christ in <strong>1 Corinthians 15:3–8</strong> — then the test cannot be settled by the intensity of the experience. It must be settled by whether the message coheres with God's prior revealed testimony.</p>",
+            "hi": "<p>यह X पोस्ट प्रारम्भिक इस्लामी रिवायतों की एक वास्तविक बात की ओर इशारा करता है। <strong>सहीह अल-बुखारी 3</strong> कहता है कि हिरा में आए प्राणी ने मुहम्मद को तीन बार पकड़ा और इतना दबाया कि वे सह न सके; फिर वे तेज़ धड़कते हृदय के साथ लौटे और बोले, <em>\"मुझे ढँक दो! मुझे ढँक दो!\"</em> और <em>\"मुझे अपने बारे में डर है।\"</em> <strong>सहीह मुस्लिम 160a</strong> भी वही मूल क्रम रखता है: पकड़ना, भय, काँपना, ख़दीजा की ढाढ़स, और फिर वरक़ा की व्याख्या।</p><p>महत्वपूर्ण ऐतिहासिक बिंदु केवल यह नहीं कि मुहम्मद डरे हुए थे। भय अपने-आप किसी नबी को झूठा सिद्ध नहीं करता; बाइबिल के नबी भी काँपते हैं। तीखा बिंदु यह है कि रिवायत में पहला व्याख्यात्मक ढाँचा क़ुरआन से बाहर से आता है। वरक़ा को एक ईसाई बताया गया है जो इंजील से लिखता था, और वह अनुभव को मूसा पर उतरे <em>नामूस</em> से जोड़ता है। उस समय क़ुरआन अभी पूर्ण सार्वजनिक कसौटी नहीं था; अनुभव को पहले के प्रकाशन से परखा जा रहा है।</p><p>यही न्यायपूर्ण कसौटी देता है। क़ुरआन स्वयं पीछे की ओर अपील करता है: <strong>क़ुरआन 10:94</strong> मुहम्मद से कहता है कि यदि वे अपने ऊपर उतारी गई बात के विषय में संदेह में हों, तो उनसे पूछें जो उनसे पहले किताब पढ़ते थे; <strong>क़ुरआन 5:47</strong> इंजील वालों से कहता है कि वे परमेश्वर ने उसमें जो उतारा है उससे न्याय करें; और <strong>क़ुरआन 5:68</strong> कहता है कि किताब वाले तब तक किसी आधार पर नहीं जब तक वे तौरा और इंजील को कायम न रखें। बाइबिल भी परखने की आज्ञा देती है: <strong>व्यवस्थाविवरण 13:1–5</strong> उन चिन्हों को अस्वीकार करता है जो यहोवा से दूर ले जाएँ, <strong>गलातियों 1:8</strong> किसी स्वर्गदूत द्वारा प्रचारित दूसरे सुसमाचार को भी अस्वीकार करता है, और <strong>1 यूहन्ना 4:1</strong> कहता है कि हर आत्मा पर विश्वास न करो, आत्माओं को परखो।</p><p>इसलिए सावधान निष्कर्ष यह है: पहली वह़ी की रिवायत अपने-आप मुहम्मद को झूठा सिद्ध नहीं करती। लेकिन यह इस्लाम को उसी पहले प्रकाशन से जाँचने को बहुत मज़बूती से उचित ठहराती है जिसे वह स्वयं बुलाता है। यदि कोई बाद का संदेशवाहक प्रेरितों के सुसमाचार — विशेषकर <strong>1 कुरिन्थियों 15:3–8</strong> में मसीह की मृत्यु, दफ़न, पुनरुत्थान और प्रभुता — से टकराता है, तो कसौटी अनुभव की तीव्रता नहीं हो सकती। कसौटी यह होगी कि संदेश परमेश्वर की पहले से प्रकट गवाही से मेल खाता है या नहीं।</p>",
+            "ur": "<p>یہ X پوسٹ ابتدائی اسلامی روایات کی ایک حقیقی بات کی طرف اشارہ کرتی ہے۔ <strong>صحیح البخاری 3</strong> کہتا ہے کہ حرا میں آنے والی ہستی نے محمد کو تین بار پکڑا اور اتنا دبایا کہ وہ برداشت نہ کر سکے؛ پھر وہ سخت دھڑکتے دل کے ساتھ واپس آئے اور کہا، <em>\"مجھے اوڑھا دو! مجھے اوڑھا دو!\"</em> اور <em>\"مجھے اپنے بارے میں خوف ہے۔\"</em> <strong>صحیح مسلم 160a</strong> بھی یہی بنیادی ترتیب محفوظ کرتا ہے: پکڑنا، خوف، لرزنا، خدیجہ کی تسلی، اور پھر ورقہ کی تشریح۔</p><p>اہم تاریخی نکتہ صرف یہ نہیں کہ محمد خوف زدہ تھے۔ خوف بذاتِ خود کسی نبی کو جھوٹا ثابت نہیں کرتا؛ بائبلی انبیا بھی کانپتے ہیں۔ زیادہ تیز نکتہ یہ ہے کہ روایت میں پہلا تفسیری فریم قرآن کے باہر سے آتا ہے۔ ورقہ کو ایک مسیحی بتایا گیا ہے جو انجیل سے لکھتا تھا، اور وہ اس تجربے کو موسیٰ پر نازل ہونے والے <em>ناموس</em> سے ملاتا ہے۔ اس وقت قرآن ابھی مکمل عوامی معیار نہیں تھا؛ تجربہ پچھلی وحی کے ذریعے سمجھا جا رہا ہے۔</p><p>یہی منصفانہ کسوٹی فراہم کرتا ہے۔ قرآن خود پیچھے کی طرف اپیل کرتا ہے: <strong>قرآن 10:94</strong> محمد سے کہتا ہے کہ اگر وہ اس چیز کے بارے میں شک میں ہوں جو ان پر نازل کی گئی ہے تو ان لوگوں سے پوچھیں جو ان سے پہلے کتاب پڑھتے تھے؛ <strong>قرآن 5:47</strong> اہلِ انجیل سے کہتا ہے کہ وہ اس کے مطابق فیصلہ کریں جو خدا نے اس میں نازل کیا؛ اور <strong>قرآن 5:68</strong> کہتا ہے کہ اہلِ کتاب کسی چیز پر قائم نہیں جب تک تورات اور انجیل کو قائم نہ رکھیں۔ بائبل بھی آزمائش کا حکم دیتی ہے: <strong>استثنا 13:1–5</strong> اُن نشانوں کو رد کرتا ہے جو یہوواہ سے دور لے جائیں، <strong>گلتیوں 1:8</strong> فرشتے کے سنائے ہوئے دوسرے gospel کو بھی رد کرتا ہے، اور <strong>1 یوحنا 4:1</strong> کہتا ہے کہ ہر روح کا یقین نہ کرو بلکہ روحوں کو آزماؤ۔</p><p>لہٰذا محتاط نتیجہ یہ ہے: پہلی وحی کی روایت اکیلی محمد کو جھوٹا ثابت نہیں کرتی۔ لیکن یہ اسلام کو اسی سابقہ وحی سے پرکھنے کو مضبوطی سے جائز بناتی ہے جسے اسلام خود طلب کرتا ہے۔ اگر کوئی بعد کا رسول رسولوں کی خوشخبری — خاص طور پر <strong>1 کرنتھیوں 15:3–8</strong> میں مسیح کی موت، دفن، قیامت اور خداوندی — سے ٹکراتا ہے، تو فیصلہ تجربے کی شدت سے نہیں ہو سکتا۔ فیصلہ اس سے ہو گا کہ پیغام خدا کی پہلے سے نازل شدہ گواہی سے موافق ہے یا نہیں۔</p>",
+            "fa": "<p>این پست X به ویژگی واقعیِ گزارش‌های آغازین اسلامی اشاره می‌کند. <strong>صحیح بخاری ۳</strong> می‌گوید موجودی که در حرا آمد، محمد را سه بار گرفت و چنان فشرد که دیگر توان تحمل نداشت؛ سپس محمد با دلی به‌شدت تپنده بازگشت و گفت: <em>«مرا بپوشانید! مرا بپوشانید!»</em> و <em>«بر خود می‌ترسم.»</em> <strong>صحیح مسلم ۱۶۰a</strong> نیز همین الگوی اصلی را حفظ می‌کند: گرفتن، ترس، لرزش، دلگرمی خدیجه، و سپس تفسیر ورقه.</p><p>نکتهٔ مهم تاریخی فقط این نیست که محمد ترسید. ترس به‌خودیِ خود پیامبری را باطل نمی‌کند؛ پیامبران کتاب مقدس نیز می‌لرزند. نکتهٔ تیزتر این است که نخستین چارچوب تفسیری در گزارش، از بیرون قرآن می‌آید. ورقه مسیحی‌ای معرفی می‌شود که از انجیل می‌نوشت، و او این تجربه را با <em>ناموس</em> فرستاده‌شده بر موسی یکی می‌داند. در آن لحظه، قرآن هنوز معیار عمومیِ کامل‌شده نبود؛ تجربه از راه وحی پیشین سنجیده می‌شود.</p><p>این یک آزمون منصفانه می‌دهد. خود قرآن نیز به عقب ارجاع می‌دهد: <strong>قرآن ۱۰:۹۴</strong> به محمد می‌گوید اگر دربارهٔ آنچه بر او نازل شده در تردید است، از کسانی بپرسد که پیش از او کتاب را می‌خواندند؛ <strong>قرآن ۵:۴۷</strong> به اهل انجیل می‌گوید بر پایهٔ آنچه خدا در آن نازل کرده حکم کنند؛ و <strong>قرآن ۵:۶۸</strong> می‌گوید اهل کتاب بر چیزی نیستند مگر آنکه تورات و انجیل را برپا دارند. کتاب مقدس نیز فرمان آزمودن می‌دهد: <strong>تثنیه ۱۳:۱–۵</strong> نشانه‌هایی را که از خداوند دور می‌کنند رد می‌کند، <strong>غلاطیان ۱:۸</strong> حتی انجیل دیگری را که فرشته‌ای بیاورد رد می‌کند، و <strong>اول یوحنا ۴:۱</strong> می‌گوید هر روحی را باور نکنید بلکه روح‌ها را بیازمایید.</p><p>پس نتیجهٔ محتاط این است: گزارش نخستین وحی به‌تنهایی محمد را دروغین ثابت نمی‌کند. اما به‌قوت توجیه می‌کند که اسلام با همان وحی پیشینی آزموده شود که خودش به آن ارجاع می‌دهد. اگر پیام‌آور متأخر با انجیل رسولان — به‌ویژه مرگ، دفن، رستاخیز و خداوندی مسیح در <strong>اول قرنتیان ۱۵:۳–۸</strong> — ناسازگار باشد، آزمون با شدت تجربه تعیین نمی‌شود. باید دید آیا پیام با شهادت پیشینِ آشکارشدهٔ خدا سازگار است یا نه.</p>"
+      },
+      "refs": [
+            "Sahih al-Bukhari 3",
+            "Sahih Muslim 160a",
+            "Sahih al-Bukhari 2",
+            "Qur'an 10:94",
+            "Qur'an 5:47, 5:68",
+            "Deuteronomy 13:1–5",
+            "Galatians 1:8",
+            "1 John 4:1",
+            "1 Corinthians 15:3–8"
+      ],
+      "attribution": {
+            "en": "Objection prompt drawn from a public X post by Shahriq Khan; first-revelation reports checked against Sunnah.com and the testing framework drawn from Qur'an/Bible references directly.",
+            "hi": "आपत्ति का prompt शहरीक खान की सार्वजनिक X पोस्ट से लिया गया; पहली वह़ी की रिवायतें Sunnah.com से जाँची गईं और कसौटी का ढाँचा सीधे क़ुरआन/बाइबल संदर्भों से लिया गया।",
+            "ur": "اعتراض کا prompt شہریق خان کی عوامی X پوسٹ سے لیا گیا؛ پہلی وحی کی روایات Sunnah.com سے جانچی گئیں اور آزمائش کا فریم براہ راست قرآن/بائبل حوالہ‌جات سے لیا گیا۔",
+            "fa": "پرامپت اعتراض از پست عمومی X از شهریق خان گرفته شد؛ گزارش‌های نخستین وحی با Sunnah.com بررسی شد و چارچوب آزمون مستقیماً از ارجاعات قرآن/کتاب مقدس گرفته شد."
+      },
+      "sourceUrl": "https://x.com/realshahriqkhan/status/2062529110702776583"
+}
   ],
 
   // UI strings — keys mirror the data-i attributes in the markup.
@@ -491,7 +531,13 @@ window.AI_DATA = {
       "Sahih al-Bukhari 3894 — Aisha describes being called in from playing on a swing with her girl friends before being taken into the house.",
       "Qur'an 69:44–47 — If Muhammad had fabricated sayings against God, God would seize him and cut from him the aorta/life-artery; no one could prevent it.",
       "Sahih al-Bukhari 4428 — During the illness in which he died, Muhammad says he still feels the Khaybar poison and feels as if his aorta is being cut from it.",
-      "Sunan Abi Dawud 4512 — The poisoned sheep report; the woman frames it as a prophet/king test, and the report says the poison cut off Muhammad's aorta; Sunnah.com lists it Hasan Sahih per al-Albani."
+      "Sunan Abi Dawud 4512 — The poisoned sheep report; the woman frames it as a prophet/king test, and the report says the poison cut off Muhammad's aorta; Sunnah.com lists it Hasan Sahih per al-Albani.",
+      "Sahih al-Bukhari 3 — Aisha reports the first revelation in Hira: the angel presses Muhammad three times, Muhammad returns with his heart beating severely, says 'Cover me,' fears for himself, and Khadijah takes him to Waraqah the Christian.",
+      "Sahih Muslim 160a — Parallel first-revelation report: gripping/pressing, trembling, fear, Khadijah's reassurance, and Waraqah identifying the experience with the namus sent to Moses.",
+      "Sahih al-Bukhari 2 — Muhammad describes revelation as sometimes like the ringing of a bell, the hardest form for him; Aisha saw sweat dropping from his forehead on a very cold day.",
+      "Qur'an 10:94; 5:47; 5:68 — The Qur'an can appeal to those reading earlier Scripture and tells the People of the Gospel/Torah to stand by what God revealed in them.",
+      "Deuteronomy 13:1–5; Galatians 1:8; 1 John 4:1 — Biblical tests for claimed revelation: signs cannot validate departure from the LORD, even an angel cannot bring another gospel, and spirits must be tested.",
+      "1 Corinthians 15:3–8 — The apostolic summary of the gospel: Christ died for sins, was buried, was raised on the third day, and appeared to witnesses."
     ],
     hi: [
       "यूहन्ना 8:1–11 — फरीसी जब व्यभिचार में पकड़ी गई स्त्री को लाते हैं, यीशु झुककर अपनी उंगली से धरती पर लिखते हैं; अभियोग लगाने वाले एक-एक करके चले जाते हैं।",
@@ -512,7 +558,13 @@ window.AI_DATA = {
       "सहीह अल-बुखारी 3894 — आइशा बताती हैं कि उन्हें सहेलियों के साथ झूले पर खेलते हुए बुलाकर घर में ले जाया गया।",
       "क़ुरआन 69:44–47 — यदि मुहम्मद परमेश्वर के विरुद्ध झूठी बातें गढ़ते, तो परमेश्वर उन्हें पकड़कर उनकी aorta/जीवन-धमनी काट देता; कोई रोक नहीं सकता।",
       "सहीह अल-बुखारी 4428 — जिस बीमारी में मुहम्मद की मृत्यु हुई, उसमें वे कहते हैं कि ख़ैबर के ज़हर से ऐसा लगता है जैसे उनकी aorta काटी जा रही है।",
-      "सुनन अबी दाऊद 4512 — ज़हरीली भेड़ की रिवायत; स्त्री इसे नबी/राजा की परीक्षा बताती है, और रिवायत कहती है कि ज़हर ने मुहम्मद की aorta काट दी; Sunnah.com इसे अल-अलबानी के अनुसार Hasan Sahih सूचीबद्ध करता है।"
+      "सुनन अबी दाऊद 4512 — ज़हरीली भेड़ की रिवायत; स्त्री इसे नबी/राजा की परीक्षा बताती है, और रिवायत कहती है कि ज़हर ने मुहम्मद की aorta काट दी; Sunnah.com इसे अल-अलबानी के अनुसार Hasan Sahih सूचीबद्ध करता है।",
+      "सहीह अल-बुखारी 3 — आइशा पहली वह़ी की रिवायत बताती हैं: फ़रिश्ता मुहम्मद को तीन बार दबाता है, वे तेज़ धड़कते हृदय के साथ लौटते हैं, 'मुझे ढँक दो' कहते हैं, अपने लिए डरते हैं, और ख़दीजा उन्हें ईसाई वरक़ा के पास ले जाती हैं।",
+      "सहीह मुस्लिम 160a — पहली वह़ी की समानांतर रिवायत: पकड़ना/दबाना, काँपना, भय, ख़दीजा की ढाढ़स, और वरक़ा द्वारा अनुभव को मूसा पर भेजे गए नामूस से जोड़ना।",
+      "सहीह अल-बुखारी 2 — मुहम्मद कहते हैं कि वह़ी कभी घंटी की आवाज़ जैसी आती है, जो उन पर सबसे कठिन होती है; आइशा ने बहुत ठंडे दिन उनके माथे से पसीना गिरते देखा।",
+      "क़ुरआन 10:94; 5:47; 5:68 — क़ुरआन पहले की किताब पढ़ने वालों से पूछने की अपील करता है और इंजील/तौरा वालों से कहता है कि वे परमेश्वर के उतारे हुए पर खड़े रहें।",
+      "व्यवस्थाविवरण 13:1–5; गलातियों 1:8; 1 यूहन्ना 4:1 — दावे वाली वह़ी की बाइबिलीय कसौटियाँ: चिन्ह यहोवा से दूर जाने को सही नहीं ठहरा सकते, स्वर्गदूत भी दूसरा सुसमाचार नहीं ला सकता, और आत्माओं को परखना चाहिए।",
+      "1 कुरिन्थियों 15:3–8 — प्रेरितीय सुसमाचार का सार: मसीह पापों के लिए मरे, दफ़न हुए, तीसरे दिन जी उठे, और गवाहों को दिखाई दिए।"
     ],
     ur: [
       "یوحنا ۸:۱–۱۱ — جب فریسی زنا میں پکڑی گئی عورت کو لاتے ہیں، یسوع جھک کر اپنی انگلی سے زمین پر لکھتے ہیں؛ الزام لگانے والے ایک ایک کر کے چلے جاتے ہیں۔",
@@ -533,7 +585,13 @@ window.AI_DATA = {
       "صحیح البخاری 3894 — عائشہ بتاتی ہیں کہ انہیں سہیلیوں کے ساتھ جھولے پر کھیلتے ہوئے بلا کر گھر میں لے جایا گیا۔",
       "قرآن 69:44–47 — اگر محمد خدا پر جھوٹی باتیں گھڑتے تو خدا انہیں پکڑ کر ان کی شہ رگ/زندگی کی رگ کاٹ دیتا؛ کوئی اسے روک نہ سکتا۔",
       "صحیح البخاری 4428 — جس بیماری میں محمد کی وفات ہوئی، وہ کہتے ہیں کہ خیبر کے زہر سے انہیں ایسا لگتا ہے جیسے ان کی aorta کٹ رہی ہے۔",
-      "سنن ابی داؤد 4512 — زہریلی بکری کی روایت؛ عورت اسے نبی/بادشاہ کا امتحان قرار دیتی ہے، اور روایت کہتی ہے کہ زہر نے محمد کی aorta کاٹ دی؛ Sunnah.com اسے البانی کے مطابق Hasan Sahih درج کرتا ہے۔"
+      "سنن ابی داؤد 4512 — زہریلی بکری کی روایت؛ عورت اسے نبی/بادشاہ کا امتحان قرار دیتی ہے، اور روایت کہتی ہے کہ زہر نے محمد کی aorta کاٹ دی؛ Sunnah.com اسے البانی کے مطابق Hasan Sahih درج کرتا ہے۔",
+      "صحیح البخاری 3 — عائشہ پہلی وحی کی روایت بیان کرتی ہیں: فرشتہ محمد کو تین بار دباتا ہے، وہ سخت دھڑکتے دل کے ساتھ واپس آتے ہیں، 'مجھے اوڑھا دو' کہتے ہیں، اپنے لیے خوف ظاہر کرتے ہیں، اور خدیجہ انہیں مسیحی ورقہ کے پاس لے جاتی ہیں۔",
+      "صحیح مسلم 160a — پہلی وحی کی متوازی روایت: پکڑنا/دبانا، لرزنا، خوف، خدیجہ کی تسلی، اور ورقہ کا تجربے کو موسیٰ پر بھیجے گئے ناموس سے ملانا۔",
+      "صحیح البخاری 2 — محمد کہتے ہیں کہ وحی کبھی گھنٹی کی آواز جیسی آتی ہے، جو ان پر سب سے سخت ہوتی ہے؛ عائشہ نے بہت ٹھنڈے دن ان کے ماتھے سے پسینہ گرتے دیکھا۔",
+      "قرآن 10:94؛ 5:47؛ 5:68 — قرآن پہلے کتاب پڑھنے والوں سے پوچھنے کی اپیل کرتا ہے اور اہلِ انجیل/تورات سے کہتا ہے کہ خدا کے نازل کردہ پر قائم رہیں۔",
+      "استثنا 13:1–5؛ گلتیوں 1:8؛ 1 یوحنا 4:1 — دعوائے وحی کے بائبلی امتحان: نشان یہوواہ سے دوری کو جائز نہیں کرتے، فرشتہ بھی دوسرا gospel نہیں لا سکتا، اور روحوں کو آزمانا لازم ہے۔",
+      "1 کرنتھیوں 15:3–8 — رسولی خوشخبری کا خلاصہ: مسیح گناہوں کے لیے مرا، دفن ہوا، تیسرے دن جی اٹھا، اور گواہوں پر ظاہر ہوا۔"
     ],
     fa: [
       "یوحنا ۸:۱–۱۱ — وقتی فریسیان زنی را که در زنا گرفته شده بود نزد عیسی می‌آورند، عیسی خم می‌شود و با انگشت خود بر روی خاک می‌نویسد؛ متهمان یکی‌یکی می‌روند.",
@@ -554,7 +612,13 @@ window.AI_DATA = {
       "صحیح بخاری ۳۸۹۴ — عایشه می‌گوید هنگام بازی با دوستان دخترش روی تاب، او را صدا زدند و به خانه بردند.",
       "قرآن ۶۹:۴۴–۴۷ — اگر محمد سخنانی دروغین به خدا نسبت می‌داد، خدا او را می‌گرفت و آئورت/رگ حیاتش را قطع می‌کرد؛ کسی نمی‌توانست مانع شود.",
       "صحیح بخاری ۴۴۲۸ — در بیماری‌ای که محمد در آن درگذشت، او می‌گوید هنوز درد زهر خیبر را حس می‌کند و گویی آئورتش از آن زهر بریده می‌شود.",
-      "سنن ابی داود ۴۵۱۲ — گزارش گوسفند مسموم؛ زن آن را آزمون پیامبر/پادشاه می‌داند و روایت می‌گوید زهر آئورت محمد را قطع کرد؛ Sunnah.com آن را طبق آلبانی Hasan Sahih فهرست می‌کند."
+      "سنن ابی داود ۴۵۱۲ — گزارش گوسفند مسموم؛ زن آن را آزمون پیامبر/پادشاه می‌داند و روایت می‌گوید زهر آئورت محمد را قطع کرد؛ Sunnah.com آن را طبق آلبانی Hasan Sahih فهرست می‌کند.",
+      "صحیح بخاری ۳ — عایشه گزارش نخستین وحی را نقل می‌کند: فرشته محمد را سه بار می‌فشارد، او با دلی تپنده بازمی‌گردد، می‌گوید «مرا بپوشانید»، بر خود می‌ترسد، و خدیجه او را نزد ورقهٔ مسیحی می‌برد.",
+      "صحیح مسلم ۱۶۰a — گزارش موازی نخستین وحی: گرفتن/فشردن، لرزش، ترس، دلگرمی خدیجه، و تفسیر ورقه که تجربه را با ناموس فرستاده‌شده بر موسی یکی می‌داند.",
+      "صحیح بخاری ۲ — محمد می‌گوید وحی گاهی مانند صدای زنگ می‌آید و سخت‌ترین شکل آن است؛ عایشه در روزی بسیار سرد عرق را بر پیشانی او دید.",
+      "قرآن ۱۰:۹۴؛ ۵:۴۷؛ ۵:۶۸ — قرآن می‌تواند به خوانندگان کتاب پیشین ارجاع دهد و به اهل انجیل/تورات می‌گوید بر آنچه خدا نازل کرده بایستند.",
+      "تثنیه ۱۳:۱–۵؛ غلاطیان ۱:۸؛ اول یوحنا ۴:۱ — آزمون‌های کتاب مقدس برای ادعای وحی: نشانه‌ها دورشدن از خداوند را معتبر نمی‌کنند، حتی فرشته نمی‌تواند انجیل دیگری بیاورد، و روح‌ها باید آزموده شوند.",
+      "اول قرنتیان ۱۵:۳–۸ — خلاصهٔ رسولی انجیل: مسیح برای گناهان مرد، دفن شد، در روز سوم برخاست، و بر شاهدان ظاهر شد."
     ]
   }
 };
