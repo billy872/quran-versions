@@ -188,10 +188,10 @@ window.AI_DATA = {
   // order shown. Add a new category here once, then add entries that
   // belong to it via the `categories` array on each entry.
   categories: {
-    en: ["Trinity", "Jesus' Divine Identity", "Gospel of John", "Incarnation", "Cross & Sacrifice", "Muhammad", "Aisha", "Hadith"],
-    hi: ["त्रिमूर्ति (ट्रिनिटी)", "यीशु की दिव्य पहचान", "यूहन्ना का सुसमाचार", "देहधारण", "क्रूस और बलिदान", "मुहम्मद", "आइशा", "हदीस"],
-    ur: ["تثلیث (ٹرینٹی)", "یسوع کی الٰہی شناخت", "یوحنا کی انجیل", "تجسّد", "صلیب اور قربانی", "محمد", "عائشہ", "حدیث"],
-    fa: ["تثلیث (تثلیث)", "هویت الهی عیسی", "انجیل یوحنا", "تجسّد", "صلیب و قربانی", "محمد", "عایشه", "حدیث"]
+    en: ["Trinity", "Jesus' Divine Identity", "Gospel of John", "Incarnation", "Cross & Sacrifice", "Muhammad", "Aisha", "Hadith", "Quran", "False Prophecy"],
+    hi: ["त्रिमूर्ति (ट्रिनिटी)", "यीशु की दिव्य पहचान", "यूहन्ना का सुसमाचार", "देहधारण", "क्रूस और बलिदान", "मुहम्मद", "आइशा", "हदीस", "क़ुरआन", "झूठी नबूवत"],
+    ur: ["تثلیث (ٹرینٹی)", "یسوع کی الٰہی شناخت", "یوحنا کی انجیل", "تجسّد", "صلیب اور قربانی", "محمد", "عائشہ", "حدیث", "قرآن", "جھوٹی نبوت"],
+    fa: ["تثلیث (تثلیث)", "هویت الهی عیسی", "انجیل یوحنا", "تجسّد", "صلیب و قربانی", "محمد", "عایشه", "حدیث", "قرآن", "نبوت دروغین"]
   },
 
   entries: [
@@ -318,6 +318,42 @@ window.AI_DATA = {
         fa: 'پرامپت اعتراض از پست عمومی X دکتر دیوید وود گرفته شد که بخاری ۶۱۳۰ را نقل کرده بود؛ ارجاعات حدیثی با متن Sunnah.com بررسی شد.'
       },
       sourceUrl: 'https://x.com/acts17david/status/2062239174934077613'
+    },
+    {
+      id: 'muhammad-aorta-false-prophet-test',
+      categories: ["Muhammad", "Quran", "Hadith", "False Prophecy"],
+      claim: {
+        en: "The Qur'an says a false prophet would have his aorta cut; Muhammad later said his aorta was being cut from the Khaybar poison, proving he was a false prophet.",
+        hi: "क़ुरआन कहता है कि झूठा नबी होता तो उसकी aorta काट दी जाती; मुहम्मद ने बाद में कहा कि ख़ैबर के ज़हर से उनकी aorta कट रही है, इसलिए वे झूठे नबी सिद्ध होते हैं।",
+        ur: "قرآن کہتا ہے کہ اگر کوئی جھوٹا نبی ہوتا تو اس کی شہ رگ/وتین کاٹ دی جاتی؛ محمد نے بعد میں کہا کہ خیبر کے زہر سے ان کی شہ رگ کٹ رہی ہے، اس لیے وہ جھوٹے نبی ثابت ہوتے ہیں۔",
+        fa: "قرآن می‌گوید اگر پیامبر سخنی دروغین به خدا نسبت می‌داد، رگِ حیاتش قطع می‌شد؛ محمد بعداً گفت از زهر خیبر گویی آئورت/رگش بریده می‌شود، پس پیامبر دروغین بود."
+      },
+      answer: {
+        en:
+          "<p>The evidence chain is real, but it needs to be stated carefully. <strong>Qur'an 69:44–47</strong> says that if Muhammad had fabricated sayings against God, God would seize him and cut from him <em>al-watīn</em>, commonly translated as the aorta or life-artery: <em>\"Then We would have cut from him the aorta.\"</em></p>" +
+          "<p>Later Islamic reports connect Muhammad's final illness to the poisoned food at Khaybar. <strong>Sahih al-Bukhari 4428</strong> has Aisha report that during the illness in which he died, Muhammad said: <em>\"I still feel the pain caused by the food I ate at Khaibar, and at this time, I feel as if my aorta is being cut from that poison.\"</em> <strong>Sunan Abi Dawud 4512</strong> gives the fuller poisoning story and says the Jewish woman explained her test: <em>\"If you were a prophet, it would not harm you; but if you were a king, I should rid the people of you.\"</em> The report then says Muhammad said of his death-pain: <em>\"This is the time when it has cut off my aorta.\"</em> Sunnah.com lists the Abu Dawud report as <em>Hasan Sahih</em> according to al-Albani.</p>" +
+          "<p>The strongest careful conclusion is this: Islam's own texts create a striking internal problem. The Qur'an proposes a bodily sign of divine judgment on a fabricator, and canonical/near-canonical hadith describe Muhammad's death using the same image in translation. A Muslim response may argue that the Arabic terms differ (<em>al-watīn</em> in Qur'an 69:46, <em>abharī</em> in Bukhari/Abu Dawud), or that Muhammad was describing the feeling of poison rather than God's direct judgment. Those replies should be heard and tested. But the objection is not invented: the Qur'anic warning and the death reports are both real Islamic source texts, and together they supply a serious falsification argument that must be answered rather than dismissed.</p>",
+        hi:
+          "<p>साक्ष्य-श्रृंखला वास्तविक है, लेकिन उसे सावधानी से कहना चाहिए। <strong>क़ुरआन 69:44–47</strong> कहता है कि यदि मुहम्मद ने परमेश्वर के विरुद्ध झूठी बातें गढ़ीं होतीं, तो परमेश्वर उन्हें पकड़कर उनसे <em>al-watīn</em> काट देता — जिसे सामान्यतः aorta या जीवन-धमनी अनुवादित किया जाता है: <em>\"फिर हम उसकी aorta काट देते।\"</em></p>" +
+          "<p>बाद की इस्लामी रिवायतें मुहम्मद की अंतिम बीमारी को ख़ैबर के ज़हरीले भोजन से जोड़ती हैं। <strong>सहीह अल-बुखारी 4428</strong> में आइशा बताती हैं कि जिस बीमारी में मुहम्मद की मृत्यु हुई, उसमें उन्होंने कहा: <em>\"मैं अभी भी ख़ैबर में खाए गए भोजन का दर्द महसूस करता हूँ, और इस समय मुझे ऐसा लगता है जैसे उस ज़हर से मेरी aorta काटी जा रही है।\"</em> <strong>सुनन अबी दाऊद 4512</strong> ज़हर की कहानी अधिक विस्तार से देता है और कहता है कि यहूदी स्त्री ने अपना परीक्षण समझाया: <em>\"यदि आप नबी होते, तो यह आपको हानि न पहुँचाता; और यदि आप राजा होते, तो मैं लोगों को आपसे छुटकारा दिला देती।\"</em> फिर रिवायत कहती है कि मुहम्मद ने मृत्यु-पीड़ा के बारे में कहा: <em>\"अब वह समय है जब इसने मेरी aorta काट दी है।\"</em> Sunnah.com इस अबी दाऊद रिवायत को अल-अलबानी के अनुसार <em>Hasan Sahih</em> सूचीबद्ध करता है।</p>" +
+          "<p>सबसे मजबूत सावधान निष्कर्ष यह है: इस्लाम के अपने स्रोत एक गंभीर आंतरिक समस्या बनाते हैं। क़ुरआन झूठ गढ़ने वाले के लिए दैवी न्याय का शारीरिक चिन्ह देता है, और canonical/near-canonical हदीस मुहम्मद की मृत्यु को अनुवाद में उसी छवि से वर्णित करती हैं। मुस्लिम उत्तर यह कह सकता है कि अरबी शब्द अलग हैं — क़ुरआन 69:46 में <em>al-watīn</em>, जबकि बुखारी/अबी दाऊद में <em>abharī</em> — या यह कि मुहम्मद ज़हर की अनुभूति बता रहे थे, सीधे परमेश्वर के न्याय को नहीं। उन उत्तरों को सुनकर जाँचना चाहिए। लेकिन आपत्ति गढ़ी हुई नहीं है: क़ुरआनी चेतावनी और मृत्यु-रिवायतें दोनों वास्तविक इस्लामी स्रोत हैं, और साथ मिलकर वे एक गंभीर falsification argument देती हैं जिसे dismiss नहीं किया जाना चाहिए।</p>",
+        ur:
+          "<p>ثبوت کی کڑی حقیقی ہے، مگر اسے احتیاط سے بیان کرنا چاہیے۔ <strong>قرآن 69:44–47</strong> کہتا ہے کہ اگر محمد خدا پر جھوٹی باتیں گھڑتے تو خدا انہیں پکڑتا اور ان سے <em>الوتین</em> کاٹ دیتا، جسے عموماً aorta یا زندگی کی رگ ترجمہ کیا جاتا ہے: <em>\"پھر ہم اس کی شہ رگ کاٹ دیتے۔\"</em></p>" +
+          "<p>بعد کی اسلامی روایات محمد کی آخری بیماری کو خیبر کے زہریلے کھانے سے جوڑتی ہیں۔ <strong>صحیح البخاری 4428</strong> میں عائشہ روایت کرتی ہیں کہ جس بیماری میں محمد کی وفات ہوئی، اس میں وہ کہتے تھے: <em>\"اے عائشہ! میں خیبر میں کھائے ہوئے کھانے کا درد ابھی تک محسوس کرتا ہوں، اور اب مجھے ایسا لگتا ہے جیسے اس زہر سے میری aorta کٹ رہی ہے۔\"</em> <strong>سنن ابی داؤد 4512</strong> زہر کی کہانی زیادہ تفصیل سے دیتا ہے اور کہتا ہے کہ یہودی عورت نے اپنا امتحان یوں بیان کیا: <em>\"اگر آپ نبی ہوتے تو یہ آپ کو نقصان نہ دیتا؛ اور اگر آپ بادشاہ ہوتے تو میں لوگوں کو آپ سے نجات دلا دیتی۔\"</em> پھر روایت کہتی ہے کہ محمد نے اپنی وفات کی تکلیف کے بارے میں کہا: <em>\"یہ وہ وقت ہے جب اس نے میری aorta کاٹ دی ہے۔\"</em> Sunnah.com اس ابو داؤد روایت کو البانی کے مطابق <em>Hasan Sahih</em> درج کرتا ہے۔</p>" +
+          "<p>سب سے مضبوط مگر محتاط نتیجہ یہ ہے: اسلام کے اپنے متون ایک نمایاں اندرونی مسئلہ پیدا کرتے ہیں۔ قرآن ایک جھوٹ گھڑنے والے پر الٰہی فیصلے کی جسمانی علامت پیش کرتا ہے، اور canonical/near-canonical حدیثیں محمد کی وفات کو ترجمے میں اسی تصویر سے بیان کرتی ہیں۔ مسلمان جواب دے سکتا ہے کہ عربی الفاظ مختلف ہیں — قرآن 69:46 میں <em>الوتین</em>، جبکہ بخاری/ابو داؤد میں <em>ابہری</em> — یا یہ کہ محمد زہر کا احساس بیان کر رہے تھے، خدا کے براہ راست فیصلے کو نہیں۔ ان جوابات کو سننا اور پرکھنا چاہیے۔ مگر اعتراض ایجاد شدہ نہیں: قرآنی تنبیہ اور وفات کی روایات دونوں حقیقی اسلامی مصادر ہیں، اور مل کر ایک سنجیدہ falsification argument بناتے ہیں جسے رد کرنے کے بجائے جواب دینا لازم ہے۔</p>",
+        fa:
+          "<p>زنجیرهٔ شواهد واقعی است، اما باید با دقت بیان شود. <strong>قرآن ۶۹:۴۴–۴۷</strong> می‌گوید اگر محمد سخنانی دروغین به خدا نسبت می‌داد، خدا او را می‌گرفت و از او <em>الوتین</em> را قطع می‌کرد؛ واژه‌ای که معمولاً به آئورت یا رگ حیات ترجمه می‌شود: <em>«سپس آئورت او را قطع می‌کردیم.»</em></p>" +
+          "<p>گزارش‌های بعدی اسلامی بیماری نهایی محمد را به غذای مسموم خیبر پیوند می‌دهند. <strong>صحیح بخاری ۴۴۲۸</strong> از عایشه نقل می‌کند که در بیماری‌ای که محمد در آن درگذشت، او می‌گفت: <em>«ای عایشه، هنوز درد غذایی را که در خیبر خوردم احساس می‌کنم، و اکنون گویی آئورت من از آن زهر بریده می‌شود.»</em> <strong>سنن ابی داود ۴۵۱۲</strong> داستان مسمومیت را کامل‌تر نقل می‌کند و می‌گوید زن یهودی آزمون خود را چنین توضیح داد: <em>«اگر پیامبر بودی، به تو آسیبی نمی‌رسانْد؛ اما اگر پادشاه بودی، مردم را از تو آسوده می‌کردم.»</em> سپس روایت می‌گوید محمد دربارهٔ درد مرگش گفت: <em>«این همان زمانی است که آئورت مرا قطع کرده است.»</em> Sunnah.com این روایت ابی داود را طبق آلبانی <em>Hasan Sahih</em> فهرست می‌کند.</p>" +
+          "<p>نتیجهٔ محتاط اما قوی این است: متون خود اسلام یک مشکل درونی چشمگیر ایجاد می‌کنند. قرآن نشانه‌ای جسمانی برای داوری الهی بر کسی که به خدا دروغ ببندد مطرح می‌کند، و احادیث معتبر/نزدیک به معتبر مرگ محمد را در ترجمه با همان تصویر توصیف می‌کنند. پاسخ مسلمان ممکن است بگوید واژه‌های عربی متفاوت‌اند — در قرآن ۶۹:۴۶ <em>الوتین</em> و در بخاری/ابی داود <em>ابهری</em> — یا اینکه محمد احساس زهر را توصیف می‌کرد نه داوری مستقیم خدا را. این پاسخ‌ها باید شنیده و آزموده شوند. اما اعتراض ساخته‌وپرداخته نیست: هشدار قرآنی و گزارش‌های مرگ هر دو منابع واقعی اسلامی‌اند و با هم استدلالی جدی برای ابطال فراهم می‌کنند که باید پاسخ داده شود، نه اینکه کنار گذاشته شود.</p>"
+      },
+      refs: ['Qur\'an 69:44–47', 'Sahih al-Bukhari 4428', 'Sunan Abi Dawud 4512'],
+      attribution: {
+        en: 'Objection prompt drawn from a public X post by GodLogic_GL; Qur\'an translation checked through Quran.com Saheeh International and hadith reports checked against Sunnah.com text.',
+        hi: 'आपत्ति का prompt GodLogic_GL की सार्वजनिक X पोस्ट से लिया गया; क़ुरआन अनुवाद Quran.com Saheeh International से और हदीस-रिपोर्टें Sunnah.com पाठ से जाँची गईं।',
+        ur: 'اعتراض کا prompt GodLogic_GL کی عوامی X پوسٹ سے لیا گیا؛ قرآن کا ترجمہ Quran.com Saheeh International سے اور حدیثی روایات Sunnah.com کے متن سے جانچی گئیں۔',
+        fa: 'پرامپت اعتراض از پست عمومی X حساب GodLogic_GL گرفته شد؛ ترجمهٔ قرآن با Quran.com Saheeh International و گزارش‌های حدیثی با متن Sunnah.com بررسی شدند.'
+      },
+      sourceUrl: 'https://x.com/godlogic_gl/status/2062603622244827527'
     }
   ],
 
@@ -452,7 +488,10 @@ window.AI_DATA = {
       "1 Peter 2:24 — Christ bore our sins in His body on the tree.",
       "Sahih al-Bukhari 6130 — Aisha reports playing with dolls in Muhammad's presence; the English note cites Fath al-Bari and says this was allowed because she was a little girl who had not yet reached puberty.",
       "Sahih al-Bukhari 5133 / 5158 / 3896 — Reports stating marriage at six and consummation at nine.",
-      "Sahih al-Bukhari 3894 — Aisha describes being called in from playing on a swing with her girl friends before being taken into the house."
+      "Sahih al-Bukhari 3894 — Aisha describes being called in from playing on a swing with her girl friends before being taken into the house.",
+      "Qur'an 69:44–47 — If Muhammad had fabricated sayings against God, God would seize him and cut from him the aorta/life-artery; no one could prevent it.",
+      "Sahih al-Bukhari 4428 — During the illness in which he died, Muhammad says he still feels the Khaybar poison and feels as if his aorta is being cut from it.",
+      "Sunan Abi Dawud 4512 — The poisoned sheep report; the woman frames it as a prophet/king test, and the report says the poison cut off Muhammad's aorta; Sunnah.com lists it Hasan Sahih per al-Albani."
     ],
     hi: [
       "यूहन्ना 8:1–11 — फरीसी जब व्यभिचार में पकड़ी गई स्त्री को लाते हैं, यीशु झुककर अपनी उंगली से धरती पर लिखते हैं; अभियोग लगाने वाले एक-एक करके चले जाते हैं।",
@@ -470,7 +509,10 @@ window.AI_DATA = {
       "1 पतरस 2:24 — मसीह ने हमारे पापों को अपने शरीर पर लकड़ी पर उठा लिया।",
       "सहीह अल-बुखारी 6130 — आइशा मुहम्मद की उपस्थिति में गुड़ियों से खेलने की बात कहती हैं; अंग्रेज़ी नोट फ़त्ह अल-बारी का हवाला देकर कहता है कि यह इसलिए अनुमति था क्योंकि वह छोटी लड़की थीं और puberty तक नहीं पहुँची थीं।",
       "सहीह अल-बुखारी 5133 / 5158 / 3896 — विवाह छह वर्ष और consummation नौ वर्ष में होने की रिवायतें।",
-      "सहीह अल-बुखारी 3894 — आइशा बताती हैं कि उन्हें सहेलियों के साथ झूले पर खेलते हुए बुलाकर घर में ले जाया गया।"
+      "सहीह अल-बुखारी 3894 — आइशा बताती हैं कि उन्हें सहेलियों के साथ झूले पर खेलते हुए बुलाकर घर में ले जाया गया।",
+      "क़ुरआन 69:44–47 — यदि मुहम्मद परमेश्वर के विरुद्ध झूठी बातें गढ़ते, तो परमेश्वर उन्हें पकड़कर उनकी aorta/जीवन-धमनी काट देता; कोई रोक नहीं सकता।",
+      "सहीह अल-बुखारी 4428 — जिस बीमारी में मुहम्मद की मृत्यु हुई, उसमें वे कहते हैं कि ख़ैबर के ज़हर से ऐसा लगता है जैसे उनकी aorta काटी जा रही है।",
+      "सुनन अबी दाऊद 4512 — ज़हरीली भेड़ की रिवायत; स्त्री इसे नबी/राजा की परीक्षा बताती है, और रिवायत कहती है कि ज़हर ने मुहम्मद की aorta काट दी; Sunnah.com इसे अल-अलबानी के अनुसार Hasan Sahih सूचीबद्ध करता है।"
     ],
     ur: [
       "یوحنا ۸:۱–۱۱ — جب فریسی زنا میں پکڑی گئی عورت کو لاتے ہیں، یسوع جھک کر اپنی انگلی سے زمین پر لکھتے ہیں؛ الزام لگانے والے ایک ایک کر کے چلے جاتے ہیں۔",
@@ -488,7 +530,10 @@ window.AI_DATA = {
       "1 پطرس 2:24 — مسیح نے ہمارے گناہوں کو اپنے بدن پر لکڑی پر اٹھا لیا۔",
       "صحیح البخاری 6130 — عائشہ محمد کی موجودگی میں گڑیوں سے کھیلنے کا ذکر کرتی ہیں؛ انگریزی نوٹ فتح الباری کا حوالہ دے کر کہتا ہے کہ یہ اس لیے جائز تھا کہ وہ چھوٹی لڑکی تھیں اور بلوغت تک نہیں پہنچی تھیں۔",
       "صحیح البخاری 5133 / 5158 / 3896 — نکاح چھ سال اور ازدواجی تعلق نو سال میں ہونے کی روایات۔",
-      "صحیح البخاری 3894 — عائشہ بتاتی ہیں کہ انہیں سہیلیوں کے ساتھ جھولے پر کھیلتے ہوئے بلا کر گھر میں لے جایا گیا۔"
+      "صحیح البخاری 3894 — عائشہ بتاتی ہیں کہ انہیں سہیلیوں کے ساتھ جھولے پر کھیلتے ہوئے بلا کر گھر میں لے جایا گیا۔",
+      "قرآن 69:44–47 — اگر محمد خدا پر جھوٹی باتیں گھڑتے تو خدا انہیں پکڑ کر ان کی شہ رگ/زندگی کی رگ کاٹ دیتا؛ کوئی اسے روک نہ سکتا۔",
+      "صحیح البخاری 4428 — جس بیماری میں محمد کی وفات ہوئی، وہ کہتے ہیں کہ خیبر کے زہر سے انہیں ایسا لگتا ہے جیسے ان کی aorta کٹ رہی ہے۔",
+      "سنن ابی داؤد 4512 — زہریلی بکری کی روایت؛ عورت اسے نبی/بادشاہ کا امتحان قرار دیتی ہے، اور روایت کہتی ہے کہ زہر نے محمد کی aorta کاٹ دی؛ Sunnah.com اسے البانی کے مطابق Hasan Sahih درج کرتا ہے۔"
     ],
     fa: [
       "یوحنا ۸:۱–۱۱ — وقتی فریسیان زنی را که در زنا گرفته شده بود نزد عیسی می‌آورند، عیسی خم می‌شود و با انگشت خود بر روی خاک می‌نویسد؛ متهمان یکی‌یکی می‌روند.",
@@ -506,7 +551,10 @@ window.AI_DATA = {
       "اول پطرس ۲:۲۴ — مسیح گناهان ما را در بدن خود بر چوب حمل کرد.",
       "صحیح بخاری ۶۱۳۰ — عایشه از بازی با عروسک‌ها در حضور محمد سخن می‌گوید؛ یادداشت انگلیسی با ارجاع به فتح الباری می‌گوید این اجازه به دلیل دختر کوچک بودن و نرسیدن به بلوغ بود.",
       "صحیح بخاری ۵۱۳۳ / ۵۱۵۸ / ۳۸۹۶ — گزارش‌هایی که ازدواج در شش‌سالگی و زفاف در نه‌سالگی را بیان می‌کنند.",
-      "صحیح بخاری ۳۸۹۴ — عایشه می‌گوید هنگام بازی با دوستان دخترش روی تاب، او را صدا زدند و به خانه بردند."
+      "صحیح بخاری ۳۸۹۴ — عایشه می‌گوید هنگام بازی با دوستان دخترش روی تاب، او را صدا زدند و به خانه بردند.",
+      "قرآن ۶۹:۴۴–۴۷ — اگر محمد سخنانی دروغین به خدا نسبت می‌داد، خدا او را می‌گرفت و آئورت/رگ حیاتش را قطع می‌کرد؛ کسی نمی‌توانست مانع شود.",
+      "صحیح بخاری ۴۴۲۸ — در بیماری‌ای که محمد در آن درگذشت، او می‌گوید هنوز درد زهر خیبر را حس می‌کند و گویی آئورتش از آن زهر بریده می‌شود.",
+      "سنن ابی داود ۴۵۱۲ — گزارش گوسفند مسموم؛ زن آن را آزمون پیامبر/پادشاه می‌داند و روایت می‌گوید زهر آئورت محمد را قطع کرد؛ Sunnah.com آن را طبق آلبانی Hasan Sahih فهرست می‌کند."
     ]
   }
 };
