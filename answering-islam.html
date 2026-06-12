@@ -64,10 +64,22 @@
     .grow-card{margin:48px 0 0;padding:20px 24px;background:var(--bg-surface);border:1px dashed var(--border);border-radius:10px;text-align:center}
     .grow-card .lbl{font-size:.6rem;letter-spacing:.01em;color:var(--text-3);font-weight:600;margin-bottom:6px}
     .grow-card p{color:var(--text-2);font-size:.85rem;line-height:1.6}
-    .src ol{counter-reset:s;list-style:none;padding:0}
-    .src li{counter-increment:s;padding:10px 0;border-bottom:1px solid var(--border);font-size:.85rem;color:var(--text-2);display:flex;gap:10px;line-height:1.6}
-    .src li::before{content:counter(s);flex-shrink:0;width:22px;height:22px;background:var(--tag);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:600;color:var(--text-3)}
-    .src li:last-child{border-bottom:none}
+    .source-tools{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center;margin:20px 0 16px}
+    .source-search{width:100%;border:1px solid var(--border);background:var(--bg-card);color:var(--text);font:inherit;font-size:.86rem;border-radius:6px;padding:10px 12px;outline:none}
+    .source-search:focus{border-color:var(--text-3)}
+    .source-count{font-size:.72rem;color:var(--text-3);white-space:nowrap}
+    .source-groups{display:grid;gap:10px}
+    .source-group{border:1px solid var(--border);border-radius:8px;background:var(--bg-card);overflow:hidden}
+    .source-group summary{list-style:none;cursor:pointer;padding:13px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:.86rem;font-weight:650;color:var(--text)}
+    .source-group summary::-webkit-details-marker{display:none}
+    .source-group summary::before{content:'+';width:20px;height:20px;border:1px solid var(--border);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:var(--text-3);font-size:.85rem;flex-shrink:0}
+    .source-group[open] summary::before{content:'−'}
+    .source-title{display:flex;align-items:center;gap:8px;min-width:0}
+    .source-badge{font-size:.68rem;font-weight:600;color:var(--text-3);background:var(--tag);border:1px solid var(--border);padding:2px 7px;border-radius:999px;white-space:nowrap}
+    .source-group ol{counter-reset:s;list-style:none;padding:0 16px 10px}
+    .source-group li{counter-increment:s;padding:10px 0;border-top:1px solid var(--border);font-size:.85rem;color:var(--text-2);display:flex;gap:10px;line-height:1.6}
+    .source-group li::before{content:counter(s);flex-shrink:0;width:22px;height:22px;background:var(--tag);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:600;color:var(--text-3)}
+    .source-empty{padding:18px;border:1px dashed var(--border);border-radius:8px;color:var(--text-3);font-size:.85rem;text-align:center}
     footer{margin-top:72px;padding:36px 0;border-top:1px solid var(--border);text-align:center;color:var(--text-3);font-size:.8rem}
     footer .v{font-style:italic;color:var(--text-2);margin-top:10px}
 
@@ -75,14 +87,16 @@
     [dir="ltr"] .bar{flex-direction:row}
     [dir="ltr"] .bar-actions{flex-direction:row}
     [dir="ltr"] .filter-row{flex-direction:row}
-    [dir="ltr"] .qa-claim,[dir="ltr"] .qa-body,[dir="ltr"] .qa-head,[dir="ltr"] .src li{text-align:left}
+    [dir="ltr"] .qa-claim,[dir="ltr"] .qa-body,[dir="ltr"] .qa-head,[dir="ltr"] .source-group li{text-align:left}
 
     /* ─── RTL (Urdu, Farsi) ─── */
     [dir="rtl"] .bar{flex-direction:row-reverse}
     [dir="rtl"] .bar-actions{flex-direction:row-reverse}
     [dir="rtl"] .filter-row{flex-direction:row-reverse}
     [dir="rtl"] .qa-claim,[dir="rtl"] .qa-body,[dir="rtl"] .qa-head{text-align:right}
-    [dir="rtl"] .src li{flex-direction:row-reverse;text-align:right}
+    [dir="rtl"] .source-group li{flex-direction:row-reverse;text-align:right}
+    [dir="rtl"] .source-group summary{flex-direction:row-reverse}
+    [dir="rtl"] .source-tools{direction:rtl}
     [dir="rtl"] .qa-cats{flex-direction:row-reverse}
 
     @media(max-width:640px){
@@ -92,6 +106,7 @@
         .qa-claim{padding:0 18px}
         .bar-title{display:none}
         .filter-lbl{display:none}
+        .source-tools{grid-template-columns:1fr}
     }
 </style>
 </head>
@@ -147,9 +162,13 @@
         <div class="sec-lbl" data-i="sourcesLabel">References</div>
         <h2 data-i="sourcesH">Sources cited in this compendium</h2>
         <p data-i="sourcesIntro">References include Biblical passages and, where relevant, Islamic primary sources such as hadith collections and classical commentary. Check every citation in its own context.</p>
-        <ol id="aiSourcesList">
-            <!-- sources injected here -->
-        </ol>
+        <div class="source-tools">
+            <input id="aiSourceSearch" class="source-search" type="search" autocomplete="off" data-placeholder="sourcesSearch" placeholder="Search sources by reference or wording…">
+            <div id="aiSourceCount" class="source-count"></div>
+        </div>
+        <div id="aiSourcesList" class="source-groups">
+            <!-- grouped sources injected here -->
+        </div>
     </div>
 </div>
 
@@ -768,6 +787,14 @@ window.AI_DATA = {
       sourcesLabel: "References",
       sourcesH: "Sources cited in this compendium",
       sourcesIntro: "References include Biblical passages and, where relevant, Islamic primary sources such as hadith collections and classical commentary. Check every citation in its own context.",
+      sourcesSearch: "Search sources by reference or wording…",
+      sourcesCount: "{shown} of {total} sources",
+      sourcesEmpty: "No sources match that search.",
+      sourceGroupBible: "Bible",
+      sourceGroupQuran: "Qur’an",
+      sourceGroupHadith: "Hadith",
+      sourceGroupIslamic: "Islamic commentary & history",
+      sourceGroupOther: "Other sources",
       footer1: "Answering Islam compendium · Compiled and revised May 2026",
       footer2: '"You will know the truth, and the truth will set you free." — John 8:32',
       claimWord: "The claim",
@@ -794,6 +821,14 @@ window.AI_DATA = {
       sourcesLabel: "संदर्भ",
       sourcesH: "इस संग्रह में उद्धृत स्रोत",
       sourcesIntro: "संदर्भों में बाइबल के पद और जहाँ आवश्यक हो, इस्लामी प्राथमिक स्रोत जैसे हदीस-संग्रह और classical commentary शामिल हैं। हर उद्धरण को उसके अपने संदर्भ में जाँचें।",
+      sourcesSearch: "संदर्भ या शब्दों से स्रोत खोजें…",
+      sourcesCount: "{total} में से {shown} स्रोत",
+      sourcesEmpty: "इस खोज से कोई स्रोत नहीं मिला।",
+      sourceGroupBible: "बाइबल",
+      sourceGroupQuran: "क़ुरआन",
+      sourceGroupHadith: "हदीस",
+      sourceGroupIslamic: "इस्लामी टीका और इतिहास",
+      sourceGroupOther: "अन्य स्रोत",
       footer1: "इस्लाम के सवालों के जवाब संग्रह · मई 2026 में संकलित और संशोधित",
       footer2: '"तुम सत्य को जानोगे, और सत्य तुम्हें स्वतंत्र करेगा।" — यूहन्ना 8:32',
       claimWord: "दावा",
@@ -820,6 +855,14 @@ window.AI_DATA = {
       sourcesLabel: "حوالہ‌جات",
       sourcesH: "اس مجموعے میں نقل شدہ مآخذ",
       sourcesIntro: "حوالہ‌جات میں بائبلی آیات اور جہاں متعلق ہو، اسلامی بنیادی مآخذ جیسے حدیثی مجموعے اور کلاسیکی شرح شامل ہیں۔ ہر اقتباس کو اس کے اپنے سیاق میں جانچیں۔",
+      sourcesSearch: "حوالہ یا عبارت سے مآخذ تلاش کریں…",
+      sourcesCount: "{total} میں سے {shown} مآخذ",
+      sourcesEmpty: "اس تلاش سے کوئی ماخذ نہیں ملا۔",
+      sourceGroupBible: "بائبل",
+      sourceGroupQuran: "قرآن",
+      sourceGroupHadith: "حدیث",
+      sourceGroupIslamic: "اسلامی تفسیر اور تاریخ",
+      sourceGroupOther: "دیگر مآخذ",
       footer1: "اسلام کے سوالات کے جوابات کا مجموعہ · مئی ۲۰۲۶ میں مرتب اور نظرثانی شدہ",
       footer2: '"تم سچائی کو جان لو گے، اور سچائی تمہیں آزاد کرے گی۔" — یوحنا ۸:۳۲',
       claimWord: "دعویٰ",
@@ -846,6 +889,14 @@ window.AI_DATA = {
       sourcesLabel: "ارجاعات",
       sourcesH: "منابع ذکرشده در این مجموعه",
       sourcesIntro: "ارجاعات شامل آیات کتاب مقدس و، در موارد مربوط، منابع اصلی اسلامی مانند مجموعه‌های حدیث و شرح کلاسیک هستند. هر نقل‌قول را در زمینهٔ خودش بررسی کنید.",
+      sourcesSearch: "جست‌وجوی منابع بر اساس ارجاع یا عبارت…",
+      sourcesCount: "{shown} از {total} منبع",
+      sourcesEmpty: "هیچ منبعی با این جست‌وجو پیدا نشد.",
+      sourceGroupBible: "کتاب مقدس",
+      sourceGroupQuran: "قرآن",
+      sourceGroupHadith: "حدیث",
+      sourceGroupIslamic: "تفسیر و تاریخ اسلامی",
+      sourceGroupOther: "منابع دیگر",
       footer1: "مجموعهٔ پاسخ به اسلام · گردآوری و بازبینی در مه ۲۰۲۶",
       footer2: '«حقیقت را خواهید شناخت، و حقیقت شما را آزاد خواهد کرد.» — یوحنا ۸:۳۲',
       claimWord: "ادعا",
@@ -1149,13 +1200,65 @@ function aiRenderEntries() {
     list.innerHTML = html;
 }
 
+function aiSourceGroup(line) {
+    var ref = String(line || '').split(' — ')[0];
+    if (/Qur[’']?an|Quran|قرآن|क़ुरआन/i.test(ref)) return 'quran';
+    if (/Sahih|Sunan|Jami`|Muwatta|Musnad|Hadith|Bukhari|Muslim|Abi Dawud|Ibn Majah|Tirmidhi|نسائی|بخاری|مسلم|داود|حدیث|हदीस/i.test(ref)) return 'hadith';
+    if (/Ibn Kathir|Tabari|Tafsir|Sira|Ishaq|Waqidi|طبری|تفسیر|सीरत/i.test(ref)) return 'islamic';
+    if (/Genesis|Exodus|Leviticus|Numbers|Deuteronomy|Joshua|Judges|Ruth|Samuel|Kings|Chronicles|Ezra|Nehemiah|Esther|Job|Psalm|Proverbs|Ecclesiastes|Song|Isaiah|Jeremiah|Lamentations|Ezekiel|Daniel|Hosea|Joel|Amos|Obadiah|Jonah|Micah|Nahum|Habakkuk|Zephaniah|Haggai|Zechariah|Malachi|Matthew|Mark|Luke|John|Acts|Romans|Corinthians|Galatians|Ephesians|Philippians|Colossians|Thessalonians|Timothy|Titus|Philemon|Hebrews|James|Peter|Jude|Revelation|यूहन्ना|निर्गमन|मत्ती|मरकुस|लूका|भजन|दानिय्येल|یوحنا|خروج|متی|مرقس|لوقا|زبور|دانی|اشعیا|مزمور/i.test(ref)) return 'bible';
+    return 'other';
+}
+
+function aiSourceGroupLabel(key, ui) {
+    var labels = {
+        bible: ui.sourceGroupBible || 'Bible',
+        quran: ui.sourceGroupQuran || 'Qur’an',
+        hadith: ui.sourceGroupHadith || 'Hadith',
+        islamic: ui.sourceGroupIslamic || 'Islamic commentary & history',
+        other: ui.sourceGroupOther || 'Other sources'
+    };
+    return labels[key] || key;
+}
+
 function aiRenderSources() {
-    var ol = document.getElementById('aiSourcesList');
-    if (!ol) return;
+    var wrap = document.getElementById('aiSourcesList');
+    if (!wrap) return;
     var lang = AI_STATE.lang;
-    var refs = (AI_DATA.sourceRefs && AI_DATA.sourceRefs[lang]) || AI_DATA.sourceRefs.en;
-    ol.innerHTML = refs.map(function (line) {
-        return '<li>' + line + '</li>';
+    var ui = AI_DATA.ui[lang] || AI_DATA.ui.en;
+    var refs = (AI_DATA.sourceRefs && AI_DATA.sourceRefs[lang]) || AI_DATA.sourceRefs.en || [];
+    var input = document.getElementById('aiSourceSearch');
+    if (input) input.placeholder = ui.sourcesSearch || 'Search sources by reference or wording…';
+    var query = input ? input.value.trim().toLowerCase() : '';
+    var seen = {};
+    var filtered = refs.filter(function (line) {
+        if (seen[line]) return false;
+        seen[line] = true;
+        return !query || String(line).toLowerCase().indexOf(query) !== -1;
+    });
+    var count = document.getElementById('aiSourceCount');
+    if (count) {
+        var template = ui.sourcesCount || '{shown} of {total} sources';
+        count.textContent = template.replace('{shown}', filtered.length).replace('{total}', refs.length);
+    }
+    if (!filtered.length) {
+        wrap.innerHTML = '<div class="source-empty">' + aiEscape(ui.sourcesEmpty || 'No sources match that search.') + '</div>';
+        return;
+    }
+    var order = ['bible', 'quran', 'hadith', 'islamic', 'other'];
+    var groups = {};
+    filtered.forEach(function (line) {
+        var key = aiSourceGroup(line);
+        if (!groups[key]) groups[key] = [];
+        groups[key].push(line);
+    });
+    var searching = !!query;
+    wrap.innerHTML = order.filter(function (key) { return groups[key] && groups[key].length; }).map(function (key) {
+        var lines = groups[key];
+        var list = lines.map(function (line) { return '<li>' + line + '</li>'; }).join('');
+        return '<details class="source-group" ' + (searching || key === 'bible' ? 'open' : '') + '>' +
+            '<summary><span class="source-title">' + aiEscape(aiSourceGroupLabel(key, ui)) + '</span><span class="source-badge">' + lines.length + '</span></summary>' +
+            '<ol>' + list + '</ol>' +
+        '</details>';
     }).join('');
 }
 
@@ -1165,6 +1268,10 @@ function aiApplyUiStrings() {
     document.querySelectorAll('[data-i]').forEach(function (el) {
         var key = el.getAttribute('data-i');
         if (ui[key] !== undefined) el.innerHTML = ui[key];
+    });
+    document.querySelectorAll('[data-placeholder]').forEach(function (el) {
+        var key = el.getAttribute('data-placeholder');
+        if (ui[key] !== undefined) el.setAttribute('placeholder', ui[key]);
     });
     // The page <title> stays in English so the URL/title bar reads
     // sensibly in any browser; the visible H1 is translated above.
@@ -1192,6 +1299,8 @@ function aiFilter(cat) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    var sourceSearch = document.getElementById('aiSourceSearch');
+    if (sourceSearch) sourceSearch.addEventListener('input', aiRenderSources);
     var saved = localStorage.getItem('lang');
     if (saved && AI_DATA.ui[saved]) {
         aiSetLang(saved);
